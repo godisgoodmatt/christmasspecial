@@ -1,0 +1,9 @@
+h1|Mystery Gifts
+
+In this episode[;] your items are randomized each
+turn. However[;] the items you have in the overworld
+act as guidelines for what items should replace them.
+
+For example[;] open the inventory and check out
+your starter weapon.
+
