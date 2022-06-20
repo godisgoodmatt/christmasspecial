@@ -53,3 +53,5 @@ reennote,reennote,0x00FF00,IMAGE
 orangenote,orangenote,0x808000,IMAGE
 purplenote,purplenote,0x800080,IMAGE
 yellownote,yellownote,0xFFFF00,IMAGE
+bownote,bownote,0x000000,IMAGE
+black,0,0x000000,COLOUR
