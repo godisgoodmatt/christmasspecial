@@ -47,19 +47,25 @@ if (isladyluck) {
 } else {
 	actor("Lady Luck", screenwidthmid + 200, 100, Col.YELLOW, LEFT, TOP, "chat_ladyluck", "characters/misc/charicon_ladyluck");
 }
-
+var spin = 90;
 if(player == "Warrior"){
   actor("Warrior", 150, screenheight - 100, Col.LIGHTBLUE, LEFT, BOTTOM, "chat_warrior", "characters/warrior/charicon_warrior");
+  spin = 50;
 }else if(player == "Thief"){
   actor("Thief", 150, screenheight - 100, Col.multiplylightness(Col.GREEN, 1.25), LEFT, BOTTOM, "chat_thief", "characters/thief/charicon_thief");
+  spin = 50;
 }else if(player == "Robot"){
   actor("Robot", 150, screenheight - 100, 0xDDDDDD, LEFT, BOTTOM, "chat_robot", "characters/robot/charicon_robot");
+  spin = 50;
 }else if(player == "Inventor"){
   actor("Inventor", 150, screenheight - 100, 0xffe48d, LEFT, BOTTOM, "chat_inventor", "characters/inventor/charicon_inventor");
+  spin = 50;
 }else if(player == "Witch"){
   actor("Witch", 150, screenheight - 100, 0xb496ec, LEFT, BOTTOM, "chat_witch", "characters/witch/charicon_witch");
+  spin = 50;
 }else if(player == "Jester"){
   actor("Jester", 150, screenheight - 100, Col.ORANGE, LEFT, BOTTOM, "chat_jester", "characters/jester/charicon_jester");
+  spin = 50;
 }else if(player == "Bear"){
   actor("Bear", 150, screenheight - 100, Col.RED, LEFT, BOTTOM, "chat_thief", "characters/bear/charicon_bear");
 }else if(player == "Ghost of Present"){
@@ -120,9 +126,10 @@ if (isladyluck) {
 announcer.show("idle");
 
 announcer.hide();
-
-var wheelwins = chance(95) || debugalwayswin; // 50% chance to win
+trace(spin);
+var wheelwins = chance(spin) || debugalwayswin; // 50% chance to win
 spinthewheel(sign, wheel, wheelwins ? "spin2" : "spin1");
+trace(wheelwins);
 
 signanimate(sign);
 
