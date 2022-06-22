@@ -83,14 +83,11 @@ gooditems = [];
 otherstuff = [];
 goodotherstuff = [];
 
-var lastfloor = addfloor("boss");
-
 if (getfinalboss() == "Mariah Carey"){
   items.push("BOOO!");
 }
 
-lastfloor
-  .additems(items, gooditems)
-  .setlocation('BOSS')
-  .addotherstuff(otherstuff, goodotherstuff)
-  .generate();
+var mycoolfloor6 = addfloor('boss').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
+mycoolfloor6.theme = rand(['bossy']);
+mycoolfloor6.setlocation("BOSS");
+mycoolfloor6.generate();
