@@ -47,8 +47,7 @@ gooditems = [];
 otherstuff = [];
 goodotherstuff = [];
 
-addfloor("boss")
-  .addenemies([finalboss], [])
-  .setlocation("boss")
-  .generate();
-  
+var mycoolfloor2 = addfloor('boss').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff).addenemies([finalboss], []);
+mycoolfloor2.theme = rand(['bossy']);
+mycoolfloor2.setlocation("BOSS");
+mycoolfloor2.generate();
