@@ -47,4 +47,12 @@
 	<SubTexture name="enemies/rudy_01" x="600" y="300" rotated="false" width="150" height="150"/>
     <SubTexture name="enemies/rudy_02" x="1350" y="300" rotated="false" width="150" height="150"/>
     <SubTexture name="overworld/rudy" x="600" y="300" rotated="false" width="150" height="150"/>
+	<SubTexture name="enemies/heatmiser_01" x="0" y="450" rotated="false" width="150" height="150"/>
+    <SubTexture name="enemies/heatmiser_02" x="750" y="450" rotated="false" width="150" height="150"/>
+    <SubTexture name="overworld/heatmiser" x="0" y="450" rotated="false" width="150" height="150"/>
+    <SubTexture name="enemies/snowmiser_01" x="150" y="450" rotated="false" width="150" height="150"/>
+    <SubTexture name="enemies/snowmiser_02" x="900" y="450" rotated="false" width="150" height="150"/>
+    <SubTexture name="overworld/snowmiser" x="150" y="450" rotated="false" width="150" height="150"/>
+	<SubTexture name="enemies/playerladyluck_01" x="300" y="450" width="181" height="180" frameX="-29" frameY="-32" frameWidth="244" frameHeight="244"/>
+	<SubTexture name="enemies/playerladyluck_02" x="1050" y="450" width="181" height="180" frameX="-29" frameY="-32" frameWidth="244" frameHeight="244"/>
 </TextureAtlas>
