@@ -711,3 +711,4 @@ Swap Out,Switch to another Miser,1,if(!simulation) { bonus(1000000000); if(self.
 Scorching Blast,Do [fire]8 damage,2,attack(8[;] FIRE); sfxdamage(target[;] 8);,,REQUIRE6,,RED,change_power,doublerequirements,,,0,NO,NO,,,,,,,,,,,,,
 Scorching Blast_upgraded,Do [fire]8 damage,2,attack(8[;] FIRE); sfxdamage(target[;] 8);,,MIN5,,RED,,,,,0,NO,NO,,,,,,,,,,,,,
 Hot Headed,[90%]Do [fire]<d6> damage[;] Burn a dice|[gray](Reuseable),1,attack(d[;] FIRE); sfxdamage(target[;] d); inflict(FIRE);,,MAX3,,RED,increaserange,decreaserange,,,2,NO,NO,,,,,,,,,,,,,
+Fairy Lights,Get 3x[dice]1s next turn,1,inflictself(~stash1~[;]3); inflictself(~illuminate~); sfx(~_thinghappens~);,Very Unlucky Roll,MIN4,,YELLOW,increaserange,complicate,,,0,YES,NO,,1,,,,,,,,,,,
