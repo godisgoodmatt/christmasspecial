@@ -1,4 +1,4 @@
-var notes = shuffle(["Soft Palette","Commandments@dmg","Commandments@health","Commandments@dice"]);
+var notes = shuffle(["Soft Palette","Sharp Palette","Commandments@health","Commandments@dice"]);
 var remove = [];
 var misc = [];
 var vampireitem = ["Silver Sword"];

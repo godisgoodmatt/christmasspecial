@@ -718,3 +718,5 @@ Soft Palette,Gain [greennote]Green_Note|If you have 2 green notes|removes all gr
 Soft Palette_upgraded,Gain [greennote]Green_Note|If you have 2 green notes|removes all green notes,1,inflictself(~greennote~); sfx(~_cure~); if(getstatusself(~greennote~) >= 2){ removestatusself(~greennote~); },,COUNTDOWN,6,GREEN,,change_power,,,0,YES,NO,,,,,,,,,,,,,
 Soft Palette_weakened,Gain [greennote]Green_Note,1,inflictself(~greennote~); sfx(~_cure~);,,COUNTDOWN,6,GREEN,change_power,change_power,,,0,YES,NO,,,,,,,,,,,,,
 Soft Palette_downgraded,Gain [greennote]Green_Note,2,inflictself(~greennote~); sfx(~_cure~);,,COUNTDOWN,6,GREEN,change_power,change_power,,,0,YES,NO,,,,,,,,,,,,,
+Sharp Palette,Gain [orangenote]Orange_Note|If weakened removes all [orangenote],1,inflictself(~orangenote~); sfx(~_weaken~);,,MIN3|MAX3,,ORANGE,simplify,change_power,,,0,NO,NO,,,,,,,,,,,,,
+Sharp Palette_downgraded,If weakened removes all [orangenote],1,removestatusself(~orangenote~);,,MIN3|MAX3,,ORANGE,,,,,0,NO,NO,,,,,,,,,,,,,
