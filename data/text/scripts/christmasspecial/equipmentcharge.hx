@@ -1,3 +1,4 @@
+// This script is a result of Tonite
 var _count = args[0];
 var _modifier = args[1];
 var _thisequipment = args[2];
