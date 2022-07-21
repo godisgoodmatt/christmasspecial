@@ -1,8 +1,14 @@
 // This script is a result of Tonite
 var self = args[0];
 var reset = args[1];
+var beforestartturn = args[2];
 
 for(e in self.getcurrentequipment()) {
+
+	if (e.varexists("oldslots") && beforestartturn) {
+		e.changeslots(e.getvar("oldslots"));
+	}
+
 	var position = ((e.column * 2) + e.row + 1);
 
 	if (e.slots[0] == "COMBINATION") {

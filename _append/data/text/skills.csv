@@ -95,4 +95,4 @@ Calculate@bg,[80%]Roll dice 35% to error a random item,if(chance(65)){ var rolls
 Locked1,[lock]till next turn,self.textparticle(~[lock]Locked~); Gadget.reactivate(self[;] ALL);
 Locked2,[lock]till next turn,self.textparticle(~[lock]Locked~); Gadget.reactivate(self[;] ALL);
 Locked3,[lock]till next turn,self.textparticle(~[lock]Locked~); Gadget.reactivate(self[;] ALL);
-Knock Your Socks,Loosens the equipment requirments,for(e in self.getcurrentequipment()) {e.changeslots(["NORMAL"]);} sfx(~levelup~);
+Knock Your Socks,Loosens the equipment requirments,for(e in self.getcurrentequipment()) {e.setvar("oldslots"|e.slots.copy()); e.changeslots(["NORMAL"]);} sfx(~levelup~);
