@@ -1,3 +1,4 @@
+// This script is a result of Tonite
 var self = args[0];
 var reset = args[1];
 
@@ -53,6 +54,9 @@ for(e in self.getcurrentequipment()) {
 			}
 			e.addtag("combination:" + combo);
 			e.changeslots(["COMBINATION"]);
+			if (reset) {
+				e.setvar("combination",combo);
+			}
 		}
 	} else {
 		e.changeslots(["REQUIRE" + position]);
