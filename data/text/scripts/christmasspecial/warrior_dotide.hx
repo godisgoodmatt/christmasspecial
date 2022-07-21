@@ -18,6 +18,7 @@ var allsmalleqs = getequipmentlist(
 		"inventoronly",
 		"onceperbattle",
 		"alternateversion",
+		"vanilla",
 		"immunetotide"
 	]
 );
@@ -33,6 +34,7 @@ var alllargeeqs = getequipmentlist(
 		"inventoronly",
 		"onceperbattle",
 		"alternateversion",
+		"vanilla",
 		"immunetotide"
 	]
 );
