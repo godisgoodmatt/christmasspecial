@@ -1,6 +1,6 @@
 var self = args[0];
 var opb = args[1];
-var exceptions = ['skillcard','excludefromrandomlists','alternateversion','robotonly','witchonly','inventoronly','jesteronly'];
+var exceptions = ['skillcard','excludefromrandomlists','alternateversion','robotonly','witchonly','inventoronly','jesteronly','vanilla'];
 if(opb) exceptions.push('onceperbattle');
 if(self.layout != 'DECK') {
   if(self.usecpuinsteadofdice) exceptions.remove('robotonly');
