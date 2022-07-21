@@ -5,10 +5,14 @@ if (args[0].getvar("mqspecialdice") == 0) {
 	var funcSpecialDice = new hscript.Parser().parseString("
         if (self.dicepool.length > 0) for (mydice in self.dicepool) {
             if (mydice.basevalue < 1 || mydice.basevalue > 6) {
+		mydice.y += 90;
+		
                 mydice.flash += 0.1;
                 mydice.animate(\"\");
                 var anim = mydice.animation[mydice.animation.length - 1];
-                anim.addcommand(\"textparticle\", \"\" + mydice.basevalue, 0xFFFFFF);
+                anim.addcommand(\"textparticle\", \"\" + mydice.basevalue, 0x000000);
+
+		mydice.y -= 90;
             }
         }
         if (self.getvar(\"mqmyturn\") == 0) {
