@@ -14,9 +14,9 @@ historytext.temporary_thisturnonly = true;
 self.equipment.push(historytext);
 displays.push(historytext);
 
-var dicecount = new elements.Equipment("Defective Display");
+var dicecount = new elements.Equipment("Defective Dice Display");
 dicecount.displayname = "";
-dicecount.fulldescription = "Dice Count: " + self.getvar("numrolls");
+dicecount.fulldescription = "Dice: 0 / " + self.getvar("numrolls");
 dicecount.height = 0;
 dicecount.x = e.x;
 dicecount.y = e.y + 3 * e.height / 2 - 8 * 45 + 30;

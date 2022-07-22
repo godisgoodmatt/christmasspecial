@@ -108,98 +108,98 @@ bownote,[yellow]Ra[green]in[blue]bo[purple]w_N[orange]ot[red]e,bownote,[yellow]M
 bluenote,Blue_Note,bluenote,Freeze a dice each turn|When removed freeze all dice,NO,NO,NO,NO,NO,,,,,,,inflict(ICE); sfx(~_ice~);,,,,Null
 blacknote,Black_Note,blacknote,Do [sword]<value> damage|When removed Do [sword]6 damage,YES,NO,NO,NO,NO,,,,,,,attack(getstatusself(~blacknote~)); sfxdamage(target[;] getstatusself(~blacknote~));,,,,Null
 purpnote,Purple_Note,purplenote,Inflict [poison]<value> poison on odd turns|When removed inflict [poison]4 poison,YES,NO,NO,NO,NO,,,,,,,inflict(POISON[;] getstatusself(~purpnote~)); sfx(~_poison~);,,,,Null
-stash7,Stash_7,dice,Roll an extra 7 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(7); } givedice(dice);,,,,,,,Null
-stash8,Stash_8,dice,Roll an extra 8 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(8); } givedice(dice);,,,,,,,Null
-stash9,Stash_9,dice,Roll an extra 9 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(9); } givedice(dice);,,,,,,,Null
-stash10,Stash_10,dice,Roll an extra 10 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(10); } givedice(dice);,,,,,,,Null
-stash11,Stash_11,dice,Roll an extra 11 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(11); } givedice(dice);,,,,,,,Null
-stash12,Stash_12,dice,Roll an extra 12 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(12); } givedice(dice);,,,,,,,Null
-stash13,Stash_13,dice,Roll an extra 13 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(13); } givedice(dice);,,,,,,,Null
-stash14,Stash_14,dice,Roll an extra 14 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(14); } givedice(dice);,,,,,,,Null
-stash15,Stash_15,dice,Roll an extra 15 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(15); } givedice(dice);,,,,,,,Null
-stash16,Stash_16,dice,Roll an extra 16 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(16); } givedice(dice);,,,,,,,Null
-stash17,Stash_17,dice,Roll an extra 17 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(17); } givedice(dice);,,,,,,,Null
-stash18,Stash_18,dice,Roll an extra 18 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(18); } givedice(dice);,,,,,,,Null
-stash19,Stash_19,dice,Roll an extra 19 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(19); } givedice(dice);,,,,,,,Null
-stash20,Stash_20,dice,Roll an extra 20 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(20); } givedice(dice);,,,,,,,Null
-stash21,Stash_21,dice,Roll an extra 21 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(21); } givedice(dice);,,,,,,,Null
-stash22,Stash_22,dice,Roll an extra 22 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(22); } givedice(dice);,,,,,,,Null
-stash23,Stash_23,dice,Roll an extra 23 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(23); } givedice(dice);,,,,,,,Null
-stash24,Stash_24,dice,Roll an extra 24 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(24); } givedice(dice);,,,,,,,Null
-stash25,Stash_25,dice,Roll an extra 25 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(25); } givedice(dice);,,,,,,,Null
-stash26,Stash_26,dice,Roll an extra 26 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(26); } givedice(dice);,,,,,,,Null
-stash27,Stash_27,dice,Roll an extra 27 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(27); } givedice(dice);,,,,,,,Null
-stash28,Stash_28,dice,Roll an extra 28 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(28); } givedice(dice);,,,,,,,Null
-stash29,Stash_29,dice,Roll an extra 29 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(29); } givedice(dice);,,,,,,,Null
-stash30,Stash_30,dice,Roll an extra 30 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(30); } givedice(dice);,,,,,,,Null
-stash31,Stash_31,dice,Roll an extra 31 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(31); } givedice(dice);,,,,,,,Null
-stash32,Stash_32,dice,Roll an extra 32 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(32); } givedice(dice);,,,,,,,Null
-stash33,Stash_33,dice,Roll an extra 33 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(33); } givedice(dice);,,,,,,,Null
-stash34,Stash_34,dice,Roll an extra 34 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(34); } givedice(dice);,,,,,,,Null
-stash35,Stash_35,dice,Roll an extra 35 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(35); } givedice(dice);,,,,,,,Null
-stash36,Stash_36,dice,Roll an extra 36 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(36); } givedice(dice);,,,,,,,Null
-stash37,Stash_37,dice,Roll an extra 37 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(37); } givedice(dice);,,,,,,,Null
-stash38,Stash_38,dice,Roll an extra 38 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(38); } givedice(dice);,,,,,,,Null
-stash39,Stash_39,dice,Roll an extra 39 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(39); } givedice(dice);,,,,,,,Null
-stash40,Stash_40,dice,Roll an extra 40 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(40); } givedice(dice);,,,,,,,Null
-stash41,Stash_41,dice,Roll an extra 41 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(41); } givedice(dice);,,,,,,,Null
-stash42,Stash_42,dice,Roll an extra 42 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(42); } givedice(dice);,,,,,,,Null
-stash43,Stash_43,dice,Roll an extra 43 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(43); } givedice(dice);,,,,,,,Null
-stash44,Stash_44,dice,Roll an extra 44 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(44); } givedice(dice);,,,,,,,Null
-stash45,Stash_45,dice,Roll an extra 45 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(45); } givedice(dice);,,,,,,,Null
-stash46,Stash_46,dice,Roll an extra 46 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(46); } givedice(dice);,,,,,,,Null
-stash47,Stash_47,dice,Roll an extra 47 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(47); } givedice(dice);,,,,,,,Null
-stash48,Stash_48,dice,Roll an extra 48 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(48); } givedice(dice);,,,,,,,Null
-stash49,Stash_49,dice,Roll an extra 49 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(49); } givedice(dice);,,,,,,,Null
-stash50,Stash_50,dice,Roll an extra 50 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(50); } givedice(dice);,,,,,,,Null
-stash0,Stash_0,dice,Roll an extra 0 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(0); } givedice(dice);,,,,,,,Null
-stash-1,Stash_m1,dice,Roll an extra -1 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-1); } givedice(dice);,,,,,,,Null
-stash-2,Stash_m2,dice,Roll an extra -2 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-2); } givedice(dice);,,,,,,,Null
-stash-3,Stash_m3,dice,Roll an extra -3 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-3); } givedice(dice);,,,,,,,Null
-stash-4,Stash_m4,dice,Roll an extra -4 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-4); } givedice(dice);,,,,,,,Null
-stash-5,Stash_m5,dice,Roll an extra -5 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-5); } givedice(dice);,,,,,,,Null
-stash-6,Stash_m6,dice,Roll an extra -6 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-6); } givedice(dice);,,,,,,,Null
-stash-7,Stash_m7,dice,Roll an extra -7 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-7); } givedice(dice);,,,,,,,Null
-stash-8,Stash_m8,dice,Roll an extra -8 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-8); } givedice(dice);,,,,,,,Null
-stash-9,Stash_m9,dice,Roll an extra -9 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-9); } givedice(dice);,,,,,,,Null
-stash-10,Stash_m10,dice,Roll an extra -10 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-10); } givedice(dice);,,,,,,,Null
-stash-11,Stash_m11,dice,Roll an extra -11 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-11); } givedice(dice);,,,,,,,Null
-stash-12,Stash_m12,dice,Roll an extra -12 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-12); } givedice(dice);,,,,,,,Null
-stash-13,Stash_m13,dice,Roll an extra -13 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-13); } givedice(dice);,,,,,,,Null
-stash-14,Stash_m14,dice,Roll an extra -14 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-14); } givedice(dice);,,,,,,,Null
-stash-15,Stash_m15,dice,Roll an extra -15 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-15); } givedice(dice);,,,,,,,Null
-stash-16,Stash_m16,dice,Roll an extra -16 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-16); } givedice(dice);,,,,,,,Null
-stash-17,Stash_m17,dice,Roll an extra -17 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-17); } givedice(dice);,,,,,,,Null
-stash-18,Stash_m18,dice,Roll an extra -18 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-18); } givedice(dice);,,,,,,,Null
-stash-19,Stash_m19,dice,Roll an extra -19 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-19); } givedice(dice);,,,,,,,Null
-stash-20,Stash_m20,dice,Roll an extra -20 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-20); } givedice(dice);,,,,,,,Null
-stash-21,Stash_m21,dice,Roll an extra -21 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-21); } givedice(dice);,,,,,,,Null
-stash-22,Stash_m22,dice,Roll an extra -22 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-22); } givedice(dice);,,,,,,,Null
-stash-23,Stash_m23,dice,Roll an extra -23 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-23); } givedice(dice);,,,,,,,Null
-stash-24,Stash_m24,dice,Roll an extra -24 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-24); } givedice(dice);,,,,,,,Null
-stash-25,Stash_m25,dice,Roll an extra -25 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-25); } givedice(dice);,,,,,,,Null
-stash-26,Stash_m26,dice,Roll an extra -26 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-26); } givedice(dice);,,,,,,,Null
-stash-27,Stash_m27,dice,Roll an extra -27 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-27); } givedice(dice);,,,,,,,Null
-stash-28,Stash_m28,dice,Roll an extra -28 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-28); } givedice(dice);,,,,,,,Null
-stash-29,Stash_m29,dice,Roll an extra -29 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-29); } givedice(dice);,,,,,,,Null
-stash-30,Stash_m30,dice,Roll an extra -30 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-30); } givedice(dice);,,,,,,,Null
-stash-31,Stash_m31,dice,Roll an extra -31 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-31); } givedice(dice);,,,,,,,Null
-stash-32,Stash_m32,dice,Roll an extra -32 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-32); } givedice(dice);,,,,,,,Null
-stash-33,Stash_m33,dice,Roll an extra -33 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-33); } givedice(dice);,,,,,,,Null
-stash-34,Stash_m34,dice,Roll an extra -34 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-34); } givedice(dice);,,,,,,,Null
-stash-35,Stash_m35,dice,Roll an extra -35 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-35); } givedice(dice);,,,,,,,Null
-stash-36,Stash_m36,dice,Roll an extra -36 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-36); } givedice(dice);,,,,,,,Null
-stash-37,Stash_m37,dice,Roll an extra -37 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-37); } givedice(dice);,,,,,,,Null
-stash-38,Stash_m38,dice,Roll an extra -38 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-38); } givedice(dice);,,,,,,,Null
-stash-39,Stash_m39,dice,Roll an extra -39 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-39); } givedice(dice);,,,,,,,Null
-stash-40,Stash_m40,dice,Roll an extra -40 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-40); } givedice(dice);,,,,,,,Null
-stash-41,Stash_m41,dice,Roll an extra -41 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-41); } givedice(dice);,,,,,,,Null
-stash-42,Stash_m42,dice,Roll an extra -42 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-42); } givedice(dice);,,,,,,,Null
-stash-43,Stash_m43,dice,Roll an extra -43 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-43); } givedice(dice);,,,,,,,Null
-stash-44,Stash_m44,dice,Roll an extra -44 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-44); } givedice(dice);,,,,,,,Null
-stash-45,Stash_m45,dice,Roll an extra -45 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-45); } givedice(dice);,,,,,,,Null
-stash-46,Stash_m46,dice,Roll an extra -46 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-46); } givedice(dice);,,,,,,,Null
-stash-47,Stash_m47,dice,Roll an extra -47 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-47); } givedice(dice);,,,,,,,Null
-stash-48,Stash_m48,dice,Roll an extra -48 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-48); } givedice(dice);,,,,,,,Null
-stash-49,Stash_m49,dice,Roll an extra -49 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-49); } givedice(dice);,,,,,,,Null
-stash-50,Stash_m50,dice,Roll an extra -50 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-50); } givedice(dice);,,,,,,,Null
+stash7,Stash_7,dice,Roll an extra 7 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(7); } givedice(dice); status.value = 0;,,,,,,,Null
+stash8,Stash_8,dice,Roll an extra 8 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(8); } givedice(dice); status.value = 0;,,,,,,,Null
+stash9,Stash_9,dice,Roll an extra 9 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(9); } givedice(dice); status.value = 0;,,,,,,,Null
+stash10,Stash_10,dice,Roll an extra 10 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(10); } givedice(dice); status.value = 0;,,,,,,,Null
+stash11,Stash_11,dice,Roll an extra 11 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(11); } givedice(dice); status.value = 0;,,,,,,,Null
+stash12,Stash_12,dice,Roll an extra 12 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(12); } givedice(dice); status.value = 0;,,,,,,,Null
+stash13,Stash_13,dice,Roll an extra 13 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(13); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash14,Stash_14,dice,Roll an extra 14 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(14); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash15,Stash_15,dice,Roll an extra 15 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(15); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash16,Stash_16,dice,Roll an extra 16 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(16); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash17,Stash_17,dice,Roll an extra 17 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(17); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash18,Stash_18,dice,Roll an extra 18 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(18); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash19,Stash_19,dice,Roll an extra 19 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(19); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash20,Stash_20,dice,Roll an extra 20 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(20); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash21,Stash_21,dice,Roll an extra 21 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(21); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash22,Stash_22,dice,Roll an extra 22 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(22); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash23,Stash_23,dice,Roll an extra 23 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(23); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash24,Stash_24,dice,Roll an extra 24 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(24); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash25,Stash_25,dice,Roll an extra 25 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(25); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash26,Stash_26,dice,Roll an extra 26 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(26); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash27,Stash_27,dice,Roll an extra 27 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(27); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash28,Stash_28,dice,Roll an extra 28 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(28); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash29,Stash_29,dice,Roll an extra 29 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(29); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash30,Stash_30,dice,Roll an extra 30 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(30); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash31,Stash_31,dice,Roll an extra 31 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(31); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash32,Stash_32,dice,Roll an extra 32 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(32); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash33,Stash_33,dice,Roll an extra 33 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(33); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash34,Stash_34,dice,Roll an extra 34 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(34); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash35,Stash_35,dice,Roll an extra 35 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(35); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash36,Stash_36,dice,Roll an extra 36 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(36); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash37,Stash_37,dice,Roll an extra 37 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(37); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash38,Stash_38,dice,Roll an extra 38 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(38); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash39,Stash_39,dice,Roll an extra 39 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(39); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash40,Stash_40,dice,Roll an extra 40 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(40); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash41,Stash_41,dice,Roll an extra 41 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(41); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash42,Stash_42,dice,Roll an extra 42 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(42); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash43,Stash_43,dice,Roll an extra 43 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(43); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash44,Stash_44,dice,Roll an extra 44 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(44); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash45,Stash_45,dice,Roll an extra 45 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(45); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash46,Stash_46,dice,Roll an extra 46 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(46); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash47,Stash_47,dice,Roll an extra 47 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(47); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash48,Stash_48,dice,Roll an extra 48 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(48); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash49,Stash_49,dice,Roll an extra 49 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(49); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash50,Stash_50,dice,Roll an extra 50 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(50); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash0,Stash_0,dice,Roll an extra 0 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(0); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-1,Stash_m1,dice,Roll an extra -1 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-1); } givedice(dice); status.value = 0;,,,,,,,Null
+stash-2,Stash_m2,dice,Roll an extra -2 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-2); } givedice(dice); status.value = 0;,,,,,,,Null
+stash-3,Stash_m3,dice,Roll an extra -3 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-3); } givedice(dice); status.value = 0;,,,,,,,Null
+stash-4,Stash_m4,dice,Roll an extra -4 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-4); } givedice(dice); status.value = 0;,,,,,,,Null
+stash-5,Stash_m5,dice,Roll an extra -5 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-5); } givedice(dice); status.value = 0;,,,,,,,Null
+stash-6,Stash_m6,dice,Roll an extra -6 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-6); } givedice(dice); status.value = 0;,,,,,,,Null
+stash-7,Stash_m7,dice,Roll an extra -7 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-7); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-8,Stash_m8,dice,Roll an extra -8 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-8); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-9,Stash_m9,dice,Roll an extra -9 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-9); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-10,Stash_m10,dice,Roll an extra -10 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-10); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-11,Stash_m11,dice,Roll an extra -11 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-11); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-12,Stash_m12,dice,Roll an extra -12 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-12); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-13,Stash_m13,dice,Roll an extra -13 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-13); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-14,Stash_m14,dice,Roll an extra -14 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-14); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-15,Stash_m15,dice,Roll an extra -15 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-15); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-16,Stash_m16,dice,Roll an extra -16 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-16); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-17,Stash_m17,dice,Roll an extra -17 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-17); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-18,Stash_m18,dice,Roll an extra -18 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-18); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-19,Stash_m19,dice,Roll an extra -19 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-19); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-20,Stash_m20,dice,Roll an extra -20 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-20); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-21,Stash_m21,dice,Roll an extra -21 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-21); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-22,Stash_m22,dice,Roll an extra -22 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-22); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-23,Stash_m23,dice,Roll an extra -23 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-23); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-24,Stash_m24,dice,Roll an extra -24 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-24); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-25,Stash_m25,dice,Roll an extra -25 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-25); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-26,Stash_m26,dice,Roll an extra -26 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-26); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-27,Stash_m27,dice,Roll an extra -27 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-27); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-28,Stash_m28,dice,Roll an extra -28 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-28); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-29,Stash_m29,dice,Roll an extra -29 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-29); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-30,Stash_m30,dice,Roll an extra -30 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-30); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-31,Stash_m31,dice,Roll an extra -31 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-31); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-32,Stash_m32,dice,Roll an extra -32 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-32); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-33,Stash_m33,dice,Roll an extra -33 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-33); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-34,Stash_m34,dice,Roll an extra -34 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-34); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-35,Stash_m35,dice,Roll an extra -35 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-35); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-36,Stash_m36,dice,Roll an extra -36 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-36); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-37,Stash_m37,dice,Roll an extra -37 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-37); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-38,Stash_m38,dice,Roll an extra -38 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-38); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-39,Stash_m39,dice,Roll an extra -39 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-39); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-40,Stash_m40,dice,Roll an extra -40 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-40); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-41,Stash_m41,dice,Roll an extra -41 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-41); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-42,Stash_m42,dice,Roll an extra -42 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-42); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-43,Stash_m43,dice,Roll an extra -43 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-43); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-44,Stash_m44,dice,Roll an extra -44 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-44); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-45,Stash_m45,dice,Roll an extra -45 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-45); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-46,Stash_m46,dice,Roll an extra -46 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-46); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-47,Stash_m47,dice,Roll an extra -47 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-47); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-48,Stash_m48,dice,Roll an extra -48 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-48); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-49,Stash_m49,dice,Roll an extra -49 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-49); } givedice(dice);  status.value = 0;,,,,,,,Null
+stash-50,Stash_m50,dice,Roll an extra -50 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-50); } givedice(dice);  status.value = 0;,,,,,,,Null

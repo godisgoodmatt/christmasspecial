@@ -96,3 +96,4 @@ Locked1,[lock]till next turn,self.textparticle(~[lock]Locked~); Gadget.reactivat
 Locked2,[lock]till next turn,self.textparticle(~[lock]Locked~); Gadget.reactivate(self[;] ALL);
 Locked3,[lock]till next turn,self.textparticle(~[lock]Locked~); Gadget.reactivate(self[;] ALL);
 Knock Your Socks,Loosens the equipment requirments,for(e in self.getcurrentequipment()) { e.setvar(oldslots[;]e.slots.copy()); e.changeslots([NORMAL]); } sfx(~levelup~);
+Reroll,Change the current workout card.,runscript(~christmasspecial/thief/superset~[;][Rules|self]);
