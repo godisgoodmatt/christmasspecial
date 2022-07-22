@@ -2,7 +2,9 @@
 var self = args[0];
 var e = args[1];
 
-var reuseablecopy:Equipment = e.copy();
+var reuseablecopy:Equipment = self.createskillcard("Defective Calculator", []);
+reuseablecopy.x = e.x;
+reuseablecopy.y = e.y;
 e.show = false;
 e.temporary_thisturnonly = true;
 
