@@ -97,3 +97,4 @@ Locked2,[lock]till next turn,self.textparticle(~[lock]Locked~); Gadget.reactivat
 Locked3,[lock]till next turn,self.textparticle(~[lock]Locked~); Gadget.reactivate(self[;] ALL);
 Knock Your Socks,Loosens the equipment requirments,for(e in self.getcurrentequipment()) { e.setvar("oldslots"[;]e.slots.copy()); e.changeslots(["NORMAL"]); } sfx(~levelup~);
 Reroll,Change the current workout card.,runscript(~christmasspecial/thief/superset~[;][Rules|self]);
+[90%]Mass Radicalisation,Radicalise all your dice,var c = 0; var extradice = []; for (mydice in self.dicepool){ if (mydice.available()){ if (mydice.basevalue > 3){ mydice.animatereroll((6)[;] self.screenposition()[;] c * 0.05); } else { mydice.animatereroll((1)[;] self.screenposition()[;] c * 0.05); } c++; } }
