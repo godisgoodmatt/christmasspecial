@@ -203,3 +203,4 @@ stash-47,Stash_m47,dice,Roll an extra -47 next turn.,YES,NO,NO,YES,NO,,,,var dic
 stash-48,Stash_m48,dice,Roll an extra -48 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-48); } givedice(dice);  status.value = 0;,,,,,,,Null
 stash-49,Stash_m49,dice,Roll an extra -49 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-49); } givedice(dice);  status.value = 0;,,,,,,,Null
 stash-50,Stash_m50,dice,Roll an extra -50 next turn.,YES,NO,NO,YES,NO,,,,var dice = []; for (i in 0...status.value) { dice.push(-50); } givedice(dice);  status.value = 0;,,,,,,,Null
+fixfakeskillcardafterbattleends,Fix_Fake_Skillcard_After_Battle_Ends,cog,Fixes the fake skillcard to make it so that it goes back into the backpack. Yes[;] it has to be a status.,NO,NO,NO,YES,NO,,,,,,,,self.equipment[0].skillcard = "";,,,Null
