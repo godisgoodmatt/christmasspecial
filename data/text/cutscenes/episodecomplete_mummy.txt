@@ -306,7 +306,7 @@ if (wheelwins) {
 				speak(player, "Ghost of Christmas Past");
 				announcer.show("talking");
 				speak("Lady Luck", "Interesting");
-				speak("Lady Luck", "Besy not to ask questions I suppose", "sly");
+				speak("Lady Luck", "Best not to ask questions I suppose", "sly");
 				speak("Lady Luck", "What would you like to wish for?", "sly");
 				announcer.show("idle");
 				speak(player, "For this year to last forever!");

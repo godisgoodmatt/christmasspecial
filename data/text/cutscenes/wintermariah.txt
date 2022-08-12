@@ -1,0 +1,170 @@
+// SETUP
+
+#include intrographics_justladyluck.txt
+#include ladyluckbiggraphics.txt
+
+setdatapath("data/graphics/cutscenes/mariah/");
+
+var mariahgraphics = {
+	idle: {
+		animation: "mariah_idle.json",
+		pack: "mariah.pck",
+		loop: true
+	},
+	worried_idle: {
+		animation: "mariah_worried_idle.json",
+		pack: "mariah.pck",
+		loop: true
+	},
+	transform: {
+		animation: "mariah_transform.json",
+		pack: "mariah.pck",
+		speed: 2,
+		loop: false
+	}
+}
+var mariah = addsprite("mariah", 1, mariahgraphics);
+
+
+// HELPER FUNCTIONS	
+
+function signanimate(sign) {
+	var s = sign.show("turn");
+	//s.onComplete(function() { resume(); sign.show("loop"); });
+	//pause();
+	while(!s.completed) {
+		// do nothing
+	}
+	sign.show("loop");
+}
+
+function fadein_sprite(sprite, time) {
+	return;
+	sprite.alpha = 0.0;
+	Actuate.tween(sprite, time, { alpha: 1.0 });
+	wait(time);
+}
+
+function fadeout_sprite(sprite, time) {
+	return;
+	Actuate.tween(sprite, time, { alpha: 0.0 });
+	wait(time);
+}
+
+var fade_time = 0.4;
+
+// ACTORS
+
+actor("Lady Luck", screenwidthmid + 800, 550, Col.YELLOW, CENTER, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
+actor("Mariah", 2600, 600, Col.multiplylightness(Col.GREEN, 1.25), RIGHT, TOP, "chat_inventor", "characters/mariah/charicon_mariah");
+// INTRO
+
+play("music_cutscene_cheery");
+
+changebackground("intro_sign");
+
+sign.y = -screenheight;
+ladyluck_sign.y = -screenheight;
+sign.show("loop");
+ladyluck_sign.show("idle");
+
+Actuate.tween(sign, 2, { y: 0 }).ease(Expo.easeOut);
+Actuate.tween(ladyluck_sign, 2, { y: 0 }).ease(Expo.easeOut);
+
+wait(0.5);
+
+fadein();
+play("cutscene_audience");
+
+wait(1.5);
+
+ladyluck_sign.show("talking", true);
+speak("Lady Luck", "Put your hands together for the next hapless-");
+speak("Lady Luck", "er, HOPEFUL challenger!", "sly");
+speak("Lady Luck", "He's got big hopes, big dreams...");
+speak("Lady Luck", "...and he signed a legally binding agreement not to sue us!", "sly");
+ladyluck_sign.show("idle", true);
+
+fadeout();
+while(isfading()) {
+	// do nothing
+}
+changebackground("intro_transform");
+sign.hide();
+ladyluck_sign.hide();
+fadein();
+
+mariah.x = screenwidth;
+var transform = mariah.show("transform");
+Actuate.tween(mariah, 2, { x: 0 }).ease(Expo.easeOut);
+
+var marker_human = false;
+var marker_dice = false;
+while(true) {	
+	if(!marker_human && transform.marker == "human") {
+		marker_human = true;
+		transform.paused = true;
+		speak("Lady Luck", "It's... the mariah!");
+		play("transformintodice");
+		transform.paused = false;
+	} else if(!marker_dice && transform.marker == "dice") {
+		marker_dice = true;
+		transform.paused = true;
+		actor("mariah", screenwidthmid, screenheightmid - 300, Col.multiplylightness(Col.GREEN, 1.25), CENTER, BOTTOM, "chat_mariah", "characters/mariah/charicon_mariah");
+    speak("Mariah", "Wait, you meant that dice thing literally?", "thinking");
+		actor("Lady Luck", screenwidthmid, 550, Col.YELLOW, CENTER, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
+    speak("Lady Luck", "I mean *everything* literally.", "sly");
+    fadeout();
+	  break;
+	}
+}
+
+while(isfading()) {
+	// do nothing
+}
+
+mariah.scale = 0.5;
+mariah.x = 2620 - ((mariah.getwidth("idle") * mariah.scale) / 2);
+mariah.y = 800;
+changebackground("intro_stage");
+fadein();
+mariah.show("idle");
+
+ladyluck_big.x = -screenwidth;
+ladyluck_big.show("idle");
+Actuate.tween(ladyluck_big, 2, { x: 0 }).ease(Expo.easeOut);
+
+play("cutscene_audience");
+
+
+ladyluck_big.show("talking", true);
+actor("Lady Luck", screenwidthmid + 240, screenheightmid - 240, Col.YELLOW, RIGHT, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
+speak("Lady Luck", "So tell me, mariah, what brings you to|my arena of terrible fate?");
+ladyluck_big.show("idle", true);
+
+actor("Mariah", mariah.x + ((mariah.getwidth("idle") * mariah.scale) / 2), 870, Col.multiplylightness(Col.GREEN, 1.25), CENTER, BOTTOM, "chat_inventor", "characters/mariah/charicon_mariah");
+speak("Mariah", "Okay. A dice.", "normal");
+speak("Mariah", "Good.");
+speak("Mariah", "Right, well, my friends don't seem to be |taking this seriously, but I am.");
+speak("Mariah", "And I'm going to win a billion dollars.", "determined");
+
+ladyluck_big.show("talking-thinking", true);
+speak("Lady Luck", "Mmm. And what will you do with the money if you win?", "thinking");
+ladyluck_big.show("idle-thinking", true);
+
+speak("Mariah", "Anything I want.");
+speak("Mariah", "For the rest of my life.");
+
+ladyluck_big.show("talking", true);
+speak("Lady Luck", "Well, fortune favours the bold.");
+ladyluck_big.show("talking-sly", true);
+actor("Lady Luck", screenwidthmid + 240, screenheightmid - 280, Col.YELLOW, RIGHT, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
+speak("Lady Luck", "At least, that's what people who haven't|met me sometimes believe.", "sly");
+actor("Lady Luck", screenwidthmid + 40, screenheightmid - 240, Col.YELLOW, RIGHT, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
+ladyluck_big.show("talking", true);
+speak("Lady Luck", "Let's get started!");
+ladyluck_big.show("idle", true);
+
+play("cutscene_audience");
+
+startgamefromcutscene();
