@@ -22,13 +22,17 @@ for (eqname in eqlist) {
 	var eq = new elements.Equipment(eqname);
 	
 	eq.temporary_thisturnonly = true;
+	if (eq.hastag("finale")){
+		eq.removetag("finale");
+	}
 
 	Deck.createcopyondrawpile(self, eq);
 }
 
 self.setvar("damagephaseequipment",eqlist);
+self.setvar("damagephaseslots",slots);
 
-var delay = 0.2;
+/*var delay = 0.2;
 
 if (turn == 1 && target.innate.length == 0) {
 	delay = 0.75;
@@ -62,4 +66,4 @@ s.script="
 ";
 act._repeat = 1;
 act.onComplete(s.execute,[self,null]);
-act.move();
+act.move();*/
