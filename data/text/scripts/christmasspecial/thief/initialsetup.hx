@@ -1,7 +1,7 @@
 //Set up Warrior Reunion's workout card system
 var Rules = args[0];
 
-Rules.hpchangeonlevelup = 0; 
+Rules.hpchangeonlevelup = 2; 
 Rules.reunionwarriormode(
  1, //Number of rerolls
  [] //Starting workouts. Gonna try having none to start!
