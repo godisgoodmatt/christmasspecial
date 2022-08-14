@@ -1,0 +1,13 @@
+slots,equipment
+NORMAL,Iron Shield|Iron Shield
+NORMAL,Magic Barrier|Magic Shield
+EVEN,Spiked Shield|Spiked Shield
+NORMAL,Shield Bash
+MIN4,Target Shield|Thick Skin
+MAX3,Crowbar|Buckler|Buckler
+EVEN,Rosepetal Shield
+MIN4,Deflect|Deflect|Deflect|Deflect
+NORMAL|NORMAL,Battering Ram
+MIN3,Fortify|Fortify|Fortify
+MAX4,Princess Guard|Princess Guard
+NORMAL,Charge!

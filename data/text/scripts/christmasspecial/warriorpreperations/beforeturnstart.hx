@@ -1,36 +1,8 @@
 var self = args[0];
-var turn = args[1];
-var target = args[2];
 
-var data = loaddata("christmasspecial/warriorpreperations/damagephaseslevel" + self.level);
-
-var damagephase = rand(data);
-
-var eqlist = damagephase.equipment.split("|");
-var slots = damagephase.slots.split("|");
-
-var eqs = [];
-
-for (c in Deck.getcards("all")) {
-	c.equipment.onceperbattle = true;
-	c.equipment.usedthisbattle = true;
-}
+runscript("christmasspecial/warriorpreperations/grabdamagephase",[self]);
 
 self.setvar("indamagephase", false);
-
-for (eqname in eqlist) {
-	var eq = new elements.Equipment(eqname);
-	
-	eq.temporary_thisturnonly = true;
-	if (eq.hastag("finale")){
-		eq.removetag("finale");
-	}
-
-	Deck.createcopyondrawpile(self, eq);
-}
-
-self.setvar("damagephaseequipment",eqlist);
-self.setvar("damagephaseslots",slots);
 
 /*var delay = 0.2;
 
