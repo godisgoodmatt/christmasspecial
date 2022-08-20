@@ -51,10 +51,13 @@ actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "ch
 speak("Mariah Carey", "Let's welcome the Robot back to the stage!");
 mariahcarey_big.show("talking-sly", true);
 speak("Mariah Carey", "To a brand new episode made by me!", "normal");
+mariahcarey_big.show("talking-confused", true);
 speak("Mariah Carey", "However due to lack of experience in this...");
-speak("Mariah Carey", "I accidentally made it so you can't roll 1-6");
+speak("Mariah Carey", "PR accidentally made it so you can't roll 1-6", "normal");
 speak("Mariah Carey", "and you roll negative dice now and up to 12");
-mariahcarey_big.show("idle-sly", true);
+mariahcarey_big.show("talking-sly", true);
+speak("Mariah Carey", "rather than my idea which was|making you roll normally without calculating as a gift", "normal");
+mariahcarey_big.show("idle", true);
 
 actor("Robot", 2600, 780, 0xDDDDDD, CENTER, BOTTOM, "chat_robot", "characters/robot/charicon_robot");
 robot.show("worried_idle");
@@ -68,7 +71,7 @@ mariahcarey_big.show("talking-angry", true);
 speak("Mariah Carey", "Otherwise this would've been perfect!", "normal");
 mariahcarey_big.show("idle", true);
 
-speak("Robot", "Well in I go I guess-", "worried").dismiss_in = 1.0;
+speak("Robot", "Well in I go I guess-", "worried").dismiss_in = 0.6;
 
 mariahcarey_big.show("talking-scary", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
