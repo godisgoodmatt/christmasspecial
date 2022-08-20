@@ -4,7 +4,7 @@ if (args[0].getvar("mqspecialdice") == 0) {
 	actSpecialDice.repeat(-1);
 	var funcSpecialDice = new hscript.Parser().parseString("
         if (self.dicepool.length > 0) for (mydice in self.dicepool) {
-            if (mydice.basevalue < 1 || mydice.basevalue > 6) {
+            if ((mydice.basevalue < 1 || mydice.basevalue > 6) && !mydice.consumed) {
 		mydice.y += 200;
 		
                 mydice.flash += 0.1;
