@@ -1689,3 +1689,5 @@ Sing Along,Sing a song and gain a [bownote][]note|of that color[;]|return the di
 [bluenote]Blue_Note,,1,,Megabump,,,BLUE,,,,,0,YES,NO,excludefromrandomlists,1,,,,,,,,,,,
 [blacknote]Black_Note,,1,,Megabump,,,BLACK,,,,,0,YES,NO,excludefromrandomlists,1,,,,,,,,,,,
 [purplenote]Purple_Note,,1,,Megabump,,,PURPLE,,,,,0,YES,NO,excludefromrandomlists,1,,,,,,,,,,,
+Tiny Pocket,[gray](once per battle),2,,Catapult,REQUIRE6,,GRAY,reducesize,noeffect,,,0,YES,YES,skillcard|skill:Tiny Pocket@skill,,,,,,,,,,,,
+Tiny Pocket@skill,[gray](once per battle),2,,Catapult,REQUIRE6,,GRAY,reducesize,noeffect,,,0,YES,YES,skillcard,,,,,,,,,,,,
