@@ -1693,3 +1693,4 @@ Tiny Pocket,[gray](once per battle),2,,Catapult,REQUIRE6,,GRAY,reducesize,noeffe
 Tiny Pocket@skill,[gray](once per battle),2,,Catapult,REQUIRE6,,GRAY,reducesize,noeffect,,,0,YES,YES,skillcard,,,,,,,,,,,,
 Supercharger,Do [sword]<d6> damage[;]|If requires 3 do [sword]<double> dmg,1,if(e.slots.length == 3){ attack(d * 2); sfxdamage(target[;] d * 2); } else { attack(d); sfxdamage(target[;] d); },,NORMAL,,RED,change_power,doublerequirements,,,0,NO,NO,,,,,,,,,,,,,
 Supercharger_upgraded,Do [sword]<d6> damage[;]|If requires 3 do [sword]7 dmg,1,if(e.slots.length == 3){ attack(7); sfxdamage(target[;] 7); } else { attack(d); sfxdamage(target[;] d); },,NORMAL,,RED,,,,,0,NO,NO,,,,,,,,,,,,,
+Broken Ray Gun,Do [sword]<d6> damage[;]|if durablity is lower than 2|Do double damage,2,if(eq.totalusesremaining < 2){ attack(d * 2); sfxdamage(target[;] d * 2); } else ( attack(d); sfxdamage(target[;] d); },,NORMAL,,RED,add1,complicate,,,0,NO,NO,,,,,,,,,,,,,
