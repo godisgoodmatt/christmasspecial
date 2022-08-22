@@ -1,5 +1,5 @@
 #include intrographics_justladyluck.txt
-#include ladyluckbiggraphics.txt
+#include mariahcareybiggraphics.txt
 
 setdatapath("data/graphics/cutscenes/thief/");
 
@@ -28,7 +28,7 @@ var thief = addsprite("thief", 1, thiefgraphics);
 var fade_time = 0.4;
 
 // ACTORS
-actor("Lady Luck", screenwidthmid + 800, 550, Col.YELLOW, CENTER, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
+actor("Mariah Carey", screenwidthmid + 800, 550, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
 actor("Thief", 2600, 780, Col.multiplylightness(Col.GREEN, 1.25), CENTER, BOTTOM, "chat_thief", "characters/thief/charicon_thief");
 
 // INTRO
@@ -42,21 +42,21 @@ changebackground("intro_stage");
 fadein();
 thief.show("worried_idle");
 
-ladyluck_big.x = -screenwidth;
-ladyluck_big.show("idle");
-Actuate.tween(ladyluck_big, 2, { x: 0 }).ease(Expo.easeOut);
+mariahcarey_big.x = -screenwidth;
+mariahcarey_big.show("idle");
+Actuate.tween(mariahcarey_big, 2, { x: 0 }).ease(Expo.easeOut);
 
 wait(0.5);
 
-ladyluck_big.show("talking", true);
-actor("Lady Luck", screenwidthmid + 240, screenheightmid - 240, Col.YELLOW, RIGHT, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
-speak("Lady Luck", "Hi there, thief!");
-speak("Lady Luck", "We have something special lined up for you today.");
+mariahcarey_big.show("talking", true);
+actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
+speak("Mariah Carey", "Hi there, thief!");
+speak("Mariah Carey", "We have something special lined up for you today.");
 speak("Thief", "For some reason I'm not sure I'm going to enjoy it.");
-ladyluck_big.show("talking-sly", true);
-speak("Lady Luck", "Nonsense my friend.");
-speak("Lady Luck", "I'm sure it'll give you a whole new perspective on things!");
-speak("Lady Luck", "Now, stay exactly where you are.");
+mariahcarey_big.show("talking-sly", true);
+speak("Mariah Carey", "Nonsense my friend.");
+speak("Mariah Carey", "I'm sure it'll give you a whole new perspective on things!");
+speak("Mariah Carey", "Now, stay exactly where you are.");
 speak("Thief", "Uh... okay.");
 
 fadeout();
@@ -65,7 +65,7 @@ while(isfading()) {
 }
 changebackground("intro_transform");
 thief.hide();
-ladyluck_big.hide();
+mariahcarey_big.hide();
 fadein();
 
 thief.x = screenwidth;
@@ -89,9 +89,8 @@ while(true) {
 		transform.paused = true;
         actor("Bear", 2600, 780, Col.WHITE, CENTER, BOTTOM, null, "characters/bear/charicon_bear");
 		speak("Bear", "[70%]RRRRAWWRR RAWR RRRAWR.");
-        speak("Lady Luck", "You're not supposed to be that size...");
-        speak("Lady Luck", "Don't worry, I'll get Alchemist to make you a growth potion.|We'll get you back to the right size in just a second...");
-    fadeout();
+        speak("Mariah Carey", "You're not supposed to be that size...");
+        speak("Mariah Carey", "Don't worry, I'll get Alchemist to make you a growth potion.|We'll get you back to the right size in just a second...");
 	  break;
 	}
 }

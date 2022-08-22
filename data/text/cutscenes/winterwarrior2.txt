@@ -2,7 +2,7 @@
 
 setdatapath("data/graphics/cutscenes/intro/");
 addbackground("intro_stage", {animation: "background_stage.json", pack: "background_stage.pck"});
-#include ladyluckbiggraphics.txt
+#include mariahcareybiggraphics.txt
 
 setdatapath("data/graphics/cutscenes/warrior/");
 
@@ -25,7 +25,7 @@ var warrior = addsprite("warrior", 1, warriorgraphics);
 var fade_time = 0.4;
 
 // ACTORS
-actor("Lady Luck", screenwidthmid + 800, 550, Col.YELLOW, CENTER, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
+actor("Mariah Carey", screenwidthmid + 800, 550, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
 actor("Warrior", 2670, 670, Col.LIGHTBLUE, CENTER, BOTTOM, "chat_warrior", "characters/warrior/charicon_warrior");
 
 // INTRO
@@ -39,35 +39,35 @@ changebackground("intro_stage");
 fadein();
 warrior.show("idle");
 
-ladyluck_big.x = -screenwidth;
-ladyluck_big.show("idle");
-Actuate.tween(ladyluck_big, 2, { x: 0 }).ease(Expo.easeOut);
+mariahcarey_big.x = -screenwidth;
+mariahcarey_big.show("idle");
+Actuate.tween(mariahcarey_big, 2, { x: 0 }).ease(Expo.easeOut);
 
 wait(0.5);
 
-ladyluck_big.show("talking-scary", true);
-actor("Lady Luck", screenwidthmid + 240, screenheightmid - 240, Col.YELLOW, RIGHT, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
-speak("Lady Luck", "Hey warrior buddy", "scary");
-ladyluck_big.show("idle-scary", true);
+mariahcarey_big.show("talking-scary", true);
+actor("Mariah Carey", screenwidthmid + 240, screenheightmid - 240, Col.YELLOW, RIGHT, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
+speak("Mariah Carey", "Hey warrior buddy", "scary");
+mariahcarey_big.show("idle-scary", true);
 
 warrior.show("worried_idle");
 speak("Warrior", "Hi? Lady luck.....", "worried");
 speak("Warrior", "Your kind of scaring me");
 
-ladyluck_big.show("talking-sly", true);
-actor("Lady Luck", screenwidthmid + 240, screenheightmid - 280, Col.YELLOW, RIGHT, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
-speak("Lady Luck", "Why wouldn't I?");
-ladyluck_big.show("talking-scary", true);
-speak("Lady Luck", "Have you not noticed that this entire time|You would never get anything", "scary");
-ladyluck_big.show("talking-scary", true);
-speak("Lady Luck", "I make these episodes painful not 'Fun'|Or 'Rewarding'", "scary");
-ladyluck_big.show("idle-scary", true);
+mariahcarey_big.show("talking-sly", true);
+actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
+speak("Mariah Carey", "Why wouldn't I?");
+mariahcarey_big.show("talking-scary", true);
+speak("Mariah Carey", "Have you not noticed that this entire time|You would never get anything", "scary");
+mariahcarey_big.show("talking-scary", true);
+speak("Mariah Carey", "I make these episodes painful not 'Fun'|Or 'Rewarding'", "scary");
+mariahcarey_big.show("idle-scary", true);
 
 speak("Warrior", "Sounds pretty mean!");
 
-ladyluck_big.show("talking-scary", true);
-actor("Lady Luck", screenwidthmid + 240, screenheightmid - 280, Col.YELLOW, RIGHT, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
-speak("Lady Luck", "I don't care about mean or nice|Get in there and fight your way up!", "scary");
-ladyluck_big.show("idle-scary", true);
+mariahcarey_big.show("talking-scary", true);
+actor("Mariah Carey", screenwidthmid + 240, screenheightmid - 280, Col.YELLOW, RIGHT, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
+speak("Mariah Carey", "I don't care about mean or nice|Get in there and fight your way up!", "scary");
+mariahcarey_big.show("idle-scary", true);
 
 startgamefromcutscene();
