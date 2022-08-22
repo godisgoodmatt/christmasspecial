@@ -1,10 +1,18 @@
 // SETUP
 
-#include intrographics_justladyluck.txt
+#include intrographics.txt
 #include ladyluckbiggraphics.txt
 
-setdatapath("data/graphics/cutscenes/mariah/");
+setdatapath("data/animations/mariahcarey/");
 
+var mariahhumangraphics	= {
+  	idle: {
+		sprites: ["mariahcarey.png"]
+	}
+}
+var mariahhuman = addsprite("mariahhuman", 1, mariahhumangraphics);
+
+setdatapath("data/graphics/cutscenes/mariah/");
 var mariahgraphics = {
 	idle: {
 		animation: "mariah_idle.json",
@@ -24,7 +32,6 @@ var mariahgraphics = {
 	}
 }
 var mariah = addsprite("mariah", 1, mariahgraphics);
-
 
 // HELPER FUNCTIONS	
 
@@ -54,19 +61,19 @@ function fadeout_sprite(sprite, time) {
 var fade_time = 0.4;
 
 // ACTORS
-
 actor("Lady Luck", screenwidthmid + 800, 550, Col.YELLOW, CENTER, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
 actor("Mariah", 2600, 600, Col.multiplylightness(Col.GREEN, 1.25), RIGHT, TOP, "chat_inventor", "characters/mariah/charicon_mariah");
 // INTRO
 
-play("music_cutscene_cheery");
+//play("music_cutscene_cheery");
+play("music_cutscene_dark");
 
 changebackground("intro_sign");
 
 sign.y = -screenheight;
 ladyluck_sign.y = -screenheight;
 sign.show("loop");
-ladyluck_sign.show("idle");
+ladyluck_sign.show("scary_idle");
 
 Actuate.tween(sign, 2, { y: 0 }).ease(Expo.easeOut);
 Actuate.tween(ladyluck_sign, 2, { y: 0 }).ease(Expo.easeOut);
@@ -78,20 +85,53 @@ play("cutscene_audience");
 
 wait(1.5);
 
-ladyluck_sign.show("talking", true);
-speak("Lady Luck", "Put your hands together for the next hapless-");
-speak("Lady Luck", "er, HOPEFUL challenger!", "sly");
-speak("Lady Luck", "He's got big hopes, big dreams...");
-speak("Lady Luck", "...and he signed a legally binding agreement not to sue us!", "sly");
-ladyluck_sign.show("idle", true);
+ladyluck_sign.show("scary_talking", true);
+speak("Lady Luck", "... You.", "angry");
+speak("Lady Luck", "After all these years. How could you? How *dare* you?", "angry");
+ladyluck_sign.show("scary_idle", true);
+
+fadeout();
+while(isfading()) {
+	// do nothing
+}
+
+sign.hide();
+ladyluck_sign.hide();
+
+mariahhuman.x = 2670 - ((mariahhuman.getwidth("idle") * mariahhuman.scale) * 3 / 4);
+mariahhuman.y = 700;
+changebackground("intro_stage");
+fadein();
+mariahhuman.show("idle");
+
+ladyluck_big.x = -screenwidth;
+ladyluck_big.show("idle-scary");
+Actuate.tween(ladyluck_big, 2, { x: 0 }).ease(Expo.easeOut);
+
+actor("Mariah", 2620 - 350, 200, Col.multiplylightness(Col.GREEN, 1.25), RIGHT, TOP, "chat_inventor", "characters/mariah/charicon_mariah");
+speak("Mariah", "I've been down here so long!", "determined");
+speak("Mariah", "I just want to breathe fresh air and eat a|pizza and go on a rollercoaster and--", "determined");
+
+ladyluck_big.show("talking-angry", true);
+actor("Lady Luck", screenwidthmid + 240, screenheightmid - 240, Col.YELLOW, RIGHT, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
+speak("Lady Luck", "Silence! That was a rhetorical question, minion.", "scary");
+ladyluck_big.show("idle-angry", true);
+
+speak("Mariah", "Plus I'm sick of being called a minion!", "normal");
+speak("Mariah", "Decades in the dungeon, working day and night,|and I'm still not even a sidekick?");
+
+ladyluck_big.show("talking-sly", true);
+actor("Lady Luck", screenwidthmid + 240, screenheightmid - 280, Col.YELLOW, RIGHT, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
+speak("Lady Luck", "So you'd prefer to try your hand as a CONTESTANT?", "sly");
+ladyluck_big.show("idle-sly", true);
 
 fadeout();
 while(isfading()) {
 	// do nothing
 }
 changebackground("intro_transform");
-sign.hide();
-ladyluck_sign.hide();
+ladyluck_big.hide();
+mariahhuman.hide();
 fadein();
 
 mariah.x = screenwidth;
@@ -104,67 +144,22 @@ while(true) {
 	if(!marker_human && transform.marker == "human") {
 		marker_human = true;
 		transform.paused = true;
-		speak("Lady Luck", "It's... the mariah!");
-		play("transformintodice");
+    actor("Lady Luck", screenwidthmid + 800, 550, Col.YELLOW, CENTER, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
+    speak("Lady Luck", "Well, good luck with that!", "angry");
+    play("transformintodice");
 		transform.paused = false;
 	} else if(!marker_dice && transform.marker == "dice") {
 		marker_dice = true;
 		transform.paused = true;
-		actor("mariah", screenwidthmid, screenheightmid - 300, Col.multiplylightness(Col.GREEN, 1.25), CENTER, BOTTOM, "chat_mariah", "characters/mariah/charicon_mariah");
-    speak("Mariah", "Wait, you meant that dice thing literally?", "thinking");
-		actor("Lady Luck", screenwidthmid, 550, Col.YELLOW, CENTER, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
-    speak("Lady Luck", "I mean *everything* literally.", "sly");
-    fadeout();
+    actor("Lady Luck", screenwidthmid + 500, 550, Col.YELLOW, CENTER, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
+    speak("Lady Luck", "AND IN CASE IT WASN'T CLEAR, THAT WAS SARCASM.", "angry");
+    speak("Lady Luck", "I HOPE YOU HAVE THE MOST MISERABLE EXPERIENCE OF ALL.", "angry");
+    actor("Mariah", screenwidthmid, screenheightmid - 540, Col.multiplylightness(Col.YELLOW, 1.25), CENTER, BOTTOM, "chat_inventor", "characters/mariah/charicon_mariah");
+    speak("Mariah", "It can't be as miserable as working for you!", "determined");
+    speak("Mariah", "Let's go!");
 	  break;
 	}
 }
 
-while(isfading()) {
-	// do nothing
-}
-
-mariah.scale = 0.5;
-mariah.x = 2620 - ((mariah.getwidth("idle") * mariah.scale) / 2);
-mariah.y = 800;
-changebackground("intro_stage");
-fadein();
-mariah.show("idle");
-
-ladyluck_big.x = -screenwidth;
-ladyluck_big.show("idle");
-Actuate.tween(ladyluck_big, 2, { x: 0 }).ease(Expo.easeOut);
-
-play("cutscene_audience");
-
-
-ladyluck_big.show("talking", true);
-actor("Lady Luck", screenwidthmid + 240, screenheightmid - 240, Col.YELLOW, RIGHT, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
-speak("Lady Luck", "So tell me, mariah, what brings you to|my arena of terrible fate?");
-ladyluck_big.show("idle", true);
-
-actor("Mariah", mariah.x + ((mariah.getwidth("idle") * mariah.scale) / 2), 870, Col.multiplylightness(Col.GREEN, 1.25), CENTER, BOTTOM, "chat_inventor", "characters/mariah/charicon_mariah");
-speak("Mariah", "Okay. A dice.", "normal");
-speak("Mariah", "Good.");
-speak("Mariah", "Right, well, my friends don't seem to be |taking this seriously, but I am.");
-speak("Mariah", "And I'm going to win a billion dollars.", "determined");
-
-ladyluck_big.show("talking-thinking", true);
-speak("Lady Luck", "Mmm. And what will you do with the money if you win?", "thinking");
-ladyluck_big.show("idle-thinking", true);
-
-speak("Mariah", "Anything I want.");
-speak("Mariah", "For the rest of my life.");
-
-ladyluck_big.show("talking", true);
-speak("Lady Luck", "Well, fortune favours the bold.");
-ladyluck_big.show("talking-sly", true);
-actor("Lady Luck", screenwidthmid + 240, screenheightmid - 280, Col.YELLOW, RIGHT, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
-speak("Lady Luck", "At least, that's what people who haven't|met me sometimes believe.", "sly");
-actor("Lady Luck", screenwidthmid + 40, screenheightmid - 240, Col.YELLOW, RIGHT, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
-ladyluck_big.show("talking", true);
-speak("Lady Luck", "Let's get started!");
-ladyluck_big.show("idle", true);
-
-play("cutscene_audience");
 
 startgamefromcutscene();
