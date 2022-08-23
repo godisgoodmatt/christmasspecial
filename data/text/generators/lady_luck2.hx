@@ -1,4 +1,4 @@
-var lady = shuffle(["Commandments@status","Commandments@dmg","Commandments@health","Commandments@dice"]);
+var ladyearly = shuffle(["Spare 1@ll2"]);
 var strangeshop = [];
 var awesomelist = [];
 var floor2gooditem = [];
@@ -6,7 +6,7 @@ var floor3item = [];
 var floor5item = [];
 var vampireitem = ["Silver Sword"];
 
-var itempools = [lady, strangeshop, awesomelist, floor2gooditem, floor3item, floor5item, vampireitem];
+var itempools = [ladyearly, strangeshop, awesomelist, floor2gooditem, floor3item, floor5item, vampireitem];
 
 runscript("christmasspecial/checkgeneratorisaccurate",[itempools]);
 
@@ -18,11 +18,11 @@ var otherstuff = [];
 var goodotherstuff = [];
 
 //Floor 1:
-items = [lady.pop()];
+items = [ladyearly.pop()];
 gooditems = [];
 otherstuff = [];
 goodotherstuff = [];
-var mycoolfloor1 = addfloor('small').additems(items, gooditems);
+var mycoolfloor1 = addfloor('tiny').additems(items, gooditems);
 mycoolfloor1.theme = rand(['music_ladyluck2']);
 mycoolfloor1.setlocation("GAMESHOW");
 mycoolfloor1.generate();
@@ -38,7 +38,7 @@ mycoolfloor2.setlocation("GAMESHOW");
 mycoolfloor2.generate();
 
 //Floor 3:
-items = [lady.pop()];
+items = [ladyearly.pop()];
 gooditems = [];
 otherstuff = [health(), health()];
 
@@ -49,7 +49,7 @@ mycoolfloor3.setlocation("GAMESHOW");
 mycoolfloor3.generate();
 
 //Floor 4:
-items = [lady.pop()];
+items = [ladyearly.pop()];
 gooditems = [];
 
 otherstuff = [health(), health()];
@@ -60,7 +60,7 @@ mycoolfloor4.setlocation("GAMESHOW");
 mycoolfloor4.generate();
   
 //Floor 5:
-items = [lady.pop()];
+items = [ladyearly.pop()];
 gooditems = [];
 
 otherstuff = [health(), health()];
