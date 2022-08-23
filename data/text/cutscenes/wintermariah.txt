@@ -62,7 +62,7 @@ var fade_time = 0.4;
 
 // ACTORS
 actor("Lady Luck", screenwidthmid + 800, 550, Col.YELLOW, CENTER, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
-actor("Mariah", 2600, 600, Col.multiplylightness(Col.GREEN, 1.25), RIGHT, TOP, "chat_inventor", "characters/mariah/charicon_mariah");
+actor("Mariah", 2600, 600, Col.multiplylightness(Col.GREEN, 1.25), RIGHT, TOP, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
 // INTRO
 
 //play("music_cutscene_cheery");
@@ -87,7 +87,7 @@ wait(1.5);
 
 ladyluck_sign.show("scary_talking", true);
 speak("Lady Luck", "... You.", "angry");
-speak("Lady Luck", "After all these years. How could you? How *dare* you?", "angry");
+speak("Lady Luck", "Did you really think turning me into a|dice would allow you to be a permenant host?", "angry");
 ladyluck_sign.show("scary_idle", true);
 
 fadeout();
@@ -98,7 +98,7 @@ while(isfading()) {
 sign.hide();
 ladyluck_sign.hide();
 
-mariahhuman.x = 2670 - ((mariahhuman.getwidth("idle") * mariahhuman.scale) * 3 / 4);
+mariahhuman.x = 2270 - ((mariahhuman.getwidth("idle") * mariahhuman.scale) * 3 / 4);
 mariahhuman.y = 700;
 changebackground("intro_stage");
 fadein();
@@ -108,22 +108,22 @@ ladyluck_big.x = -screenwidth;
 ladyluck_big.show("idle-scary");
 Actuate.tween(ladyluck_big, 2, { x: 0 }).ease(Expo.easeOut);
 
-actor("Mariah", 2620 - 350, 200, Col.multiplylightness(Col.GREEN, 1.25), RIGHT, TOP, "chat_inventor", "characters/mariah/charicon_mariah");
-speak("Mariah", "I've been down here so long!", "determined");
-speak("Mariah", "I just want to breathe fresh air and eat a|pizza and go on a rollercoaster and--", "determined");
+actor("Mariah", 2620 - 350, 200, Col.multiplylightness(Col.RED, 1.25), RIGHT, TOP, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
+speak("Mariah", "Kinda didn't plan ahead to be honest", "normal");
+speak("Mariah", "I thought it would be a fun twist");
 
-ladyluck_big.show("talking-angry", true);
+ladyluck_big.show("talking-scary", true);
 actor("Lady Luck", screenwidthmid + 240, screenheightmid - 240, Col.YELLOW, RIGHT, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
-speak("Lady Luck", "Silence! That was a rhetorical question, minion.", "scary");
-ladyluck_big.show("idle-angry", true);
+speak("Lady Luck", "Well too bad because now its your turn!", "scary");
+ladyluck_big.show("idle-scary", true);
 
-speak("Mariah", "Plus I'm sick of being called a minion!", "normal");
-speak("Mariah", "Decades in the dungeon, working day and night,|and I'm still not even a sidekick?");
+speak("Mariah", "Wait I'm sure we don't have to do this!", "normal");
+speak("Mariah", "What'll happen to my perfect body!?|What if fans stop watching me");
 
-ladyluck_big.show("talking-sly", true);
-actor("Lady Luck", screenwidthmid + 240, screenheightmid - 280, Col.YELLOW, RIGHT, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
-speak("Lady Luck", "So you'd prefer to try your hand as a CONTESTANT?", "sly");
-ladyluck_big.show("idle-sly", true);
+ladyluck_big.show("talking-confused", true);
+actor("Lady Luck", screenwidthmid + 240, screenheightmid - 240, Col.YELLOW, RIGHT, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
+speak("Lady Luck", "Then they probably weren't watching for music anyway", "sly");
+ladyluck_big.show("idle-confused", true);
 
 fadeout();
 while(isfading()) {
@@ -145,18 +145,14 @@ while(true) {
 		marker_human = true;
 		transform.paused = true;
     actor("Lady Luck", screenwidthmid + 800, 550, Col.YELLOW, CENTER, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
-    speak("Lady Luck", "Well, good luck with that!", "angry");
+    speak("Lady Luck", "So trust me I'm sure you'll do fine", "sly");
     play("transformintodice");
 		transform.paused = false;
 	} else if(!marker_dice && transform.marker == "dice") {
 		marker_dice = true;
 		transform.paused = true;
     actor("Lady Luck", screenwidthmid + 500, 550, Col.YELLOW, CENTER, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
-    speak("Lady Luck", "AND IN CASE IT WASN'T CLEAR, THAT WAS SARCASM.", "angry");
-    speak("Lady Luck", "I HOPE YOU HAVE THE MOST MISERABLE EXPERIENCE OF ALL.", "angry");
-    actor("Mariah", screenwidthmid, screenheightmid - 540, Col.multiplylightness(Col.YELLOW, 1.25), CENTER, BOTTOM, "chat_inventor", "characters/mariah/charicon_mariah");
-    speak("Mariah", "It can't be as miserable as working for you!", "determined");
-    speak("Mariah", "Let's go!");
+    speak("Lady Luck", "Plus wouldn't that be such a fun twist!?", "angry");
 	  break;
 	}
 }
