@@ -74,9 +74,10 @@ mariahcarey_big.show("idle", true);
 speak("Robot", "Well in I go I guess-", "worried").dismiss_in = 0.6;
 
 mariahcarey_big.show("talking-scary", true);
-actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
+actor("Mariah Carey", screenwidthmid + 350, 700, Col.RED, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
 speak("Mariah Carey", "[red]NO THATS MY LINE", "normal");
 mariahcarey_big.show("talking", true);
+actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
 speak("Mariah Carey", "I... I um mean in you go", "normal");
 mariahcarey_big.show("idle", true);
 
