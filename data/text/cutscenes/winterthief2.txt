@@ -1,84 +1,73 @@
-// SETUP
-
-setdatapath("data/graphics/cutscenes/intro/");
-addbackground("intro_stage", {animation: "background_stage.json", pack: "background_stage.pck"});
+#include intrographics_justladyluck.txt
 #include mariahcareybiggraphics.txt
 
-setdatapath("data/graphics/cutscenes/robot/");
+setdatapath("data/graphics/cutscenes/thief/");
 
-var robotgraphics = {
+var thiefgraphics = {
 	idle: {
-		animation: "robot_idle.json",
-		pack: "robot.pck",
+		animation: "thief_idle.json",
+		pack: "thief.pck",
 		loop: true
 	},
 	worried_idle: {
-		animation: "robot_worried_idle.json",
-		pack: "robot.pck",
+		animation: "thief_worried_idle.json",
+		pack: "thief.pck",
 		loop: true
+	},
+	transform: {
+		animation: "thief_transform.json",
+		pack: "thief.pck",
+		speed: 2,
+		loop: false
 	}
 }
-var robot = addsprite("robot", 1, robotgraphics);
+var thief = addsprite("thief", 1, thiefgraphics);
 
-// HELPER FUNCTIONS	
+// HELPER FUNCTIONS
 
 var fade_time = 0.4;
 
 // ACTORS
 actor("Mariah Carey", screenwidthmid + 800, 550, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-actor("Robot", 2600, 780, 0xDDDDDD, CENTER, BOTTOM, "chat_robot", "characters/robot/charicon_robot");
+actor("Thief", 2600, 780, Col.multiplylightness(Col.GREEN, 1.25), CENTER, BOTTOM, "chat_thief", "characters/thief/charicon_thief");
 
 // INTRO
 
 play("music_cutscene_cheery");
 
-robot.scale = 0.5;
-robot.x = 2700 - ((robot.getwidth("idle") * robot.scale) / 2);
-robot.y = 800;
+thief.scale = 0.5;
+thief.x = 2620 - ((thief.getwidth("idle") * thief.scale) / 2);
+thief.y = 890;
 changebackground("intro_stage");
 fadein();
-robot.show("idle");
+thief.show("idle");
 
 mariahcarey_big.x = -screenwidth;
 mariahcarey_big.show("idle");
 Actuate.tween(mariahcarey_big, 2, { x: 0 }).ease(Expo.easeOut);
-play("cutscene_audience");
 
 wait(0.5);
-
+ 
 mariahcarey_big.show("talking", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "Let's welcome the Robot back to the stage!");
-mariahcarey_big.show("talking-sly", true);
-speak("Mariah Carey", "To a brand new episode made by me!", "normal");
+speak("Mariah Carey", "Heya Thief how are you feeling this christmas?");
 mariahcarey_big.show("talking-confused", true);
-speak("Mariah Carey", "However due to lack of experience in this...");
-speak("Mariah Carey", "PR accidentally made it so you can't roll 1-6", "normal");
-speak("Mariah Carey", "and you roll negative dice now and up to 12");
-mariahcarey_big.show("talking-sly", true);
-speak("Mariah Carey", "rather than my idea which was|making you roll normally without calculating as a gift", "normal");
-mariahcarey_big.show("idle", true);
+speak("Mariah Carey", "I'm still working on your new episode", "normal");
+mariahcarey_big.show("talking-confused", true);
 
-actor("Robot", 2600, 780, 0xDDDDDD, CENTER, BOTTOM, "chat_robot", "characters/robot/charicon_robot");
-robot.show("worried_idle");
-speak("Robot", "What!?");
-speak("Robot", "This throws off everything!");
-
-mariahcarey_big.show("talking", true);
-actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "Well it would've been fine if dave|from PR didnt step in");
+speak("Thief", "Well I think the minions are starting|New years resolutions early");
 mariahcarey_big.show("talking-angry", true);
-speak("Mariah Carey", "Otherwise this would've been perfect!", "normal");
-mariahcarey_big.show("idle", true);
-
-speak("Robot", "Well in I go I guess-", "worried").dismiss_in = 0.6;
+speak("Thief", "I could copy them after beating them?");
 
 mariahcarey_big.show("talking-scary", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.RED, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "[red]NO THATS MY LINE", "normal");
+speak("Mariah Carey", "[red]NOOO THATS NOT MY IDEA", "normal");
 mariahcarey_big.show("talking", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "I... I um mean in you go", "normal");
+speak("Mariah Carey", "I mean thats a great idea!");
+speak("Mariah Carey", "I'm sorry that outburst isnt like me...I've been|getting those more often after being host", "normal");
 mariahcarey_big.show("idle", true);
+
+speak("Thief", "You might have some issues to workout", "worried");
 
 startgamefromcutscene();
