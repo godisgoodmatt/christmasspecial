@@ -54,3 +54,4 @@ purplenote,purplenote,0x800080,IMAGE
 yellownote,yellownote,0xFFFF00,IMAGE
 bownote,bownote,0x000000,IMAGE
 black,0,0x000000,COLOUR
+combo,combo,0xFFFF00,IMAGE

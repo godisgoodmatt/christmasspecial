@@ -1707,3 +1707,8 @@ Divine Petri Dish_upgraded,Inflict [poison]1[;] return the dice|50% chance to du
 Jammed Pea Shooter,Do [sword]2 damage|On countdown reduce[;]| do [sword]1 damage,2,sfxdamage(target[;]2); attack(2);,Pea Gun,COUNTDOWN,24,RED,change_power,change_power,,,0,NO,NO,,,,,,,,sfxdamage(target[;]1); attack(1);,,,,,
 Jammed Pea Shooter_upgraded,Do [sword]2 damage|On countdown reduce[;]| do [sword]2 damage,2,sfxdamage(target[;]2); attack(2);,Pea Gun,COUNTDOWN,24,RED,change_power,change_power,,,0,NO,NO,,,,,,,,sfxdamage(target[;]2); attack(2);,,,,,
 Jammed Pea Shooter_downgraded,Do [sword]2 damage,2,sfxdamage(target[;]2); attack(2);,Pea Gun,COUNTDOWN,24,RED,change_power,change_power,,,0,NO,NO,,,,,,,,,,,,,
+Combo Punch,Do [sword]<d6> damage[;]|Gain [combo] Combo,1,inflictself(~combo~); attack(d); sfxdamage(target[;] d); sfx(~_dodge~);,,MAX3,,RED,change_power,decreaserange,,,0,NO,NO,,,,,,,,,,,,,
+Combo Punch_upgraded,Do [sword]<d6> damage[;]|Gain [combo] 2 Combo,1,inflictself(~combo~[;] 2); attack(d); sfxdamage(target[;] d); sfx(~_dodge~);,,MAX3,,RED,,,,,0,NO,NO,,,,,,,,,,,,,
+Combo Kick,Do [sword]<d6> damage|If you have [combo]Combo |Do [sword]<double> damage,2,if(getstatusself(~combo~) > 0){ attack(d * 2); sfxdamage(target[;] d * 2); } else { attack(d); sfxdamage(target[;] d); },,MAX3|MAX2,,RED,increaserange,decreaserange,,,0,NO,NO,,,,,,,,,,,,,
+Combo Jab,Do [sword]<d6> damage[;]|On [combo]combo[;] Heal [heal]3 hp,1,if(getstatusself(~combo~) > 0){ attackself(-3); sfx(~_heal~); attack(d); sfxdamage(target[;] d); } else { attack(d); sfxdamage(target[;] d); },,ODD,,RED,simplify,complicate,,,0,NO,NO,,,,,,,,,,,,,
+Combo Starter,Gain [combo]Combo,1,inflictself(~combo~); sfx(~_dodge~);,,COUNTDOWN,8,YELLOW,halfcountdown,noeffect,,,0,YES,NO,,,,,,,,,,,,,
