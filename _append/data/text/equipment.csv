@@ -1707,3 +1707,7 @@ Divine Petri Dish_upgraded,Inflict [poison]1[;] return the dice|50% chance to du
 Jammed Pea Shooter,Do [sword]2 damage|On countdown reduce[;]| do [sword]1 damage,2,sfxdamage(target[;]2); attack(2);,Pea Gun,COUNTDOWN,24,RED,change_power,change_power,,,0,NO,NO,,,,,,,,sfxdamage(target[;]1); attack(1);,,,,,
 Jammed Pea Shooter_upgraded,Do [sword]2 damage|On countdown reduce[;]| do [sword]2 damage,2,sfxdamage(target[;]2); attack(2);,Pea Gun,COUNTDOWN,24,RED,change_power,change_power,,,0,NO,NO,,,,,,,,sfxdamage(target[;]2); attack(2);,,,,,
 Jammed Pea Shooter_downgraded,Do [sword]2 damage,2,sfxdamage(target[;]2); attack(2);,Pea Gun,COUNTDOWN,24,RED,change_power,change_power,,,0,NO,NO,,,,,,,,,,,,,
+Spare Snake,A spare one|Roll another one on use,2,givedice(1);,Magic Dice,SPARE1,,GREEN,,burnsparedice,,none,0,YES,NO,excludefromrandomlists|curseavoid|skillcard|skill:Spare Snake@skill,1,,,,,,,,,,,
+Spare Snake@skill,A spare one|Roll another one on use,2,givedice(1);,Magic Dice,SPARE1,,GREEN,,burnsparedice,,none,0,YES,NO,excludefromrandomlists|curseavoid|skillcard,1,,,,,,,,,,,
+Third Sun,A spare one|Roll two more ones on use,2,givedice([1[;]1]);,Magic Dice,SPARE1,,ORANGE,,burnsparedice,,none,0,YES,NO,excludefromrandomlists|curseavoid|skillcard|skill:Third Sun@skill,1,,,,,,,,,,,
+Third Sun@skill,A spare one|Roll two more ones on use,2,givedice([1[;]1]);,Magic Dice,SPARE1,,ORANGE,,burnsparedice,,none,0,YES,NO,excludefromrandomlists|curseavoid|skillcard,1,,,,,,,,,,,

@@ -1,4 +1,5 @@
 var ladyearly = shuffle(["Spare 1@ll2"]);
+var ladylate = shuffle(["Spare Snake"]);
 var strangeshop = [];
 var awesomelist = [];
 var floor2gooditem = [];
@@ -49,7 +50,7 @@ mycoolfloor3.setlocation("GAMESHOW");
 mycoolfloor3.generate();
 
 //Floor 4:
-items = [ladyearly.pop()];
+items = [ladylate.pop()];
 gooditems = [];
 
 otherstuff = [health(), health()];
@@ -60,7 +61,7 @@ mycoolfloor4.setlocation("GAMESHOW");
 mycoolfloor4.generate();
   
 //Floor 5:
-items = [ladyearly.pop()];
+items = [ladylate.pop()];
 gooditems = [];
 
 otherstuff = [health(), health()];
