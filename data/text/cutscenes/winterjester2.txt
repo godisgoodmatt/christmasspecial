@@ -1,0 +1,98 @@
+// SETUP
+
+setdatapath("data/graphics/cutscenes/intro/");
+addbackground("intro_stage", {animation: "background_stage.json", pack: "background_stage.pck"});
+#include mariahcareybiggraphics.txt
+
+setdatapath("data/graphics/cutscenes/inventor/");
+
+setdatapath("data/graphics/cutscenes/jester/");
+
+var jestergraphics = {
+	idle: {
+		animation: "jester_idle.json",
+		pack: "jester.pck",
+		loop: true
+	},
+	defiant_idle: {
+		animation: "jester_defiant_idle.json",
+		pack: "jester.pck",
+		loop: true
+	}
+}
+var jester = addsprite("jester", 1, jestergraphics);
+
+// HELPER FUNCTIONS	
+
+var fade_time = 0.4;
+
+// ACTORS
+actor("Mariah Carey", screenwidthmid + 800, 550, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
+actor("jester", 2600, 780, Col.ORANGE, CENTER, BOTTOM, "chat_jester", "characters/jester/charicon_jester");
+
+// INTRO
+
+play("music_cutscene_cheery");
+
+jester.scale = 0.5;
+jester.x = 2700 - ((jester.getwidth("idle") * jester.scale) / 2);
+jester.y = 800;
+changebackground("intro_stage");
+fadein();
+jester.show("idle");
+
+mariahcarey_big.x = -screenwidth;
+mariahcarey_big.show("idle");
+Actuate.tween(mariahcarey_big, 2, { x: 0 }).ease(Expo.easeOut);
+play("cutscene_audience");
+
+wait(0.5);
+
+mariahcarey_big.show("talking", true);
+actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
+speak("Mariah Carey", "Oh hello jester! I'm a huge fan of yours!");
+mariahcarey_big.show("talking-sly", true);
+speak("Mariah Carey", "Of course I have to be grounded otherwise I'll become a terrible person", "normal");
+mariahcarey_big.show("idle-sly", true);
+
+actor("jester", 2600, 780, Col.ORANGE, CENTER, BOTTOM, "chat_jester", "characters/jester/charicon_jester");
+jester.show("defiant_idle");
+speak("jester", "Interesting");
+speak("jester", "I thought you were a huge fan of Lady Luck");
+
+mariahcarey_big.show("talking-sly", true);
+actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
+speak("Mariah Carey", "Well can't I have more than 1 fandom?");
+mariahcarey_big.show("talking", true);
+speak("Mariah Carey", "Is there anyway I could prove it?", "normal");
+mariahcarey_big.show("idle", true);
+
+jester.show("idle");
+speak("jester", "Well I guess you could fulfill my christmas wish", "action");
+
+mariahcarey_big.show("talking", true);
+speak("Mariah Carey", "Anything at all!", "normal");
+mariahcarey_big.show("idle", true);
+
+speak("jester", "I want 2 of every card in the show!", "action");
+
+mariahcarey_big.show("talking-scary", true);
+actor("Mariah Carey", screenwidthmid + 350, 700, Col.RED, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
+speak("Mariah Carey", "[red]YOUR JOKING RIGHT?", "normal");
+mariahcarey_big.show("talking-confused", true);
+actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
+speak("Mariah Carey", "I mean it's just a lot of work");
+mariahcarey_big.show("idle-confused", true);
+
+jester.show("defiant_idle");
+speak("jester", "Guess you like Lady Luck more", "personality");
+
+mariahcarey_big.show("talking-angry", true);
+speak("Mariah Carey", "UGH OK...", "normal");
+speak("Mariah Carey", "Lady Luck was right you are a pain in the side aren't you");
+mariahcarey_big.show("idle-angry", true);
+
+jester.show("idle");
+speak("jester", "You know it!", "action");
+
+startgamefromcutscene();
