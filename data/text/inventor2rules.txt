@@ -1,0 +1,9 @@
+h1|Maintenance Protocols
+
+In this episode, your equipment's a bit prone to
+falling into disrepair. You're going to have to
+use your equipment in order to prevent it from losing durability.
+
+However, you now roll dice with the Robot's CPU counter.
+All equipment that breaks get scrapped into gadgets.
+Rolling a Jackpot now allows you to use these gadgets.

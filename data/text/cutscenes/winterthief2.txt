@@ -3,6 +3,8 @@
 
 setdatapath("data/graphics/cutscenes/thief/");
 
+setdatapath("data/graphics/cutscenes/inventor/");
+
 var thiefgraphics = {
 	idle: {
 		animation: "thief_idle.json",
