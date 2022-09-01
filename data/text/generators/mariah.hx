@@ -7,12 +7,12 @@ var itempools = [notes, remove, misc, vampireitem];
 
 runscript("christmasspecial/checkgeneratorisaccurate",[itempools]);
 
-usestandardenemies();
-
 var items = [];
 var gooditems = [];
 var otherstuff = [];
 var goodotherstuff = [];
+
+usestandardenemies();
 
 //Floor 1:
 items = [notes.pop()];
@@ -73,12 +73,11 @@ mycoolfloor5.setlocation("GAMESHOW");
 mycoolfloor5.generate();
 
 //Floor 6:
-items = [];
-gooditems = [];
 otherstuff = [];
 goodotherstuff = [];
 
 var mycoolfloor6 = addfloor('boss').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
 mycoolfloor6.theme = rand(['music_ladyluck3']);
-mycoolfloor6.setlocation("FINALEPISODE");
+mycoolfloor6.setlocation("boss");
+mycoolfloor6.addenemies("Rose");
 mycoolfloor6.generate();
