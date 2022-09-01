@@ -72,12 +72,13 @@ mycoolfloor5.theme = rand(['music_ladyluck3']);
 mycoolfloor5.setlocation("GAMESHOW");
 mycoolfloor5.generate();
 
-//Floor 6:
+// Floor 6:            
+items = [];
+gooditems = [];
 otherstuff = [];
 goodotherstuff = [];
 
 var mycoolfloor6 = addfloor('boss').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
 mycoolfloor6.theme = rand(['music_ladyluck3']);
 mycoolfloor6.setlocation("boss");
-mycoolfloor6.addenemies("Rose");
 mycoolfloor6.generate();
