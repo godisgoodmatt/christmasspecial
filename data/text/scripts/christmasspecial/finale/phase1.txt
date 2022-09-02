@@ -1,1 +1,5 @@
-Hammer
+Palm Christmas Tree
+Divine Grip,Divine Ooze
+Hammer,Dagger
+Small Shield,Wooden Shield,Charge!
+Toxic Ooze

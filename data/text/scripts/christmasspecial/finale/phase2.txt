@@ -1,1 +1,5 @@
-Sword
+Divine Dagger
+Pip Master,Pip Master,Divine Snap
+Cape Deflect,Cape Deflect,Charge!
+Divine Throwing Axe,Divine Incantation
+Broadsword

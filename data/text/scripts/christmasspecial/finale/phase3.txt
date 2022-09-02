@@ -1,1 +1,5 @@
-Divine Dagger
+Divine Storm
+Divine Megaphone
+Random Judgment
+Sword,Sword,Dagger
+Divine Ooze,Divine Incantation
