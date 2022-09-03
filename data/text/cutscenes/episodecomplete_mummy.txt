@@ -278,6 +278,15 @@ if (wheelwins) {
 				announcer.show("talking");
 				speak("Lady Luck", "No.", "normal");
 				announcer.show("idle");
+			case "Mariah":
+				speak("Lady Luck", "Well it looks like you did it wooow", "sly");
+				speak("Lady Luck", "I guess you'll become human again");
+				announcer.show("idle");
+				speak(player, "Oh this is so lovely I could just sing!", "personality");
+				announcer.show("talking");
+				speak("Lady Luck", "No....", "confused");
+				speak("Lady Luck", "Don't", "confused");
+				announcer.show("idle");
 			case "Jester":
 				speak("Lady Luck", "Congratulations, Jess. You won.", "normal");
 				announcer.show("idle");
