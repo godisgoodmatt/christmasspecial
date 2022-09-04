@@ -1,4 +1,4 @@
-var notes = shuffle(["Soft Palette","Sharp Palette","Commandments@health","Commandments@dice"]);
+var notes = shuffle(["Soft Palette","Sharp Palette","Another Song","Dark Song","Christmas Jingle"]);
 var remove = [];
 var misc = [];
 var vampireitem = ["Silver Sword"];
@@ -25,7 +25,7 @@ mycoolfloor1.setlocation("GAMESHOW");
 mycoolfloor1.generate();
 
 //Floor 2:
-items = [];
+items = [notes.pop()];
 gooditems = [];
 otherstuff = [health()];
 goodotherstuff = [];
