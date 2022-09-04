@@ -6,8 +6,6 @@ addbackground("intro_stage", {animation: "background_stage.json", pack: "backgro
 
 setdatapath("data/graphics/cutscenes/warrior/");
 
-setdatapath("data/graphics/cutscenes/inventor/");
-
 var warriorgraphics = {
 	idle: {
 		animation: "warrior_idle.json",

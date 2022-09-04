@@ -4,8 +4,6 @@ setdatapath("data/graphics/cutscenes/intro/");
 addbackground("intro_stage", {animation: "background_stage.json", pack: "background_stage.pck"});
 #include mariahcareybiggraphics.txt
 
-setdatapath("data/graphics/cutscenes/inventor/");
-
 setdatapath("data/graphics/cutscenes/jester/");
 
 var jestergraphics = {
