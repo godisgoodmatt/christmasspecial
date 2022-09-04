@@ -76,6 +76,7 @@ if(player == "Warrior"){
   actor("Ghost of Future", 150, screenheight - 100, Col.RED, LEFT, BOTTOM, "chat_thief", "characters/thief/charicon_thief");
 }else if(player == "Mariah"){
   actor("Mariah", 150, screenheight - 100, Col.RED, LEFT, BOTTOM, "chat_mariah", "characters/mariah/charicon_mariah");
+  spin = 70;
 }else{
   actor("Lady Luck", 150, screenheight - 100, Col.RED, LEFT, BOTTOM, "chat_ladyluck", "characters/lady luck/charicon_lady_luck");
 }
