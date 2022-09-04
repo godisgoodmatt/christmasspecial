@@ -36,7 +36,7 @@ mycoolfloor2.generate();
 
 //Floor 3:
 items = [notes.pop()];
-gooditems = [upgrade()];
+gooditems = [];
 otherstuff = [health(), health()];
 
 goodotherstuff = [
