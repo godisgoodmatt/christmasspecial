@@ -74,6 +74,9 @@ if(player == "Warrior"){
   actor("Ghost of Past", 150, screenheight - 100, Col.RED, LEFT, BOTTOM, "chat_thief", "characters/thief/charicon_thief");
 }else if(player == "Ghost of Future"){
   actor("Ghost of Future", 150, screenheight - 100, Col.RED, LEFT, BOTTOM, "chat_thief", "characters/thief/charicon_thief");
+}else if(player == "Mariah"){
+  actor("Mariah", 150, screenheight - 100, Col.RED, LEFT, BOTTOM, "chat_mariah", "characters/mariah/charicon_mariah");
+  spin = 70;
 }else{
   actor("Lady Luck", 150, screenheight - 100, Col.RED, LEFT, BOTTOM, "chat_ladyluck", "characters/lady luck/charicon_lady_luck");
 }
@@ -277,6 +280,15 @@ if (wheelwins) {
 				speak(player, "This is so epic. Can we get 5,000 likes?", "personality");
 				announcer.show("talking");
 				speak("Lady Luck", "No.", "normal");
+				announcer.show("idle");
+			case "Mariah":
+				speak("Lady Luck", "Well it looks like you did it wooow", "sly");
+				speak("Lady Luck", "I guess you'll become human again");
+				announcer.show("idle");
+				speak(player, "Oh this is so lovely I could just sing!", "personality");
+				announcer.show("talking");
+				speak("Lady Luck", "No....", "confused");
+				speak("Lady Luck", "Don't", "confused");
 				announcer.show("idle");
 			case "Jester":
 				speak("Lady Luck", "Congratulations, Jess. You won.", "normal");
