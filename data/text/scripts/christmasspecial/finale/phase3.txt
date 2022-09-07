@@ -1,5 +1,5 @@
-Divine Storm
+Pip Master,Pip Master,Divine Storm,Lie,Lie
 Divine Megaphone
-Random Judgment
-Sword,Sword,Dagger
-Divine Ooze,Divine Incantation
+Dark Shadow,Dark Shadow
+Broadsword,Sword,Dagger
+Divine Ooze,Tennis Racket,Lie,Lie
