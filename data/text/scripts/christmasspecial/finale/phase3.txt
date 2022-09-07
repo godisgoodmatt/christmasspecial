@@ -2,4 +2,4 @@ Pip Master,Pip Master,Divine Storm,Lie,Lie
 Divine Megaphone
 Dark Shadow,Dark Shadow
 Broadsword,Sword,Dagger
-Divine Ooze,Divine Incantation,Lie,Lie
+Divine Ooze,Tennis Racket,Lie,Lie

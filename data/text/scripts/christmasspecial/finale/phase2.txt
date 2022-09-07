@@ -2,4 +2,4 @@ Divine Dagger@LL,Backstab@LL
 Pip Master,Pip Master,Divine Snap
 Cape Deflect,Cape Deflect,Charge!
 Divine Throwing Axe,Divine Incantation
-Broadsword
+Tennis Racket
