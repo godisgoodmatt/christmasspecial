@@ -79,6 +79,6 @@ otherstuff = [];
 goodotherstuff = [];
 
 var mycoolfloor6 = addfloor('boss').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
-mycoolfloor6.theme = rand(['music_ladyluck3']);
+mycoolfloor6.theme = rand(['music_mariahboss']);
 mycoolfloor6.setlocation("boss");
 mycoolfloor6.generate();
