@@ -1729,4 +1729,4 @@ Return Bicep Curls,Gain [recycle]Re-Equip?|Reroll the dice,1,inflictself(~altern
 Return Bicep Curls_upgraded,Gain [recycle]2 Re-Equip?|Reroll the dice,1,inflictself(~alternate_reequipnext~[;] 2); sfx(~_thinghappens~); givedice();,,DOUBLES|DOUBLES,,GREEN,,,,,0,YES,NO,,,,,,,,,,,,,
 Return Bicep Curls_downgraded,Gain [recycle]Re-Equip?|Give enemy [recycle]Re-Equip?,1,inflictself(~alternate_reequipnext~); inflict(~alternate_reequipnext~); sfx(~_thinghappens~);,,DOUBLES|DOUBLES,,GREEN,,,,,0,NO,NO,,,,,,,,,,,,,
 Eggnog,Heal [heal]2 health|Gain [regen]2 Regen|Become [drunk]Drunk,2,attackself(-2); inflictself(~Regen~); inflictself(~drunk~); sfx(~_cure~);,,COUNTDOWN,9,GREEN,twothirdcountdown,noeffect,,,0,YES,NO,,,,,,,,,,,,,
-Voucher,Gain [coupon]christmas coupon,1,inflictself(~coupon~); sfx(~_cure~);,,REQUIRE2,,GREEN,simplify,doublerequirements,,,0,NO,NO,,,,,,,,,,,,,
+Voucher,Gain [coupon]christmas coupon,1,inflictself(~coupon~); sfx(~_cure~);,,REQUIRE2,,GREEN,simplify,doublerequirements,,,0,YES,NO,,,,,,,,,,,,,

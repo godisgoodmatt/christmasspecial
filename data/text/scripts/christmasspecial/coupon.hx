@@ -2,7 +2,7 @@
 //Made to fit the coupon scheme by Matt :p
 var toinject = "
 	/*Begin coupon script injection*/
-	if(self.hasstatus(\"coupon\") && !e.hastag(\"curseavoid\")) {
+	if(self.hasstatus(\"coupon\") && !e.hastag(\"cannotreuse\")) {
 		if(chance(40)) {
 			inflictself(\"alternate_reequipnext\");
 			sfx(\"_thinghappens\");
