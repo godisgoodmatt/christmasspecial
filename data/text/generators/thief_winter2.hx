@@ -26,7 +26,7 @@ mycoolfloor1.theme = rand(['xmas1']);
 mycoolfloor1.generate();
 
 //Floor 2:
-items = [];
+items = [floor2ndgooditem.pop()];
 gooditems = [floor2gooditem.pop()];
 otherstuff = [health()];
 goodotherstuff = [shop([jestershops.pop(), jestershops.pop(), jestershops.pop()])];
