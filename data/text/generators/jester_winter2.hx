@@ -37,7 +37,7 @@ mycoolfloor2.generate();
 items = [];
 gooditems = [];
 
-otherstuff = [health(), health()];
+otherstuff = [health()];
 
 goodotherstuff = [
   shop(["delete", "delete", "delete"]),
@@ -64,7 +64,7 @@ mycoolfloor4.generate();
 items = [];
 gooditems = [];
 
-otherstuff = [health(), health()];
+otherstuff = [];
 goodotherstuff = [
   upgrade(),
   shop(["health", "delete", "health"], [4, 4, 4])
