@@ -47,53 +47,52 @@ wait(0.5);
 
 mariahcarey_big.show("talking", true);
 actor("Mariah Carey", screenwidthmid + 240, screenheightmid - 240, Col.YELLOW, RIGHT, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "Heya warrior", "normal");
+speak("Mariah Carey", "Heya, Warrior!", "normal");
 mariahcarey_big.show("idle", true);
 
-speak("Warrior", "Hi? Mariah Carey!?", "worried");
-speak("Warrior", "Woah I had no idea you were the host now...");
+speak("Warrior", "Whoa, Mariah Carey?!", "worried");
+speak("Warrior", "I had no idea you're the host now...");
 
 mariahcarey_big.show("talking-confused", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
 speak("Mariah Carey", "Really?");
-speak("Mariah Carey", "Have the enemies not been talking about it?", "normal");
+speak("Mariah Carey", "Have the enemies not been talking about me?", "normal");
 mariahcarey_big.show("talking-scary", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.RED, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "[red]I WOULD THINK MY INFLUENCE WOULD HAVE REACHED THEM BY NOW", "normal").dismiss_in = 0.8;
+speak("Mariah Carey", "[red]YOU'D THINK THEY'D BE ALL OVER MY|[red]GAME SHOW CHRISTMAS ALBUM BY NOW!", "normal").dismiss_in = 0.8;
 mariahcarey_big.show("talking", true);
 actor("Mariah Carey", screenwidthmid + 240, screenheightmid - 280, Col.YELLOW, RIGHT, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "I meant um-");
-speak("Mariah Carey", "Are you ready for this new episode!", "normal");
+speak("Mariah Carey", "I mean, uh.");
+speak("Mariah Carey", "Are you ready for this new episode?", "normal");
 mariahcarey_big.show("idle", true);
 
 warrior.show("worried_idle");
 speak("Warrior", "Um.....", "worried");
-speak("Warrior", "I guess so?");
+speak("Warrior", " Maybe?");
 
 mariahcarey_big.show("talking", true);
 actor("Mariah Carey", screenwidthmid + 240, screenheightmid - 280, Col.YELLOW, RIGHT, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "Well this episode you can't deal damage!", "normal");
+speak("Mariah Carey", "Well, in this episode, you start out with|nothing that deals damage!", "normal");
 mariahcarey_big.show("idle-angry", true);
 
-speak("Warrior", "Well how do I win-", "worried").dismiss_in = 0.5;
+speak("Warrior", "But then how do I win-", "worried").dismiss_in = 0.5;
 
 mariahcarey_big.show("talking-scary", true);
 actor("Mariah Carey", screenwidthmid + 240, screenheightmid - 280, Col.RED, RIGHT, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "[red]YOU LET ME FINISH TALKING FIRST", "normal").dismiss_in = 0.8;
+speak("Mariah Carey", "[red]YOU LET ME FINISH TALKING FIRST!", "normal").dismiss_in = 0.8;
 mariahcarey_big.show("talking-sly", true);
 actor("Mariah Carey", screenwidthmid + 240, screenheightmid - 280, Col.YELLOW, RIGHT, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "After getting the dice you want");
+speak("Mariah Carey", "After getting the dice you want...");
 speak("Mariah Carey", "You transfer into the damaging equipment phase!", "normal");
-speak("Mariah Carey", "So you'll have to think more than you usually do");
+speak("Mariah Carey", "So you'll have to think more than you usually do.");
+mariahcarey_big.show("idle", true);
+
+speak("Warrior", "Uh, geez.");
+speak("Warrior", "I had, like, four thoughts yesterday.|I think my brain's already too sore.", "action");
+
 mariahcarey_big.show("talking-confused", true);
 speak("Mariah Carey", "This is one of the few episodes that worked");
 speak("Mariah Carey", "So don't dissapoint me", "normal");
 mariahcarey_big.show("idle-confused", true);
-
-speak("Warrior", "I'll try my best!");
-
-mariahcarey_big.show("idle", true);
-
-wait(1);
 
 startgamefromcutscene();

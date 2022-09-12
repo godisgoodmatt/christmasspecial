@@ -48,15 +48,15 @@ wait(0.5);
 
 mariahcarey_big.show("talking", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "Let's welcome the Robot back to the stage!");
+speak("Mariah Carey", "Let's welcome the Robot back on stage...");
 mariahcarey_big.show("talking-sly", true);
 speak("Mariah Carey", "To a brand new episode made by me!", "normal");
 mariahcarey_big.show("talking-confused", true);
-speak("Mariah Carey", "However due to lack of experience in this...");
-speak("Mariah Carey", "PR accidentally made it so you can't roll 1-6", "normal");
+speak("Mariah Carey", "...Well, sort of. My marketing team tidied things up a bit.");
+speak("Mariah Carey", "And they accidentally made it so you can't roll 1 through 6.", "normal");
 speak("Mariah Carey", "and you roll negative dice now and up to 12");
 mariahcarey_big.show("talking-sly", true);
-speak("Mariah Carey", "rather than my idea which was|making you roll normally without calculating as a gift", "normal");
+speak("Mariah Carey", "My idea was that you could roll normally|without calculating, as a gift.", "normal");
 mariahcarey_big.show("idle", true);
 
 actor("Robot", 2600, 780, 0xDDDDDD, CENTER, BOTTOM, "chat_robot", "characters/robot/charicon_robot");
@@ -66,19 +66,20 @@ speak("Robot", "This throws off everything!");
 
 mariahcarey_big.show("talking", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "Well it would've been fine if dave|from PR didnt step in");
+speak("Mariah Carey", "Well, it would have been fine, if|only Dave from PR didn't step in.");
 mariahcarey_big.show("talking-angry", true);
-speak("Mariah Carey", "Otherwise this would've been perfect!", "normal");
+speak("Mariah Carey", "Otherwise, this would've been perfect!", "normal");
 mariahcarey_big.show("idle", true);
 
+speak("Robot", "I meant the not calculating thing, but that too.", "worried");
 speak("Robot", "Well in I go I guess-", "worried").dismiss_in = 0.6;
 
 mariahcarey_big.show("talking-scary", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.RED, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "[red]NO THATS MY LINE", "normal");
+speak("Mariah Carey", "[red]NO, THATS MY LINE", "normal");
 mariahcarey_big.show("talking", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "I... I um mean in you go", "normal");
+speak("Mariah Carey", "I, uh, I mean, in you go!", "normal");
 mariahcarey_big.show("idle", true);
 
 startgamefromcutscene();

@@ -50,24 +50,27 @@ wait(0.5);
  
 mariahcarey_big.show("talking", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "Heya Thief how are you feeling this christmas?");
+speak("Mariah Carey", "Heya, Thief! how are you feeling this christmas?");
 mariahcarey_big.show("talking-confused", true);
 speak("Mariah Carey", "I'm still working on your new episode", "normal");
 mariahcarey_big.show("talking-confused", true);
 
-speak("Thief", "Well I think the minions are starting|New years resolutions early");
+speak("Thief", "Well, I made some chit-chat, might've|eavesdropped a bit...", "action");
+speak("Thief", "...a lot, you could say...");
+speak("Thief", "...and I found out most of the minions|here are starting their New Years'|resolutions early.", "normal");
 mariahcarey_big.show("talking-angry", true);
-speak("Thief", "I could copy them after beating them?");
+speak("Thief", "I'm definitely going to one-up them,|so maybe you could include that|in your episode. I copy their|resolutions after beating them.");
 
 mariahcarey_big.show("talking-scary", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.RED, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "[red]NOOO THATS NOT MY IDEA", "normal");
+speak("Mariah Carey", "[red]THAT'S NOT MY IDEA!", "normal");
 mariahcarey_big.show("talking", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
 speak("Mariah Carey", "I mean thats a great idea!");
-speak("Mariah Carey", "I'm sorry that outburst isnt like me...I've been|getting those more often after being host", "normal");
+speak("Mariah Carey", "Apologies for the outburst. I've been|getting those more often after being host.", "normal");
 mariahcarey_big.show("idle", true);
 
-speak("Thief", "You might have some issues to workout", "worried");
+speak("Thief", "Oof, right.", "action");
+speak("Thief", "I think Frog's doing anger management,|I might write down his resolution for you...", "worried");
 
 startgamefromcutscene();
