@@ -1,4 +1,4 @@
-var awesomelist = shuffle(["Eggnog", "Return Bicep Curls", "Lantern", "Normal Integer", "Primal Punch", "Prediction Interval", "Double Trouble", "Black Hole", "Target", "Negative Thoughts", "Integer Overflow", "Spanner@robot", "Can I Haxe You A Question", "Multiply", "Bump@robot", "Nudge@robot", "Probablity Question", "Raw Damage Output", "Terminal Illness", "Perfected Dice", "Dark Matter", "Bolts And Screws", "Backwards Logic"]);
+var awesomelist = shuffle(["Eggnog", "Return Bicep Curls", "Lantern", "Normal Integer", "Primal Punch", "Prediction Interval", "Double Trouble", "Black Hole", "Target", "Integer Overflow", "Spanner@robot", "Can I Haxe You A Question", "Multiply", "Bump@robot", "Nudge@robot", "Probablity Question", "Raw Damage Output", "Terminal Illness", "Perfected Dice", "Dark Matter", "Bolts And Screws", "Backwards Logic", "Null Object Reference"]);
 var vampireitem = ["Silver Sword"];
 
 var itempools = [awesomelist, vampireitem];
