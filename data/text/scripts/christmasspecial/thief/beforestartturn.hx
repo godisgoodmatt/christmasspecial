@@ -14,7 +14,7 @@ if(fighter.varexists("reunionwarrior_workouts")){
 if(workoutcardstring != ""){
   var workoutcards = workoutcardstring.split(",");
   if(workoutcards.length > 0){
-    if(currentcard == "" || cardused){
+    if(currentcard == ""){
       //At some point, I might expand this to support a more generalised Draft mode feature
       //syntax is: Rules.startdraftmode(cardlist);
       // cardlist: string array of cards
