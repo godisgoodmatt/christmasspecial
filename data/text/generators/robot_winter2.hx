@@ -1,5 +1,5 @@
 var awesomelist = shuffle(["Chocolate Bar", "Eggnog", "Return Bicep Curls", "Primal Punch", "Prediction Interval", "Double Trouble", "Black Hole", "Target", "Integer Overflow", "Can I Haxe You A Question", "Raw Damage Output", "Terminal Illness"]);
-var needs = shuffle(["Bug Fixes", "Lantern", "Normal Integer", "Null Object Reference", "Perfected Dice", "Dark Matter", "Bolts And Screws", "Backwards Logic"]);
+var needs = shuffle(["Bug Fixes", "Lantern", "Normal Integer", "Null Object Reference", "Perfected Dice", "Dark Matter", "Bolts And Screws", "Backwards Logic", "Nerfed Gun", "Reverse Calculations"]);
 var dice = shuffle(["Spanner@robot", "Multiply", "Bump@robot", "Nudge@robot", "Probablity Question"]);
 var vampireitem = ["Silver Sword"];
 
