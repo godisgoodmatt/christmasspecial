@@ -1,4 +1,4 @@
-var awesomelist = shuffle(["Chocolate Bar", "Eggnog", "Return Bicep Curls", "Primal Punch", "Prediction Interval", "Double Trouble", "Black Hole", "Target", "Integer Overflow", "Can I Haxe You A Question", "Raw Damage Output", "Terminal Illness"]);
+var awesomelist = shuffle(["Chocolate Bar", "Eggnog", "Return Bicep Curls", "Primal Punch", "Prediction Interval", "Double Trouble", "Black Hole", "Target", "Integer Overflow", "Raw Damage Output", "Terminal Illness"]);
 var needs = shuffle(["Bug Fixes", "Lantern", "Normal Integer", "Null Object Reference", "Perfected Dice", "Dark Matter", "Bolts And Screws", "Backwards Logic", "Nerfed Gun", "Reverse Calculations"]);
 var dice = shuffle(["Spanner@robot", "Multiply", "Bump@robot", "Nudge@robot", "Probablity Question"]);
 var vampireitem = ["Silver Sword"];
@@ -27,7 +27,7 @@ mycoolfloor1.generate();
 items = [dice.pop()];
 gooditems = [awesomelist.pop()];
 otherstuff = [health()];
-goodotherstuff = [shop([needs.pop(), awesomelist.pop(), awesomelist.pop()])];
+goodotherstuff = [shop([needs.pop(), awesomelist.pop(), dice.pop()])];
 var mycoolfloor2 = addfloor('small').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
 mycoolfloor2.theme = rand(['xmas1']);
 mycoolfloor2.generate();
