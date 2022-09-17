@@ -1,7 +1,9 @@
-var awesomelist = shuffle(["Bug Fixes", "Chocolate Bar", "Eggnog", "Return Bicep Curls", "Lantern", "Normal Integer", "Primal Punch", "Prediction Interval", "Double Trouble", "Black Hole", "Target", "Integer Overflow", "Spanner@robot", "Can I Haxe You A Question", "Multiply", "Bump@robot", "Nudge@robot", "Probablity Question", "Raw Damage Output", "Terminal Illness", "Perfected Dice", "Dark Matter", "Bolts And Screws", "Backwards Logic", "Null Object Reference"]);
+var awesomelist = shuffle(["Chocolate Bar", "Eggnog", "Return Bicep Curls", "Primal Punch", "Prediction Interval", "Double Trouble", "Black Hole", "Target", "Integer Overflow", "Can I Haxe You A Question", "Raw Damage Output", "Terminal Illness"]);
+var needs = shuffle(["Bug Fixes", "Lantern", "Normal Integer", "Null Object Reference", "Perfected Dice", "Dark Matter", "Bolts And Screws", "Backwards Logic"]);
+var dice = shuffle(["Spanner@robot", "Multiply", "Bump@robot", "Nudge@robot", "Probablity Question"]);
 var vampireitem = ["Silver Sword"];
 
-var itempools = [awesomelist, vampireitem];
+var itempools = [awesomelist, needs, vampireitem, dice];
 
 runscript("christmasspecial/checkgeneratorisaccurate",[itempools]);
 
@@ -14,7 +16,7 @@ var goodotherstuff = [];
 
 //Floor 1:
 items = [];
-gooditems = [awesomelist.pop()];
+gooditems = [needs.pop()];
 otherstuff = [];
 goodotherstuff = [];
 var mycoolfloor1 = addfloor('tiny').additems(items, gooditems);
@@ -22,22 +24,22 @@ mycoolfloor1.theme = rand(['xmas1']);
 mycoolfloor1.generate();
 
 //Floor 2:
-items = [];
+items = [dice.pop()];
 gooditems = [awesomelist.pop()];
 otherstuff = [health()];
-goodotherstuff = [shop([awesomelist.pop(), awesomelist.pop(), awesomelist.pop()])];
+goodotherstuff = [shop([needs.pop(), awesomelist.pop(), awesomelist.pop()])];
 var mycoolfloor2 = addfloor('small').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
 mycoolfloor2.theme = rand(['xmas1']);
 mycoolfloor2.generate();
 
 //Floor 3:
-items = [awesomelist.pop()];
+items = [needs.pop()];
 gooditems = [];
 
 otherstuff = [health(), health()];
 
 goodotherstuff = [
-  shop([awesomelist.pop(), awesomelist.pop(), awesomelist.pop()]),
+  shop([awesomelist.pop(), awesomelist.pop(), needs.pop()]),
   upgrade()
 ];
 var mycoolfloor3 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
@@ -46,7 +48,7 @@ mycoolfloor3.generate();
   
 //Floor 4:
 items = [];
-gooditems = [awesomelist.pop()];
+gooditems = [dice.pop()];
 
 otherstuff = [health()];
 goodotherstuff = [
