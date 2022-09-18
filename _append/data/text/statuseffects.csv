@@ -220,3 +220,4 @@ surprisegift,Surprise_Gift,gift,All equipment has a 33% chance to roll you a new
 wealthyrelatives,Wealthy_Relatives,wealthyrelatives,Gain [gift]5 surprise gifts every turn.,NO,NO,NO,NO,NO,,,,inflictself(~surprisegift~[;] 5); sfx(~_cure~);,,,,,,,
 wealthyrelatives+,Wealthy_Relatives+,wealthyrelatives,Gain [gift]5 upgraded surprise gifts every turn.,NO,NO,NO,NO,NO,,,,inflictself(~surprisegift+~[;] 5); sfx(~_cure~);,,,,,,,
 surprisegift+,Surprise_Gift+,gift,All equipment has a 50% chance to roll you a new dice.|Disappears once triggered.,YES,YES,NO,NO,NO,,,,,if(chance(50)) {givedice(); removestatusself(~surprisegift+~[;]1); self.textparticle(~Surprise!~);},,,,,,
+enemysilence,Silence,silence,Temporarily disables random equipment.|Can use 2 dice to unshock.,NO,YES,NO,NO,NO,,,,runscript(~christmasspecial/silenceenemy~[;][self]);,,,,,,,
