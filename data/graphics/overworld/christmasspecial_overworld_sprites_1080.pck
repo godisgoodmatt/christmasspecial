@@ -56,4 +56,7 @@
 	<SubTexture name="enemies/ladyluck_01" x="300" y="450" rotated="false" width="150" height="150"/>
     <SubTexture name="enemies/ladyluck_02" x="1050" y="450" rotated="false" width="150" height="150"/>
     <SubTexture name="overworld/ladyluck" x="300" y="450" rotated="false" width="150" height="150"/>
+	<SubTexture name="enemies/conductor_01" x="450" y="450" rotated="false" width="150" height="150"/>
+    <SubTexture name="enemies/conductor_02" x="1200" y="450" rotated="false" width="150" height="150"/>
+    <SubTexture name="overworld/conductor" x="450" y="450" rotated="false" width="150" height="150"/>
 </TextureAtlas>
