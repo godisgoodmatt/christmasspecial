@@ -21,14 +21,13 @@ shuffle(shocklist);
 trace("shocklist: " + shocklist);
 
 while (shocklist.length > 0){
-	var randequipment:Equipment = shocklist.pop();
+	var randequipment:Equipment = 1;
 	if (randequipment.hastag("shockimmune")){
 		randequipment.applyequipmentstatus = "shockimmune";
 	}else{
 		if(randequipment.shockedsetting == 0) {
 			randequipment.shockedsetting = 2;
 			randequipment.shockedtext = "Place a dice to|release silence";
-			randequipment.shockedcol = "black";
 			randequipment.shocked_showtitle = true;
 			randequipment.positionshockslots();
 			var newanimation:Animation = new elements.Animation();
