@@ -1759,3 +1759,4 @@ Wail@jester_upgraded,Silence Enemy,2,inflict(~enemysilence~); sfx(~_silence~); b
 Squawk@jester,Silence Enemy,2,inflict(~enemysilence~); sfx(~_silence~); bonus(1000);,Dial Up Sounds,DOUBLES|DOUBLES,,PURPLE,change_power,change_power,,,0,NO,NO,excludefromrandomlists|cannotsteal,,,,,,,,,,,,
 Squawk@jester_upgraded,Do [sword]2 damage|Silence Enemy,2,attack(2); inflict(~enemysilence~); sfx(~_silence~); bonus(1000);,Dial Up Sounds,DOUBLES|DOUBLES,,PURPLE,,,,,0,NO,NO,excludefromrandomlists|cannotsteal,,,,,,,,,,,,
 Squawk@jester_downgraded,Silence Enemy,2,inflict(~enemysilence~); sfx(~_silence~); bonus(1000);,Dial Up Sounds,REQUIRE6|REQUIRE6,,PURPLE,,,,,0,NO,NO,excludefromrandomlists|cannotsteal,,,,,,,,,,,,
+Downgrade,Inflict [threshold]Downgrade|,1,inflict(~downgrade~); sfx(~_silence~);,,NORMAL,,,reuseable,noeffect,,,0,NO,NO,,,,,,,,,,,,,
