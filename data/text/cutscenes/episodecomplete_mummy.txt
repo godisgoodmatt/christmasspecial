@@ -60,6 +60,9 @@ if (isladyluck) {
 	actor("Lady Luck", screenwidthmid + 200, 100, Col.YELLOW, LEFT, TOP, "chat_ladyluck", "characters/misc/charicon_ladyluck");
 }
 var spin = 90;
+if (isladyluck && episodenum == 2) {
+	spin = 100;
+}
 if(player == "Warrior"){
   actor("Warrior", 150, screenheight - 100, Col.LIGHTBLUE, LEFT, BOTTOM, "chat_warrior", "characters/warrior/charicon_warrior");
   spin = 50;
@@ -114,7 +117,7 @@ wait(1.5);
 
 announcer.show("talking");
 
-if (isladyluck) {
+if (isladyluck && episodenum == 1) {
     speak("Mariah Carey", "Hey there, is it weird from your side?");
 	announcer.show("idle");
     speak("Lady Luck", "Yes, a little bit. Are you going to spin the wheel or not?");
@@ -125,6 +128,9 @@ if (isladyluck) {
 	speak("Lady Luck", "Are you done yet?");
 	announcer.show("talking");
 	speak("Mariah Carey", "Sure.");
+} else if (isladyluck && episodenum == 2) {
+	speak("Mariah Carey", "Placeholder dialogue for second episode.");
+	speak("Lady Luck", "What?");
 } else {
     var firstlinevoice = false;
     for(message in variables.messages_beforespin) {
