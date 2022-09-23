@@ -8,6 +8,18 @@ var isladyluck = player == "Lady Luck";
 var announcer = isladyluck ? mariah : ladyluck_sign;
 var debugalwayswin = false;
 
+// HACK TO GET CURRENT EPISODE
+var acts = Actuate.defaultActuator.actuators;
+var episodenum = 0;
+for (i in 0...acts.length) {
+	if (acts[i].target == "episodenum") {
+		episodenum = acts[i].properties;
+		acts.splice(i, 1);
+		break;
+	}
+}
+trace(episodenum);
+
 // HELPER FUNCTIONS
 
 function signanimate(sign) {
