@@ -1,6 +1,9 @@
 #include ladyluckbiggraphics.txt
 #include mariahcareybiggraphics.txt
 
+var episodeover = false;
+#include getepisodenum.txt
+
 var testbackgrounds = [];
 var testbackgroundnum = 0;
 if(variables.test) {
@@ -8,7 +11,7 @@ if(variables.test) {
 }
 
 var announcer = ladyluck_big;
-if (getplayername() == "Lady Luck") {
+if (getplayername() == "Lady Luck" || episodenum == 2) {
 	announcer = mariahcarey_big;
 }
 
