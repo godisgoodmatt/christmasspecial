@@ -97,7 +97,7 @@ for(message in variables.messages) {
 			sfx("cardappear");
 			wait(1);
 		} else {
-			if (getplayername() == "Lady Luck") {
+			if (getplayername() == "Lady Luck" || episodenum == 2) {
 				speaksplit("Mariah Carey", text, mood, message.text, i);
 			} else {
 				speaksplit("Lady Luck", text, mood, message.text, i);
