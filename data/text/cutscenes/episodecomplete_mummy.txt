@@ -5,7 +5,6 @@
 
 var player = getplayername();
 var isladyluck = player == "Lady Luck";
-var announcer = isladyluck ? mariah : ladyluck_sign;
 var debugalwayswin = false;
 
 // HACK TO GET CURRENT EPISODE
@@ -19,7 +18,11 @@ for (i in 0...acts.length) {
 	}
 }
 trace(episodenum);
-
+var announcer = if(isladyluck || episodenum == 2){
+	mariah;
+} else {
+	ladyluck_sign;
+}
 // HELPER FUNCTIONS
 
 function signanimate(sign) {
@@ -277,6 +280,20 @@ if (wheelwins) {
 				speak(player, "Probably, but you have no idea|how unintuitive biomechanical|operating systems are!", "worried");
 				announcer.show("talking");
 				speak("Lady Luck", "Fair enough.");
+				announcer.show("idle");
+			case "Robot":
+				speak("Mariah Carey", "Wow this never gets old", "normal");
+				announcer.show("idle");
+				speak(player, "What?", "normal");
+				speak(player, "Being the new host?", "personality");
+				announcer.show("talking");
+				speak("Mariah Carey", "Exactly", "normal");
+				speak("Mariah Carey", "Enjoy your cyropod.|Not like you should need one.");
+				speak("Mariah Carey", "Lady Luck gave one already though right?", "thinking");
+				announcer.show("idle");
+				speak(player, "Yes, but it broke down after 1 year", "worried");
+				announcer.show("talking");
+				speak("Mariah Carey", "Gotcha");
 				announcer.show("idle");
 			case "Inventor":
 				speak("Lady Luck", "You did it! You actually won the wheel spin.", "normal");
