@@ -1,25 +1,24 @@
 // Obviously copied from inventor_christmassale right now
 var thisgenerator = "inventor_maintenance";
 var floor1countdowns = ["Eggnog", "Sceptre", "Chain Knife", "Steamstaff", "Revolver", "Pinball Machine", "Drumkit"];
-var jackpothelpers = ["Chaos Engineering", "Concatenate", "Increment", "Cooling Fan", "Fixed Payout", "Scrap Slingshot", "Scrap Trap"];
-var floor1crap = ["Flicker","Pocket Sand","Washcloth","Create Opening","Cherry Bomb","Chain Link","Ubernudge","Zoop Zoop","Loud Brostep","Burner Phone", "Crazy Glue"];
-var commonlist1 = ["Murk", "Tennis Racket", "Umbrella", "Sharpie", "Bronze Medal", "Stockpick", "Waltzer", "Safety Scissors", "Natural Charm", "Glue Pact", "Flamebringer", "Plasma Rifle"];
-var shoplist1 = ["Study", "Tennis Racket", "Scorpion", "Technology", "Rising Dagger", "Compact Resonator", "Burst Beam", "Repast Rapier", "Jester's Glove", "Hand Sanitiser", "Spin Attack", pick(["Eternal Cauldron","Plug Socket"]), "Metal Crusher", "Iron Helmet", "Two Handed Spatula", "Contact Juggling"];
-if (chance(30)) shoplist1.push("Gravity");
+var jackpothelpers = ["Chaos Engineering", "Concatenate", "Increment", "Cooling Fan", "Fixed Payout"];
+var floor1crap = ["Flicker","Pocket Sand","Washcloth","Create Opening","Chain Link","Ubernudge","Zoop Zoop","Loud Brostep", "Crazy Glue"];
+var commonlist1 = ["Tennis Racket", "Umbrella", "Sharpie", "Bronze Medal", "Stockpick", "Waltzer", "Safety Scissors", "Natural Charm", "Glue Pact", "Plasma Rifle"];
+var shoplist1 = ["Tennis Racket", "Scorpion", "Technology", "Rising Dagger", "Compact Resonator", "Burst Beam", "Repast Rapier", "Hand Sanitiser", "Spin Attack", pick(["Eternal Cauldron","Plug Socket"]), "Metal Crusher", "Iron Helmet", "Two Handed Spatula", "Contact Juggling"];
 if (chance(30)) shoplist1.push("Gavel");
-//if (chance(30)) shoplist1.push("Sledgehammer");
-var midtierdrops = ["Goggles", "Permapick", "Boston Basher", "Matchbook", "Technology", "God's Pick", pick(["Wispy Kaboom Smash", "Switchblade"]), "Tootsie Pop", "Energy Drink"];
-var floor3items = ["Vacuum", "Occam's Razor", "Dice Pump", "Tension", "Adamant Rail", pick(["Hall of Daggers", "Devilsknife"]), "Blastdice Potion", "Stop Sign", "Popcorn", "Gatling Pea", pick(["Reverse Emulation","Supersonic"]), "Ice Skates", "Zeus Dagger"];
-var commonlist2 = ["Return Bicep Curls", "Sneksword", "Ale Bat", "Waltzer", "The Monarch", "Janky Spanner", "Giga Drain", "Spirit Shield", pick(["Endless Pond", "Deva Form"]), "Present Shotgun", "Incapacitate", "Booster Pack", "Ubersaw", "Storm Reactor", "Stygian Blade", "Sand Hawk"];
+if (chance(30)) shoplist1.push("Sledgehammer");
+var midtierdrops = ["Goggles", "Permapick", "Boston Basher", "Matchbook", "Technology", "God's Pick", pick(["Wispy Kaboom Smash", "Switchblade"]), "Tootsie Pop"];
+var floor3items = ["Vacuum", "Occam's Razor", "Dice Pump", "Adamant Rail", pick(["Hall of Daggers", "Devilsknife"]), "Stop Sign", "Popcorn", "Gatling Pea", pick(["Reverse Emulation","Supersonic"]), "Ice Skates", "Zeus Dagger"];
+var commonlist2 = ["Return Bicep Curls", "Sneksword", "Ale Bat", "Waltzer", "The Monarch", "Janky Spanner", "Spirit Shield", "Present Shotgun", "Incapacitate", "Ubersaw", "Storm Reactor", "Stygian Blade", "Sand Hawk"];
 commonlist2.push(pick(jackpothelpers));
-var floor5items = ["Lucky Punch", "Russian Roulette", "Old Nail@2", "Rigged Outcome", "Mass Grimoire", "Betelgeuse"];
+var floor5items = ["Lucky Punch", "Russian Roulette", "Old Nail@2", "Rigged Calculate", "Betelgeuse"];
 var threeturnsitems = shuffle(["Tyrant's Glare", "Brimstone"]);
 floor5items.push(threeturnsitems.pop());
 if(chance(25)) floor5items.push(threeturnsitems.pop());
 
 var vampireitem = ["BOOO!"];
 
-var itempools = [floor1countdowns, jackpothelpers, floor1crap, commonlist1, shoplist1, midtierdrops, floor3items, commonlist2, floor5items, threeturnsitems, ["Gravity", "Gavel", "Eternal Cauldron", "Plug Socket", "Wispy Kaboom Smash", "Switchblade", "Hall of Daggers", "Devilsknife", "Reverse Emulation", "Supersonic", "Endless Pond", "Deva Form"]];
+var itempools = [floor1countdowns, jackpothelpers, floor1crap, commonlist1, shoplist1, midtierdrops, floor3items, commonlist2, floor5items, threeturnsitems, ["Gravity", "Gavel", "Eternal Cauldron", "Plug Socket", "Wispy Kaboom Smash", "Switchblade", "Hall of Daggers", "Devilsknife", "Reverse Emulation", "Supersonic"]];
 
 runscript("christmasspecial/checkgeneratorisaccurate",[itempools]);
 
@@ -93,7 +92,7 @@ otherstuff = [health()];
 goodotherstuff = [
   shop(shuffle([jackpothelpers.pop(),floor3items.pop(),floor3items.pop()]), shuffle([1, 2, 1]))
   shop(shuffle([commonlist2.pop(), commonlist2.pop(), commonlist2.pop()])),
-  shop(shuffle([midtierdrops.pop(),midtierdrops.pop(),midtierdrops.pop()]), shuffle([1, 2, 1])),
+  shop(shuffle([midtierdrops.pop(),"health",midtierdrops.pop()]), shuffle([1, 2, 1])),
   upgrade(),
   upgrade()
 ];
