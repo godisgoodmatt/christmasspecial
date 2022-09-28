@@ -47,7 +47,7 @@ function spinthewheel(sign, wheel, animation) {
 
 // ACTORS
 if (mariahannouncing) {
-	actor("Mariah Carey", screenwidthmid + 200, 100, Col.multiplylightness(Col.RED, 1.25), LEFT, TOP, "chat_inventor", "characters/misc/charicon_mariahcarey");
+	actor("Mariah Carey", screenwidthmid + 200, 100, Col.multiplylightness(Col.RED, 1.25), LEFT, TOP, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
 } else {
 	actor("Lady Luck", screenwidthmid + 200, 100, Col.YELLOW, LEFT, TOP, "chat_ladyluck", "characters/misc/charicon_ladyluck");
 }
