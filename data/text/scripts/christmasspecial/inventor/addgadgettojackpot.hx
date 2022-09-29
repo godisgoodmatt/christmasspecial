@@ -3,6 +3,8 @@ var e = args[0];
 
 if (!e.onceperbattle)
 {
+	self.getskillcard().animate("flash");
+	self.getskillcard().animation[self.getskillcard().animation.length - 1].addcommand("textparticle","New Gadget: " + e.gadget + "!",0xffffff);
 	e.animate("error"); 
 	sfx("roboterror"); 
 	e.ready = false; 

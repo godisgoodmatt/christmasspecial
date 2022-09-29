@@ -762,7 +762,7 @@ Power Up_upgraded,Deal [sword]<d6> extra dmg|with each attack this turn,1,inflic
 Forbidden Magic,Do [sword]<d6> damage[;]|inflict [curse]Curse,1,attack(d); inflict(CURSE); sfxdamage(target[;] d); sfx(~_curse~);,,REQUIRE1|REQUIRE1,,GRAY,change_power,change_power,,,0,NO,NO,id,1,,,,,,,,,,,
 Forbidden Magic_upgraded,Do [sword]<d6> damage[;]|inflict [curse]2 curse,1,attack(d); inflict(CURSE[;] 2); sfxdamage(target[;] d); sfx(~_curse~);,,REQUIRE1|REQUIRE1,,GRAY,,,,,0,NO,NO,id,,,,,,,,,,,,
 Forbidden Magic_downgraded,Do [sword]<d6> damage,1,attack(d) sfxdamage(target[;] d);,,REQUIRE1|REQUIRE1,,GRAY,,,,,0,NO,NO,id,,,,,,,,,,,,
-Regen Ale,Gain [regen]1 regen,1,inflictself(~Regen~[;] 1); sfx(~_cure~); if(self.hp > 1) self.hp -= 1;,Regenerative Ablity,REQUIRE2,,GREEN,change_power,change_power,,,0,YES,NO,id|regenitem,1,,,,,,,,,,,
+Regen Ale,Gain [regen]1 regen,1,inflictself(~Regen~[;] 1); sfx(~_cure~); if(self.hp > 1) self.hp -= 1;,Regenerative Ability,REQUIRE2,,GREEN,change_power,change_power,,,0,YES,NO,id|regenitem,1,,,,,,,,,,,
 Regen Ale_upgraded,Gain [regen]1 regen,1,inflictself(~Regen~[;] 1); sfx(~_cure~); if(self.hp > 1) self.hp -= 1;,,MAX3,,GREEN,,,,,0,YES,NO,id|regenitem,,,,,,,,,,,,
 Regen Ale_downgraded,Heal [heal]2 HP,1,attackself(-2); sfx(~_cure~);,,REQUIRE2,,GREEN,,,,,0,YES,NO,id|regenitem,,,,,,,,,,,,
 [END INDEED],,1,,,,,,,,,,0,NO,NO,internal|excludefromrandomlists,,,,,,,,,,,,
@@ -1728,7 +1728,7 @@ Diaphragm Reset_upgraded,Removes 1 of all notes,2,removestatusself(~rednote~[;] 
 Return Bicep Curls,Gain [recycle]Re-Equip?|Reroll the dice,1,inflictself(~alternate_reequipnext~); sfx(~_thinghappens~); givedice();,,DOUBLES|DOUBLES,,GREEN,change_power,change_power,,,0,YES,NO,,,,,,,,,,,,,
 Return Bicep Curls_upgraded,Gain [recycle]2 Re-Equip?|Reroll the dice,1,inflictself(~alternate_reequipnext~[;] 2); sfx(~_thinghappens~); givedice();,,DOUBLES|DOUBLES,,GREEN,,,,,0,YES,NO,,,,,,,,,,,,,
 Return Bicep Curls_downgraded,Gain [recycle]Re-Equip?|Give enemy [recycle]Re-Equip?,1,inflictself(~alternate_reequipnext~); inflict(~alternate_reequipnext~); sfx(~_thinghappens~);,,DOUBLES|DOUBLES,,GREEN,,,,,0,NO,NO,,,,,,,,,,,,,
-Eggnog,Heal [heal]2 health|Gain [regen]2 Regen|Become [drunk]Drunk,2,attackself(-2); inflictself(~Regen~); inflictself(~drunk~); sfx(~_cure~);,,COUNTDOWN,9,GREEN,twothirdcountdown,noeffect,,,0,YES,NO,,,,,,,,,,,,,
+Eggnog,Heal [heal]2 health|Gain [regen]2 Regen|Become [drunk]Drunk,2,attackself(-2); inflictself(~Regen~); inflictself(~drunk~); sfx(~_cure~);,Regenerative Ability,COUNTDOWN,9,GREEN,twothirdcountdown,noeffect,,,0,YES,NO,,,,,,,,,,,,,
 Chimney,Gain [gift]3 surprise gifts,1,var act = new motion.actuators.SimpleActuator(null|0.01|null); var s = new elements.DiceyScript(~inflictself(\~surprisegift\~[;]3);~); s.set(~inflictself~|inflictself);act.onComplete(s.execute|[self|target]); act.move(); sfx(~_cure~);,,REQUIRE2,,GREEN,simplify,doublerequirements,,,0,YES,NO,,,,,,,,,,,,,
 Null Object Reference,Do [sword]2 damage for every |8 pips in this countdown |at the end of each turn |Immune to error,2,,,COUNTDOWN,1,,change_power,change_power,,,0,NO,NO,errorimmune,,,,,,,,attack(e.remainingcountdown / 8 * 2); sfxdamage(target[;] e.remainingcountdown / 8 * 2);,,,,
 Null Object Reference_upgraded,Do [sword]2 damage for every |8 pips in this countdown |at the end of each turn |Immune to error,2,,,COUNTDOWN,8,,,,,,0,NO,NO,errorimmune,,,,,,,,attack(e.remainingcountdown / 8 * 2); sfxdamage(target[;] e.remainingcountdown / 8 * 2);,,,,
@@ -1766,5 +1766,5 @@ Major Adjustment_upgraded,Do [sword]<d6> damage if dice is <var:dice1>|or <var:d
 Boston Basher,Do [sword]<d6> damage[;] and|inflict [bleed]Bleed on everyone,2,attack(d); sfxdamage(target[;] d); inflict(~Bleed~[;]1); inflictself(~Bleed~[;]1); sfx(~_poison~);,Bitey Bitey,NORMAL|FREE1,,RED,reducesize,change_power,,,0,NO,NO,,,,,,,,,,,,,inflictself(~Bleed~[;]1);
 Boston Basher_downgraded,Do [sword]<d6> damage[;] but|inflict [bleed]Bleed on yourself,2,attack(d); sfxdamage(target[;] d); inflictself(~Bleed~[;]1); sfx(~_poison~);,Bitey Bitey,NORMAL|FREE1,,RED,,,,,0,NO,NO,,,,,,,,,,,,,inflictself(~Bleed~[;]1);
 Boston Basher_weakened,Do [sword]<d6> damage[;] but|inflict [bleed]Bleed on yourself,1,attack(d); sfxdamage(target[;] d); inflictself(~Bleed~[;]1); sfx(~_poison~);,Bitey Bitey,NORMAL|FREE1,,RED,,,,,0,NO,NO,,,,,,,,,,,,,inflictself(~Bleed~[;]1);
-Rigged Outcome,Autoroll immediately[;] but|enemy gains [fury]Fury[],1,robotroll(true); inflict(FURY); sfx(~_fury~);,Cheat,MIN4,F,PINK,simplify,change_power,,,0,YES,NO,,,,,,,,,,,,,
-Rigged Outcome_downgraded,Autoroll immediately[;] but|enemy gains 2 [fury]Fury[],1,robotroll(true); inflict(FURY[;]2); sfx(~_fury~);,Cheat,MIN4,,PINK,,,,,0,YES,NO,,,,,,,,,,,,,
+Rigged Calculate,Autoroll immediately[;] but|enemy gains [fury]Fury[],1,robotroll(true); inflict(FURY); sfx(~_fury~);,Cheat,MIN4,,PINK,simplify,change_power,,,0,YES,NO,,,,,,,,,,,,,
+Rigged Calculate_downgraded,Autoroll immediately[;] but|enemy gains 2 [fury]Fury[],1,robotroll(true); inflict(FURY[;]2); sfx(~_fury~);,Cheat,MIN4,,PINK,,,,,0,YES,NO,,,,,,,,,,,,,
