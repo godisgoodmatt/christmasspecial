@@ -2,7 +2,7 @@
 var self = args[0];
 var e = args[1];
 
-if (self.getvar("rollhistory").length < self.getvar("numrolls")) {
+if (self.getvar("rollhistory").length < self.getvar("numrolls") && self.getvar("stop") == 0) {
 
 	var rolls = rand(self.getvar("rolls"));
 	givedice([rolls]);

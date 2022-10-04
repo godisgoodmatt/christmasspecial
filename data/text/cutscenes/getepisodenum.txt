@@ -1,0 +1,25 @@
+// In every episode, the start game script runs the "christmasspecial/setepisodenum"
+// script, with the correct episode number as argument.
+// That creates an actuator with the episode number stored in it, adds the actuator
+// to a global list of actuators, and does some trickery to ensure the actuator stays
+// there and doesn't do anything.
+// When a cutscene runs, it sets the "episodeover" variable and runs this script.
+// Here, we find the global list of actuators, search for the one we put in,
+// record the episode number, and remove the actuator from the global list if the episode is over.
+// Near as I can tell, this is the only way to communicate between a cutscene and
+// any other type of script.
+var acts = Actuate.defaultActuator.actuators;
+var episodenum = 0;
+var i = 0;
+while (i < acts.length) {
+	if (acts[i].target == "episodenum") {
+		episodenum = acts[i].properties;
+        if (episodeover) {
+		    acts.splice(i, 1);
+        } else {
+            i++;
+        }
+	} else {
+        i++;
+    }
+}
