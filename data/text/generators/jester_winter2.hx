@@ -1,14 +1,34 @@
-var jestershops = shuffle(["Doom and Gloom", "Pip Master", "Christmas Pistol","Blighted Zap", "Christmas Revolver", "Nine Iron", "Shrug", "Gatling Pea", "Brace", "Pocket Protector", "Electric Arc", "Rock Crusher", "Dime", "Bloody Drill", "Power Glove", "Frosty Bufu", "Dynamite Shotgun", "Sandbag", "Asklepios", "Matchbook"]);
-var strangeshop = shuffle(["Bet", "Wide Spatula", "Ice Skates", "Quake Sigma", "Sickle", "Dazzler", "Cactus Cauldron"]);
-var awesomelist = shuffle(["Doom and Gloom", "Christmas Pistol","Countvalanche", "Roulette", "AC Unit", "Christmas Revolver", "Flame Lance", "Poison Sting", "Power Glove", "Ukulele", "Shovel Blade", "Lucky Punch"]);
-var floor2gooditem = shuffle(["Budge", "Pip Master"]);
-var floor3item = shuffle(["Parry", "Double Parry", "Lightreaver", "Minigun", "Shielding Potion", "The Monarch", "Innovate"]);
-var floor5item = shuffle(["Parrying Sword", "Parrying Claw", "Locket", "False Swipe", "The Monarch", "Biohazard"]);
-var vampireitem = ["Silver Sword"];
+var boosters = [
+"Call for Backup Inventor",
+"Call for Backup Witch",
+"Spare 1, Spare 2, Spare 3, Spare 4, Spare 5, Spare 6"
+"Call for Backup Robot?"
+"Call for Backup Thief"
+"Cauldron"
+];
 
-var itempools = [jestershops, strangeshop, awesomelist, floor2gooditem, floor3item, floor5item, vampireitem];
+//Adding ridiculous amounts of items to booster packs:
+
+
+for (x in 0...79) {
+boosters[0] = boosters[0] + ",Call for Backup Inventor";
+boosters[1] = boosters[1] + ",Call for Backup Witch";
+boosters[3] = boosters[3] + ",Call for Backup Robot?";
+boosters[4] = boosters[4] + ",Call for Backup Thief";
+boosters[5] = boosters[5] + ",Cauldron";
+}
+
+
+for (x in 0...12) {
+boosters[2] = boosters[2] + ",Spare 1, Spare 2, Spare 3, Spare 4, Spare 5, Spare 6";
+}
+trace(boosters);
+
+
+var itempools = [boosters];
 
 usestandardenemies();
+
 
 var items = [];
 var gooditems = [];
@@ -27,21 +47,19 @@ mycoolfloor1.generate();
 //Floor 2:
 items = [];
 gooditems = [];
-otherstuff = [health()];
-goodotherstuff = [shop(["upgrade", "delete", "delete"])];
+otherstuff = [];
+goodotherstuff = [health()];
 var mycoolfloor2 = addfloor('small').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
 mycoolfloor2.theme = rand(['xmas1']);
 mycoolfloor2.generate();
 
 //Floor 3:
 items = [];
-gooditems = [];
+gooditems = [boosters.pop()];
 
 otherstuff = [health()];
 
 goodotherstuff = [
-  shop(["delete", "delete", "delete"]),
-  upgrade()
 ];
 var mycoolfloor3 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
 mycoolfloor3.theme = rand(['xmas2']);
@@ -49,12 +67,10 @@ mycoolfloor3.generate();
   
 //Floor 4:
 items = [];
-gooditems = [];
+gooditems = [boosters.pop()];
 
 otherstuff = [health()];
-goodotherstuff = [
-  shop(["upgrade", "delete", "delete"])
-];
+goodotherstuff = [];
 
 var mycoolfloor4 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
 mycoolfloor4.theme = rand(['xmas3']);
@@ -62,12 +78,11 @@ mycoolfloor4.generate();
   
 //Floor 5:
 items = [];
-gooditems = [];
+gooditems = [boosters.pop()];
 
 otherstuff = [];
 goodotherstuff = [
-  upgrade(),
-  shop(["health", "delete", "health"], [4, 4, 4])
+  health(),health()
 ];
 
 var mycoolfloor5 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
