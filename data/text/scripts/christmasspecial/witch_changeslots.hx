@@ -4,14 +4,19 @@ var reset = args[1];
 var beforestartturn = args[2];
 
 for(e in self.getcurrentequipment()) {
+    var upgraded = e.namemodifier == '+';
+    var upgradeType = new elements.Equipment(e.name).upgradetype;
+    trace(upgradeType + " " + upgraded);
 
 	if (e.varexists("oldslots") && beforestartturn) {
 		e.changeslots(e.getvar("oldslots"));
 	}
 
 	var position = ((e.column * 2) + e.row + 1);
+	var size = e.size;
 
 	if (e.slots[0] == "COMBINATION") {
+		// Case of combination
 		var res = -1;
 		for (i in 0...e.tags.length) {
 			res = e.tags[i].indexOf("combination:");
@@ -36,6 +41,7 @@ for(e in self.getcurrentequipment()) {
 			e.setvar("combination",combo);
 		}
 	} else if (e.slots.length > 1) {
+		// Case of multiple dice slots
 		var strictmode = true;
 		for (s in e.slots) {
 			if (s == "DOUBLES") {
@@ -65,6 +71,17 @@ for(e in self.getcurrentequipment()) {
 			}
 		}
 	} else {
-		e.changeslots(["REQUIRE" + position]);
+		if (upgraded && (upgradeType == "simplify" || upgradeType == "increaserange")) {
+			// Upgrade requirements for any equipment that gets upgraded via simplify/complicate usually
+			if (position % 2 == 0) {
+				e.changeslots(["EVEN"]);
+			}
+			else {
+				e.changeslots(["ODD"]);
+			}
+		} else {
+			// Basic case: one dice slot
+			e.changeslots(["REQUIRE" + position]);
+		}
 	}
 }
