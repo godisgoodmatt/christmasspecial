@@ -1789,3 +1789,5 @@ Smuggled Dagger,Do [sword]2 damage|[gray](reusable),2,attack(2); sfxdamage(targe
 Smuggled Dagger@skill,Do [sword]2 damage|[gray](reusable),2,attack(2); sfxdamage(target[;] 2);,Catapult,MAX5,,RED,reducesize,noeffect,,,-1,NO,NO,excludefromrandomlists|skillcard,,,,,,,,,,,,
 Smuggled Sword,Do [sword]<d6> damage|[gray](reusable),2,attack(d); sfxdamage(target[;] d);,Catapult,MAX5,,RED,reducesize,noeffect,,,2,NO,NO,excludefromrandomlists|skillcard|skill:Smuggled Sword@skill,,,,,,,,,,,,
 Smuggled Sword@skill,Do [sword]<d6> damage|[gray](reusable),2,attack(d); sfxdamage(target[;] d);,Catapult,MAX5,,RED,reducesize,noeffect,,,2,NO,NO,excludefromrandomlists|skillcard,,,,,,,,,,,,
+Bit Flip,You take damage for|dice under 6 instead.,2,,Catapult,,,YELLOW,reducesize,noeffect,,,0,NO,NO,excludefromrandomlists|skillcard|skill:Bit Flip@skill,,,,self.setvar(~ll2statusoverride~[;]1);,inflictself(~alternate_anticheat~);,,,,,,,
+Bit Flip@skill,You take damage for|dice under 6 instead.,2,,Catapult,,,YELLOW,reducesize,noeffect,,,0,NO,NO,excludefromrandomlists|skillcard,,,,self.setvar(~ll2statusoverride~[;]1);,inflictself(~alternate_anticheat~);,,,,,,,
