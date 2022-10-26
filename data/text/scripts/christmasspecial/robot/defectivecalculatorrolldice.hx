@@ -14,6 +14,8 @@ if (self.getvar("rollhistory").length < self.getvar("numrolls") && self.getvar("
 		inflictself("ncr_error");
 		sfx("_curse");
 		self.getvar("survivalhistory").push(false);
+		self.setvar("errorsthisturnx2",self.getvar("errorsthisturnx2")+2);
+		self.setvar("errorsthisturnx2+2",self.getvar("errorsthisturnx2+2")+2);
 	} else {
 		self.getvar("survivalhistory").push(true);
 	}

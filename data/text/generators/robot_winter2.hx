@@ -1,4 +1,4 @@
-var awesomelist = shuffle(["Chocolate Bar", "Eggnog", "Return Bicep Curls@robot", "Prediction Interval", "Target", "Integer Overflow", "Raw Damage Output", "Terminal Illness"]);
+var awesomelist = shuffle(["Chocolate Bar", "Eggnog", "Return Bicep Curls@robot", "Prediction Interval", "Target", "Integer Overflow", "Raw Damage Output", "Terminal Illness","Bad Gateway Drug"]);
 var needs = shuffle(["Bug Fixes", "Lantern", "Normal Integer", "Null Object Reference", "Perfected Dice", "Dark Matter"]);
 var dice = shuffle(["Spanner@robot", "Multiply", "Bump@robot", "Nudge@robot", "Probablity Question"]);
 var dam = shuffle(["Primal Punch", "Double Trouble", "Black Hole", "Bolts And Screws", "Backwards Logic", "Nerfed Gun", "Reverse Calculations", "Major Adjustment"]);
