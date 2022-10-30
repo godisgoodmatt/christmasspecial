@@ -1,4 +1,4 @@
-// Obviously copied from inventor_christmassale right now
+// Inventor Episode 2: Maintenance Protocols
 var thisgenerator = "inventor_maintenance";
 var floor1countdowns = ["Eggnog", "Sceptre", "Chain Knife", "Steamstaff", "Revolver", "Pinball Machine", "Drumkit"];
 var jackpothelpers = ["Chaos Engineering", "Concatenate", "Increment", "Cooling Fan", "Fixed Payout"];
