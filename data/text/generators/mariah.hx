@@ -1,9 +1,9 @@
-var notes = shuffle(["Soft Palette","Sharp Palette","Another Song","Dark Song","Christmas Jingle"]);
-var remove = [];
-var misc = [];
+var notes = shuffle(["Broken Chord","Holding The Note","What Is That Melody?","Emotions","Opera"]);
+var misc = ["Duet"];
+var finale = ["Curtain Call"];
 var vampireitem = ["Silver Sword"];
 
-var itempools = [notes, remove, misc, vampireitem];
+var itempools = [notes, misc, vampireitem];
 
 runscript("christmasspecial/checkgeneratorisaccurate",[itempools]);
 
@@ -26,7 +26,7 @@ mycoolfloor1.generate();
 
 //Floor 2:
 items = [notes.pop()];
-gooditems = [];
+gooditems = [finale.pop()];
 otherstuff = [health()];
 goodotherstuff = [];
 var mycoolfloor2 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
@@ -36,11 +36,11 @@ mycoolfloor2.generate();
 
 //Floor 3:
 items = [notes.pop()];
-gooditems = [];
+gooditems = [misc.pop()];
 otherstuff = [health(), health()];
 
 goodotherstuff = [
-  shop(["health", "health", "health"], [4, 4, 4])
+  shop(["health", "upgrade", "health"], [4, 4, 4])
 ];
 var mycoolfloor3 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
 mycoolfloor3.theme = rand(['music_ladyluck1']);
@@ -60,11 +60,11 @@ mycoolfloor4.generate();
   
 //Floor 5:
 items = [notes.pop()];
-gooditems = [];
+gooditems = [notes.pop()];
 
 otherstuff = [health(), health()];
 goodotherstuff = [
-  shop(["health", "health", "health"], [4, 4, 4])
+  shop(["health", "health", "upgrade"], [4, 4, 4])
 ];
 
 var mycoolfloor5 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
