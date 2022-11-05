@@ -1,4 +1,4 @@
-var ladyearly = shuffle(["Spare 1@ll2","Smuggled Dagger","Smuggled Sword"]);
+var ladyearly = shuffle(["Spare 1@ll2","Smuggled Dagger","Smuggled Sword","Divine Clod"]);
 var ladylate = shuffle(["Spare Snake","Bit Flip"]);
 var strangeshop = [];
 var awesomelist = [];
