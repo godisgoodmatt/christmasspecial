@@ -1,4 +1,4 @@
-var notes = shuffle(["Dark Song","Healthy Song","Holding The Note","Emotions","Opera","Another Song","Mic Check"]);
+var notes = shuffle(["Dark Song","Healthy Song","Holding The Note","Emotions","Opera","Another Song","Mic Check","Pitch Poison","Killer Karaoke"]);
 var misc = ["Duet"];
 var finale = ["Curtain Call"];
 var vampireitem = ["Silver Sword"];
