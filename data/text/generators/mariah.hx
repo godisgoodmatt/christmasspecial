@@ -1,4 +1,4 @@
-var notes = shuffle(["Broken Chord","Holding The Note","What Is That Melody?","Emotions","Opera"]);
+var notes = shuffle(["Dark Song","Healthy Song","Holding The Note","Emotions","Opera","Another Song","Mic Check"]);
 var misc = ["Duet"];
 var finale = ["Curtain Call"];
 var vampireitem = ["Silver Sword"];
@@ -20,7 +20,7 @@ gooditems = [];
 otherstuff = [];
 goodotherstuff = [];
 var mycoolfloor1 = addfloor('tiny').additems(items, gooditems);
-mycoolfloor1.theme = rand(['music_ladyluck2']);
+mycoolfloor1.theme = rand(['music_mariahlow']);
 mycoolfloor1.setlocation("GAMESHOW");
 mycoolfloor1.generate();
 
@@ -43,7 +43,7 @@ goodotherstuff = [
   shop(["health", "upgrade", "health"], [4, 4, 4])
 ];
 var mycoolfloor3 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
-mycoolfloor3.theme = rand(['music_ladyluck1']);
+mycoolfloor3.theme = rand(['music_mariahlow']);
 mycoolfloor3.setlocation("GAMESHOW");
 mycoolfloor3.generate();
 
@@ -51,24 +51,24 @@ mycoolfloor3.generate();
 items = [notes.pop()];
 gooditems = [];
 
-otherstuff = [health(), health()];
+otherstuff = [health()];
 goodotherstuff = [];
 var mycoolfloor4 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
-mycoolfloor4.theme = rand(['music_ladyluck1']);
+mycoolfloor4.theme = rand(['music_mariahlow']);
 mycoolfloor4.setlocation("GAMESHOW");
 mycoolfloor4.generate();
   
 //Floor 5:
 items = [notes.pop()];
-gooditems = [notes.pop()];
+gooditems = [];
 
-otherstuff = [health(), health()];
+otherstuff = [health()];
 goodotherstuff = [
   shop(["health", "health", "upgrade"], [4, 4, 4])
 ];
 
 var mycoolfloor5 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
-mycoolfloor5.theme = rand(['music_ladyluck3']);
+mycoolfloor5.theme = rand(['music_mariahlow']);
 mycoolfloor5.setlocation("GAMESHOW");
 mycoolfloor5.generate();
 
