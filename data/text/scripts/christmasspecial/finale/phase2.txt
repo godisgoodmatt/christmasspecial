@@ -2,4 +2,5 @@ Divine Dagger@LL,Backstab@LL
 Pip Master,Pip Master,Divine Snap
 Cape Deflect,Cape Deflect,Charge!
 Divine Throwing Axe,Divine Incantation
-Tennis Racket
+Tennis Racket,Divine Ooze
+Ballad Of Fire And Ice,Ballad Of Fire And Ice

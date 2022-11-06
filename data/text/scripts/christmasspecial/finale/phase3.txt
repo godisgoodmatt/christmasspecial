@@ -2,4 +2,5 @@ Pip Master,Pip Master,Divine Storm,Lie,Lie
 Divine Megaphone
 Dark Shadow,Dark Shadow
 Broadsword,Sword,Dagger
-Divine Ooze,Tennis Racket,Lie,Lie
+Tennis Racket,Lie,Lie,Lie,Lie
+Pip Master,What Is That Melody?,Pip Master
