@@ -1,5 +1,5 @@
-var ladyearly = shuffle(["Spare 1@ll2","Smuggled Dagger","Smuggled Sword","Divine Clod","Pocket Rocket"]);
-var ladylate = shuffle(["Spare Snake","Bit Flip"]);
+var ladymain = shuffle(["Spare Snake","Smuggled Dagger","Smuggled Sword","Divine Clod","Pocket Rocket"]);
+var ladyinteresting = shuffle(["Bit Flip"]);
 var strangeshop = [];
 var awesomelist = [];
 var floor2gooditem = [];
@@ -7,7 +7,7 @@ var floor3item = [];
 var floor5item = [];
 var vampireitem = ["Silver Sword"];
 
-var itempools = [ladyearly, strangeshop, awesomelist, floor2gooditem, floor3item, floor5item, vampireitem];
+var itempools = [ladymain, strangeshop, awesomelist, floor2gooditem, floor3item, floor5item, vampireitem];
 
 runscript("christmasspecial/checkgeneratorisaccurate",[itempools]);
 
@@ -19,7 +19,7 @@ var otherstuff = [];
 var goodotherstuff = [];
 
 //Floor 1:
-items = [ladyearly.pop()];
+items = [ladymain.pop()];
 gooditems = [];
 otherstuff = [];
 goodotherstuff = [];
@@ -29,7 +29,7 @@ mycoolfloor1.setlocation("GAMESHOW");
 mycoolfloor1.generate();
 
 //Floor 2:
-items = [];
+items = [ladymain.pop()];
 gooditems = [];
 otherstuff = [health()];
 goodotherstuff = [];
@@ -39,8 +39,8 @@ mycoolfloor2.setlocation("GAMESHOW");
 mycoolfloor2.generate();
 
 //Floor 3:
-items = [ladyearly.pop()];
-gooditems = [];
+items = [];
+gooditems = [ladymain.pop()];
 otherstuff = [health(), health()];
 
 goodotherstuff = [];
@@ -50,18 +50,18 @@ mycoolfloor3.setlocation("GAMESHOW");
 mycoolfloor3.generate();
 
 //Floor 4:
-items = [ladylate.pop()];
+items = [ladymain.pop()];
 gooditems = [];
 
-otherstuff = [health(), health()];
-goodotherstuff = [];
+otherstuff = [health()];
+goodotherstuff = [shop(["Health", ladyinteresting.pop()],[4,4])];
 var mycoolfloor4 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
 mycoolfloor4.theme = rand(['music_ladyluck1']);
 mycoolfloor4.setlocation("GAMESHOW");
 mycoolfloor4.generate();
   
 //Floor 5:
-items = [ladylate.pop()];
+items = [ladymain.pop()];
 gooditems = [];
 
 otherstuff = [health(), health()];
