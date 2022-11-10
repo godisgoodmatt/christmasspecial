@@ -62,7 +62,7 @@ mariahcarey_big.show("talking-sly", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
 speak("Mariah Carey", "Well, can't I have more than 1 fandom?");
 mariahcarey_big.show("talking", true);
-speak("Mariah Carey", "Is there anyway I can prove I'm a fan of yours?", "normal");
+speak("Mariah Carey", "Is there any way I can prove I'm a fan of yours?", "normal");
 mariahcarey_big.show("idle", true);
 
 jester.show("idle");
@@ -76,7 +76,7 @@ speak("jester", "I want 2 of every card in the show!", "action");
 
 mariahcarey_big.show("talking-scary", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.RED, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "[red]YOUR JOKING RIGHT?", "normal");
+speak("Mariah Carey", "[red]YOU'RE JOKING, RIGHT?", "normal");
 mariahcarey_big.show("talking-confused", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
 speak("Mariah Carey", "I mean, it's just a lot of work.");
