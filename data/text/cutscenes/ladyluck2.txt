@@ -1,0 +1,87 @@
+// SETUP
+
+setdatapath("data/graphics/cutscenes/intro/");
+addbackground("intro_stage", {animation: "background_stage.json", pack: "background_stage.pck"});
+#include mariahcareybiggraphics.txt
+
+setdatapath("data/graphics/cutscenes/ladyluck/");
+
+var jestergraphics = {
+	idle: {
+		animation: "ladyluck_idle.json",
+		pack: "lady luck.pck",
+		loop: true
+	},
+	worried_idle: {
+		animation: "ladyluck_idle.json",
+		pack: "lady luck.pck",
+		loop: true
+	},
+	transform: {
+		animation: "ladyluck_transform.json",
+		pack: "lady luck.pck",
+		speed: 2,
+		loop: false
+	}
+}
+var jester = addsprite("lady", 1, jestergraphics);
+
+// HELPER FUNCTIONS	
+
+var fade_time = 0.4;
+
+// ACTORS
+actor("Mariah Carey", screenwidthmid + 800, 550, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
+actor("Lady Luck", screenwidthmid + 200, 200, Col.RED, RIGHT, TOP, "chat_ladyluck", "characters/lady luck/charicon_lady_luck");
+
+// INTRO
+
+play("music_cutscene_cheery");
+
+jester.scale = 0.5;
+jester.x = 2700 - ((jester.getwidth("idle") * jester.scale) / 2);
+jester.y = 800;
+changebackground("intro_stage");
+fadein();
+jester.show("idle");
+
+mariahcarey_big.x = -screenwidth;
+mariahcarey_big.show("idle");
+Actuate.tween(mariahcarey_big, 2, { x: 0 }).ease(Expo.easeOut);
+play("cutscene_audience");
+
+wait(0.5);
+
+mariahcarey_big.show("talking-sly", true);
+actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
+speak("Mariah Carey", "Please welcome back Lady Luck,|for her second edgy phase!");
+mariahcarey_big.show("idle-sly", true);
+
+actor("Lady Luck", screenwidthmid + 800, 200, Col.RED, RIGHT, TOP, "chat_ladyluck", "characters/lady luck/charicon_lady_luck");
+speak("Lady Luck", "Ha-ha.", "normal");
+speak("Lady Luck", "So, another of these, huh?|What’s the twist this time?");
+
+mariahcarey_big.show("talking", true);
+speak("Mariah Carey", "Well, we’ve been reading fan letters from last|Christmas, and we had reports you were…");
+mariahcarey_big.show("talking-scary", true);
+speak("Mariah Carey", "[red]CHEATING.", "normal");
+mariahcarey_big.show("idle-scary", true);
+
+speak("Lady Luck", "What? How dare they.");
+speak("Lady Luck", "I make a whole game show for them|and this is how they treat me?");
+
+mariahcarey_big.show("talking", true);
+speak("Mariah Carey", "Well, that stops now!");
+mariahcarey_big.show("talking-sly", true);
+speak("Mariah Carey", "Using new, revolutionary dice-tracking technology,|after your turn we’ll punish you for|every cheat we detect!");
+mariahcarey_big.show("idle-sly", true);
+
+speak("Lady Luck", "So I just have to hide all the|evidence by the end of my turn?");
+
+mariahcarey_big.show("talking-confused", true);
+speak("Mariah Carey", "What?", "normal");
+mariahcarey_big.show("idle-confused", true);
+
+speak("Lady Luck", "…I mean, ohhhhh noooo! Whatever will I do now?");
+
+startgamefromcutscene();
