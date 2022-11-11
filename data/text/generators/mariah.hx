@@ -1,9 +1,9 @@
-var notes = shuffle(["Dark Song","Healthy Song","Holding The Note","Emotions","Opera","Another Song","Mic Check","Pitch Poison","Killer Karaoke"]);
-var misc = ["Duet"];
+var notes = shuffle(["Dark Song","Healthy Song","Holding The Note","Emotions","Opera","Another Song"]);
+var latenotes = ["Duet","Mic Check","Pitch Poison","Killer Karaoke"];
 var finale = ["Curtain Call"];
 var vampireitem = ["Silver Sword"];
 
-var itempools = [notes, misc, vampireitem];
+var itempools = [notes, latenotes, vampireitem];
 
 runscript("christmasspecial/checkgeneratorisaccurate",[itempools]);
 
@@ -36,7 +36,7 @@ mycoolfloor2.generate();
 
 //Floor 3:
 items = [notes.pop()];
-gooditems = [misc.pop()];
+gooditems = [latenotes.pop()];
 otherstuff = [health(), health()];
 
 goodotherstuff = [
@@ -48,7 +48,7 @@ mycoolfloor3.setlocation("GAMESHOW");
 mycoolfloor3.generate();
 
 //Floor 4:
-items = [notes.pop()];
+items = [latenotes.pop()];
 gooditems = [];
 
 otherstuff = [health()];
@@ -59,7 +59,7 @@ mycoolfloor4.setlocation("GAMESHOW");
 mycoolfloor4.generate();
   
 //Floor 5:
-items = [notes.pop()];
+items = [latenotes.pop()];
 gooditems = [];
 
 otherstuff = [health()];
