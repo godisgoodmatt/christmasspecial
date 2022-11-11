@@ -37,7 +37,7 @@ mycoolfloor2.generate();
 //Floor 3:
 items = [notes.pop()];
 gooditems = [latenotes.pop()];
-otherstuff = [health(), health()];
+otherstuff = [health()];
 
 goodotherstuff = [
   shop(["health", "upgrade", "health"], [4, 4, 4])

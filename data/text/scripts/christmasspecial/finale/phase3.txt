@@ -1,6 +1,6 @@
 Pip Master,Pip Master,Divine Storm,Lie,Lie
 Divine Megaphone
 Dark Shadow,Dark Shadow
-Broadsword,Sword,Dagger
+Broadsword,Sword,Backstab
 Tennis Racket,Lie,Lie,Lie,Lie
 Pip Master,What Is That Melody?,Pip Master

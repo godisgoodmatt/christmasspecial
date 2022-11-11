@@ -1,4 +1,4 @@
-Divine Dagger@LL,Backstab@LL
+Divine Dagger@LL,Backstab,Backstab
 Pip Master,Pip Master,Divine Snap
 Cape Deflect,Cape Deflect,Charge!
 Divine Throwing Axe,Divine Incantation
