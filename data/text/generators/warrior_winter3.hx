@@ -17,11 +17,9 @@ gooditems = [awesomelist.pop()];
 otherstuff = [];
 goodotherstuff = [];
 
-addfloor("tiny")
-  .additems(items, gooditems)
-  .addotherstuff(otherstuff, goodotherstuff)
-  .setmusic(rand(combatmusic))
-  .generate();
+var mycoolfloor1 = addfloor('tiny').additems(items, gooditems);
+mycoolfloor1.theme = rand([music.pop()]);
+mycoolfloor1.generate();
 
 //Floor 2:
 items = [];
@@ -29,11 +27,10 @@ gooditems = [awesomelist.pop()];
 otherstuff = [health()];
 goodotherstuff = [shop([awesomelist.pop(), awesomelist.pop(), awesomelist.pop()])];
 
-addfloor("small")
-  .additems(items, gooditems)
-  .addotherstuff(otherstuff, goodotherstuff)
-  .setmusic(rand(combatmusic))
-  .generate();
+
+var mycoolfloor2 = addfloor('small').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
+mycoolfloor2.theme = rand([music.pop()]);
+mycoolfloor2.generate();
 
 //Floor 3:
 items = [];
@@ -47,11 +44,9 @@ goodotherstuff = [
   upgrade()
 ];
 
-addfloor("normal")
-  .additems(items, gooditems)
-  .addotherstuff(otherstuff, goodotherstuff)
-  .setmusic(rand(combatmusic))
-  .generate();
+var mycoolfloor3 = addfloor('normal').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
+mycoolfloor3.theme = rand([music.pop()]);
+mycoolfloor3.generate();
   
 //Floor 4:
 items = [];
@@ -62,11 +57,9 @@ goodotherstuff = [
   trade(["any"], [awesomelist.pop()])
 ];
 
-addfloor("normal")
-  .additems(items, gooditems)
-  .addotherstuff(otherstuff, goodotherstuff)
-  .setmusic(rand(combatmusic))
-  .generate();
+var mycoolfloor4 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
+mycoolfloor4.theme = rand([music.pop()]);
+mycoolfloor4.generate();
   
 //Floor 5:
 items = [];
@@ -79,11 +72,9 @@ goodotherstuff = [
   shop(["health", strangeshop.pop(), "upgrade"], [4, 4, 4])
 ];
 
-addfloor("big")
-  .additems(items, gooditems)
-  .addotherstuff(otherstuff, goodotherstuff)
-  .setmusic(rand(combatmusic))
-  .generate();
+var mycoolfloor5 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
+mycoolfloor5.theme = rand([music.pop()]);
+mycoolfloor5.generate();
 
 //Floor 6:
 items = [];

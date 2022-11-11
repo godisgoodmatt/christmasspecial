@@ -21,10 +21,9 @@ gooditems = ["Ghostly Flame Spell","Fortify Spell"];
 otherstuff = [];
 goodotherstuff = [];
 
-addfloor("tiny")
-  .additems(items, gooditems)
-  .addotherstuff(otherstuff, goodotherstuff)
-  .generate();
+var mycoolfloor1 = addfloor('tiny').additems(items, gooditems);
+mycoolfloor1.theme = rand([music.pop()]);
+mycoolfloor1.generate();
 
 //Floor 2:
 items = [];
@@ -32,10 +31,9 @@ gooditems = [pick(["Budge", "Pip Master"])];
 otherstuff = [health()];
 goodotherstuff = [shop([warriorshops.pop(), warriorshops.pop(), warriorshops.pop()])];
 
-addfloor("small")
-  .additems(items, gooditems)
-  .addotherstuff(otherstuff, goodotherstuff)
-  .generate();
+var mycoolfloor2 = addfloor('small').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
+mycoolfloor2.theme = rand([music.pop()]);
+mycoolfloor2.generate();
 
 //Floor 3:
 items = [];
@@ -49,10 +47,9 @@ goodotherstuff = [
   upgrade()
 ];
 
-addfloor("normal")
-  .additems(items, gooditems)
-  .addotherstuff(otherstuff, goodotherstuff)
-  .generate();
+var mycoolfloor3 = addfloor('normal').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
+mycoolfloor3.theme = rand([music.pop()]);
+mycoolfloor3.generate();
   
 //Floor 4:
 items = [];
@@ -63,10 +60,9 @@ goodotherstuff = [
   trade(["any"], [awesomelist.pop()])
 ];
 
-addfloor("normal")
-  .additems(items, gooditems)
-  .addotherstuff(otherstuff, goodotherstuff)
-  .generate();
+var mycoolfloor4 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
+mycoolfloor4.theme = rand([music.pop()]);
+mycoolfloor4.generate();
   
 //Floor 5:
 items = [];
@@ -79,10 +75,9 @@ goodotherstuff = [
   shop(["health", strangeshop.pop(), "health"], [4, 4, 4])
 ];
 
-addfloor("big")
-  .additems(items, gooditems)
-  .addotherstuff(otherstuff, goodotherstuff)
-  .generate();
+var mycoolfloor5 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
+mycoolfloor5.theme = rand([music.pop()]);
+mycoolfloor5.generate();
 
 //Floor 6:
 items = [];
