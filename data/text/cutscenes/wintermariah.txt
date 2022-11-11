@@ -114,7 +114,7 @@ speak("Mariah", "I thought it would be a fun twist!");
 
 ladyluck_big.show("talking-scary", true);
 actor("Lady Luck", screenwidthmid + 240, screenheightmid - 240, Col.YELLOW, RIGHT, BOTTOM, "chat_ladyluck", "characters/misc/charicon_ladyluck");
-speak("Lady Luck", "Well, too bad, beacuse now it's your turn.", "scary");
+speak("Lady Luck", "Well, too bad, because now it's your turn.", "scary");
 ladyluck_big.show("idle-scary", true);
 
 speak("Mariah", "Wait, you don't have to do this!", "normal");
