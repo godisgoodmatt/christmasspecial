@@ -54,7 +54,7 @@ gooditems = [];
 otherstuff = [health()];
 goodotherstuff = [];
 var mycoolfloor4 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
-mycoolfloor4.theme = rand(['music_mariahlow']);
+mycoolfloor4.theme = rand(['music_mariahhigh']);
 mycoolfloor4.setlocation("GAMESHOW");
 mycoolfloor4.generate();
   
@@ -68,7 +68,7 @@ goodotherstuff = [
 ];
 
 var mycoolfloor5 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
-mycoolfloor5.theme = rand(['music_mariahlow']);
+mycoolfloor5.theme = rand(['music_mariahhigh']);
 mycoolfloor5.setlocation("GAMESHOW");
 mycoolfloor5.generate();
 
