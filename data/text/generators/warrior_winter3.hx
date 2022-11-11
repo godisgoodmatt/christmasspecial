@@ -2,7 +2,7 @@ var awesomelist = shuffle(["Bump", "Bump", "Nudge", "Nudge", "Spatula", "Spatula
 var strangeshop = shuffle(["Backup Plan", "Pocket Rock"]);
 var vampireitem = ["Silver Sword"];
 
-var combatmusic = ['xmas1', 'xmas2', 'xmas3', 'xmas6'];
+var music = shuffle(['xmas1', 'xmas2', 'xmas3', 'xmas10', 'xmas6']);
 
 usestandardenemies();
 

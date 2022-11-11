@@ -17,7 +17,7 @@ floor5items.push(threeturnsitems.pop());
 if(chance(25)) floor5items.push(threeturnsitems.pop());
 
 var vampireitem = ["BOOO!"];
-
+var music = shuffle(['xmas1', 'xmas2', 'xmas3', 'xmas10', 'xmas6']);
 var itempools = [floor1countdowns, scrapitems, floor1crap, commonlist1, shoplist1, midtierdrops, floor3items, commonlist2, floor5items, threeturnsitems, ["Gravity", "Gavel", "Eternal Cauldron", "Plug Socket", "Wispy Kaboom Smash", "Switchblade", "Hall of Daggers", "Devilsknife", "Reverse Emulation", "Supersonic", "Endless Pond", "Deva Form"]];
 
 runscript("christmasspecial/checkgeneratorisaccurate",[itempools]);
@@ -67,7 +67,7 @@ goodotherstuff = [
   shop(shuffle([scrapitems.pop(),scrapitems.pop(),scrapitems.pop()]), shuffle([1, 2, 1]))
 ];
 var mycoolfloor1 = addfloor('inventorlarge').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
-mycoolfloor1.theme = rand(['xmas1']);
+mycoolfloor1.theme = rand([music.pop()]);
 mycoolfloor1.generate();
   
 //Floor 2:
@@ -86,7 +86,7 @@ goodotherstuff = [
   upgrade()
 ];
 var mycoolfloor2 = addfloor('inventorlarge').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
-mycoolfloor2.theme = rand(['xmas1']);
+mycoolfloor2.theme = rand([music.pop()]);
 mycoolfloor2.generate();
 
 //Floor 3:
@@ -103,7 +103,7 @@ goodotherstuff = [
   upgrade()
 ];
 var mycoolfloor3 = addfloor('inventorlarge').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
-mycoolfloor3.theme = rand(['xmas2']);
+mycoolfloor3.theme = rand([music.pop()]);
 mycoolfloor3.generate();
   
 //Floor 4:
@@ -117,7 +117,7 @@ goodotherstuff = [
   shop(shuffle([floor1crap.pop(),commonlist1.pop(),commonlist2.pop()]), shuffle([3, 2, 4]))
 ];
 var mycoolfloor4 = addfloor('inventorlarge').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
-mycoolfloor4.theme = rand(['xmas3']);
+mycoolfloor4.theme = rand([music.pop()]);
 mycoolfloor4.generate();
   
 //Floor 5:
@@ -133,7 +133,7 @@ goodotherstuff = [
 ];
 		
 var mycoolfloor5 = addfloor('inventorlarge').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
-mycoolfloor5.theme = rand(['xmas6']);
+mycoolfloor5.theme = rand([music.pop()]);
 mycoolfloor5.generate();
 
 //Floor 6:

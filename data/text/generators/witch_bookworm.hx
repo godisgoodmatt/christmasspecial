@@ -34,6 +34,7 @@ shuffle(floor2items);
 shuffle(finespells);
 
 runscript("christmasspecial/witch_checkgeneratorisaccurate",[myitempools]);
+var music = shuffle(['xmas1', 'xmas2', 'xmas3', 'xmas10', 'xmas6']);
 
 usestandardenemies();
 
@@ -48,7 +49,7 @@ gooditems = [dicethings.pop()];
 otherstuff = [];
 goodotherstuff = [];
 var mycoolfloor1 = addfloor('big').additems(items, gooditems);
-mycoolfloor1.theme = rand(['xmas1']);
+mycoolfloor1.theme = rand([music.pop()]);
 mycoolfloor1.generate();
 
 //Floor 2:
@@ -61,7 +62,7 @@ goodotherstuff = [
 ];
 
 var mycoolfloor2 = addfloor('normal').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
-mycoolfloor2.theme = rand(['xmas1']);
+mycoolfloor2.theme = rand([music.pop()]);
 mycoolfloor2.generate();
   	
 //Floor 3:
@@ -73,7 +74,7 @@ otherstuff = [health(), health()];
 goodotherstuff = [shop([goodshopcontents.pop(), "health", goodshopcontents.pop()], [2, 3, 2])];
 
 var mycoolfloor3 = addfloor('normal').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
-mycoolfloor3.theme = rand(['xmas2']);
+mycoolfloor3.theme = rand([music.pop()]);
 mycoolfloor3.generate();
   
 //Floor 4:
@@ -85,7 +86,7 @@ otherstuff = [health(),health(),health()];
 goodotherstuff = [shop(shuffle([weirdspells.pop(),weirddicethings.pop(), rand([enchantedbolts.pop(),counterspelllikes.pop()])]), [3, 4, 3])];
 		
 var mycoolfloor4 = addfloor('normal').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
-mycoolfloor4.theme = rand(['xmas3']);
+mycoolfloor4.theme = rand([music.pop()]);
 mycoolfloor4.generate();
   
 //Floor 5:
@@ -95,7 +96,7 @@ otherstuff = [health(), health(), health()];
 goodotherstuff = [shop(shuffle([strongspells.pop(), enchantedbolts.pop(), finespells.pop()])),shop(shuffle([strongspells.pop(), missiles.pop(), finespells.pop()]))];
 		
 var mycoolfloor5 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
-mycoolfloor5.theme = rand(['xmas6']);
+mycoolfloor5.theme = rand([music.pop()]);
 mycoolfloor5.generate();
 
 //Floor 6:

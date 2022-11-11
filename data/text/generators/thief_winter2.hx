@@ -7,7 +7,7 @@ var floor3item = shuffle(["Parry", "Double Parry", "Lightreaver", "Minigun", "Sh
 var floor5item = shuffle(["Parrying Sword", "Parrying Claw", "Locket", "False Swipe", "The Monarch", "Biohazard"]);
 var vampireitem = ["Silver Sword"];
 
-
+var music = shuffle(['xmas1', 'xmas2', 'xmas3', 'xmas10', 'xmas6']);
 
 usestandardenemies();
 
