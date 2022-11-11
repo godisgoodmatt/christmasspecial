@@ -3,6 +3,7 @@ var themes = shuffle(["A Maneuver","A Gun","A Maneuver","A Spell","A Flower","A 
 var vampireitem = ["Silver Sword"];
 
 runscript("christmasspecial/checkgeneratorisaccurate",[[colours, themes, vampireitem]]);
+var music = shuffle(['xmas1', 'xmas2', 'xmas3', 'xmas10', 'xmas6']);
 
 usestandardenemies();
 
@@ -18,7 +19,7 @@ otherstuff = [];
 goodotherstuff = [];
 
 var mycoolfloor1 = addfloor('tiny').additems(items, gooditems);
-mycoolfloor1.theme = rand(['xmas1']);
+mycoolfloor1.theme = rand([music.pop()]);
 mycoolfloor1.generate();
 
 //Floor 2:
@@ -28,7 +29,7 @@ otherstuff = [health()];
 goodotherstuff = [shop([colours.pop(), colours.pop(), colours.pop()])];
 
 var mycoolfloor2 = addfloor('small').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
-mycoolfloor2.theme = rand(['xmas1']);
+mycoolfloor2.theme = rand([music.pop()]);
 mycoolfloor2.generate();
 
 //Floor 3:
@@ -44,7 +45,7 @@ goodotherstuff = [
 ];
 
 var mycoolfloor3 = addfloor('normal').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
-mycoolfloor3.theme = rand(['xmas2']);
+mycoolfloor3.theme = rand([music.pop()]);
 mycoolfloor3.generate();
   
 //Floor 4:
@@ -57,7 +58,7 @@ goodotherstuff = [
 ];
 
 var mycoolfloor4 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
-mycoolfloor4.theme = rand(['xmas3']);
+mycoolfloor4.theme = rand([music.pop()]);
 mycoolfloor4.generate();
   
 //Floor 5:
@@ -72,7 +73,7 @@ goodotherstuff = [
 ];
 
 var mycoolfloor5 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
-mycoolfloor5.theme = rand(['xmas6']);
+mycoolfloor5.theme = rand([music.pop()]);
 mycoolfloor5.generate();
 
 //Floor 6:
