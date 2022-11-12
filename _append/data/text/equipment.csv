@@ -1842,3 +1842,5 @@ Wined Up Fist_downgraded,Do [sword]5 damage,1,attack(5); sfxdamage(target[;] 5);
 Charged Up Fist,Do [sword]5 damage|inflict [shock]2 shock,1,attack(5); sfxdamage(target[;] 5); inflict(SHOCK[;]2); sfx(~_shock~);,Catapult,COUNTDOWN,7,YELLOW,change_power,change_power,,,0,NO,NO,,,,,,,,,,,,,
 Charged Up Fist_upgraded,Do [sword]5 damage|inflict [shock]4 shock,1,attack(5); sfxdamage(target[;] 5); inflict(SHOCK[;]4); sfx(~_shock~);,Catapult,COUNTDOWN,7,YELLOW,,,,,0,NO,NO,,,,,,,,,,,,,
 Charged Up Fist_downgraded,Do [sword]5 damage,1,attack(5); sfxdamage(target[;] 5);,Catapult,COUNTDOWN,7,YELLOW,,,,,0,NO,NO,,,,,,,,,,,,,
+Divine Spannersword,Combine dice[;] if 6 or|above[;] [sword]4[;] else [sword]3|[gray](Reusable),2,if(d > 0) givedice(d| ~combinedice~); if(d>=6){attack(4); sfxdamage(target[;] 4);} else {attack(3); sfxdamage(target[;] 3); },Magic Spanner,MAX5|MAX5,,RED,,,,,-1,NO,NO,,,,,,,,,,,,,
+Hotpick,Split a dice in two[;]|burn [fire]1 dice,1,givedice(split(d)| ~splitdice~); sfx(~_fire~); inflict(FIRE);,,NORMAL,,RED,,,,,0,NO,NO,,,,,,,,,,,,,
