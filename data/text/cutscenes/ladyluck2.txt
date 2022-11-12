@@ -73,7 +73,7 @@ speak("Lady Luck", "I make a whole game show for them|and this is how they treat
 mariahcarey_big.show("talking", true);
 speak("Mariah Carey", "Well, that stops now!");
 mariahcarey_big.show("talking-sly", true);
-speak("Mariah Carey", "Using new, revolutionary dice-tracking technology,|after your turn we’ll punish you for|every cheat we detect!");
+speak("Mariah Carey", "Using new, revolutionary dice-tracking technology,|after your turn we’ll punish you for every cheat we detect!");
 mariahcarey_big.show("idle-sly", true);
 
 speak("Lady Luck", "So I just have to hide all the|evidence by the end of my turn?");
