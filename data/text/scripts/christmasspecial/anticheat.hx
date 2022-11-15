@@ -12,7 +12,7 @@ toinject = "
 	/*End Anti Cheat script injection*/
 ";
 }
-else
+else if (alt == 1)
 {
 toinject = "
 	/*Begin Anti Cheat? script injection*/
@@ -20,6 +20,14 @@ toinject = "
 	/*End Anti Cheat? script injection*/
 ";
 }
+else
+	{
+	toinject = "
+		/*Begin Anti Cheat! script injection*/
+		if(onlimit){var sixes = 0; for (mydice in self.dicepool){ if (mydice.available()){ sixes += 1; } } for (e in self.equipment) {if(e.ready) {for (d in e.assigneddice) {if (d != null) {sixes += 1;} } }} self.setvar(\"ultrabaddice\",sixes);}
+		/*End Anti Cheat! script injection*/
+	";
+	}
 
 var eq = self.getskillcard();
 	
