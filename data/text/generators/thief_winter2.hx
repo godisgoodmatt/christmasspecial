@@ -82,8 +82,6 @@ gooditems = [];
 otherstuff = [];
 goodotherstuff = [];
 
-var lastfloor = addfloor("boss");
-
 if (getfinalboss() == "Mariah Carey"){
   items.push("BOOO!");
 }

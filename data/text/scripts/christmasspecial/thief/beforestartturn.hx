@@ -2,6 +2,8 @@
 var fighter = args[0];
 var Rules = args[1];
 
+fighter.setvar("numberOfBattlesWon", Rules.reunionwarrior_workoutrewards.length);
+
 var currentcard = Rules.reunionwarriorcommand("getcurrentcard");
 var cardused = Rules.reunionwarriorcommand("isused");
 
