@@ -54,30 +54,30 @@ mariahcarey_big.show("talking-sly", true);
 speak("Mariah Carey", "I'm happy to say your episode is ready!", "normal");
 mariahcarey_big.show("idle", true);
 
-speak("inventor", "Oh! Awesome! Hows it work?", "action");
+speak("Inventor", "Oh! Awesome! Hows it work?", "action");
 
 mariahcarey_big.show("talking", true);
 speak("Mariah Carey", "Well since, I had a bunch of tools at my disposal.|I made an episode that's really complex.", "normal");
 speak("Mariah Carey", "I thought you would like complex ideas!");
 mariahcarey_big.show("idle", true);
 
-speak("inventor", "Well I guess...", "action");
-speak("inventor", "I like it more when I understand the complex stuff.");
+speak("Inventor", "Well I guess...", "action");
+speak("Inventor", "I like it more when I understand the complex stuff.");
 mariahcarey_big.show("idle-angry", true);
-speak("inventor", "I guess if I learn to understand it or you explain it?");
+speak("Inventor", "I guess if I learn to understand it or you explain it?");
 mariahcarey_big.show("idle-scary", true);
-speak("inventor", "I'm sure it would be much more fun!");
+speak("Inventor", "I'm sure it would be much more fun!");
 
 mariahcarey_big.show("talking-scary", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.RED, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
 speak("Mariah Carey", "[red]WHY WOULD I EXPLAIN IT!?", "normal");
-speak("Mariah Carey", "[red]HOW ABOUT YOU LEARN!? ISN"T THAT WHAT YOUR GOOD AT?");
+speak("Mariah Carey", "[red]HOW ABOUT YOU LEARN!? ISN'T THAT WHAT YOUR GOOD AT?");
 mariahcarey_big.show("talking", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
 speak("Mariah Carey", "Ahem");
 speak("Mariah Carey", "I meant you can learn as you go...|I'll also tell a minion to leave you a note in the rules page.", "normal");
 mariahcarey_big.show("idle", true);
 
-speak("inventor", "Ok then sounds good!", "normal");
+speak("Inventor", "Ok then sounds good!", "normal");
 
 startgamefromcutscene();
