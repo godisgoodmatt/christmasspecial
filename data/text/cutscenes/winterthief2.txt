@@ -53,12 +53,12 @@ actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "ch
 speak("Mariah Carey", "Heya, Thief! how are you feeling this christmas?");
 mariahcarey_big.show("talking-confused", true);
 speak("Mariah Carey", "I'm still working on your new episode", "normal");
-mariahcarey_big.show("talking-confused", true);
+mariahcarey_big.show("idle-confused", true);
 
 speak("Thief", "Well, I made some chit-chat, might've|eavesdropped a bit...", "action");
 speak("Thief", "...a lot, you could say...");
 speak("Thief", "...and I found out most of the minions|here are starting their New Years'|resolutions early.", "normal");
-mariahcarey_big.show("talking-angry", true);
+mariahcarey_big.show("idle-angry", true);
 speak("Thief", "I'm definitely going to one-up them,|so maybe you could include that|in your episode. I copy their|resolutions after beating them.");
 
 mariahcarey_big.show("talking-scary", true);
