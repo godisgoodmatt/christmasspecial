@@ -50,9 +50,9 @@ wait(0.5);
  
 mariahcarey_big.show("talking", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "Heya, Thief! how are you feeling this christmas?");
+speak("Mariah Carey", "Heya, Thief! How are you feeling this christmas?");
 mariahcarey_big.show("talking-confused", true);
-speak("Mariah Carey", "I'm still working on your new episode", "normal");
+speak("Mariah Carey", "I'm... still working on your new episode.", "normal");
 mariahcarey_big.show("idle-confused", true);
 
 speak("Thief", "Well, I made some chit-chat, might've|eavesdropped a bit...", "action");
@@ -63,14 +63,15 @@ speak("Thief", "I'm definitely going to one-up them,|so maybe you could include 
 
 mariahcarey_big.show("talking-scary", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.RED, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "[red]THAT'S NOT MY IDEA!", "normal");
+speak("Mariah Carey", "[red]DON'T TELL ME HOW TO DO MY JOB.", "normal");
 mariahcarey_big.show("talking", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "I mean thats a great idea!");
-speak("Mariah Carey", "Apologies for the outburst. I've been|getting those more often after being host.", "normal");
+speak("Mariah Carey", "I mean... actually, that's a great idea.");
+mariahcarey_big.show("talking-confused", true);
+speak("Mariah Carey", "Apologies for the outburst. They've been|happening more often now I'm host.", "normal");
 mariahcarey_big.show("idle", true);
 
 speak("Thief", "Oof, right.", "action");
-speak("Thief", "I think Frog's doing anger management,|I might write down his resolution for you...", "worried");
+speak("Thief", "I think Frog's doing anger management for his|resolution. Maybe you should too..?", "worried");
 
 startgamefromcutscene();

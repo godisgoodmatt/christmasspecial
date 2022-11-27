@@ -91,8 +91,8 @@ speak("Warrior", "Uh, geez.");
 speak("Warrior", "I had, like, four thoughts yesterday.|I think my brain's already too sore.", "action");
 
 mariahcarey_big.show("talking-confused", true);
-speak("Mariah Carey", "This is one of the few episodes that worked");
-speak("Mariah Carey", "So don't dissapoint me", "normal");
+speak("Mariah Carey", "This is one of the few episodes that worked.");
+speak("Mariah Carey", "So... don't disappoint me.", "normal");
 mariahcarey_big.show("idle-confused", true);
 
 startgamefromcutscene();
