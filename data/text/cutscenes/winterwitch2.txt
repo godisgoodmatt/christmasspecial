@@ -1,0 +1,80 @@
+#include intrographics_justladyluck.txt
+#include mariahcareybiggraphics.txt
+
+setdatapath("data/graphics/cutscenes/witch/");
+
+var witchgraphics = {
+	idle: {
+		animation: "witch_idle.json",
+		pack: "witch.pck",
+		loop: true
+	},
+	worried_idle: {
+		animation: "witch_worried_idle.json",
+		pack: "witch.pck",
+		loop: true
+	},
+	transform: {
+		animation: "witch_transform.json",
+		pack: "witch.pck",
+		speed: 2,
+		loop: false
+	}
+}
+var witch = addsprite("witch", 1, witchgraphics);
+
+// HELPER FUNCTIONS
+
+var fade_time = 0.4;
+
+// ACTORS
+actor("Mariah Carey", screenwidthmid + 800, 550, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
+actor("Witch", 2680, 730, 0xb496ec, CENTER, BOTTOM, "chat_witch", "characters/witch/charicon_witch");
+// INTRO
+
+play("music_cutscene_cheery");
+
+witch.scale = 0.5;
+witch.x = 2620 - ((witch.getwidth("idle") * witch.scale) / 2);
+witch.y = 890;
+changebackground("intro_stage");
+fadein();
+witch.show("idle");
+
+mariahcarey_big.x = -screenwidth;
+mariahcarey_big.show("idle");
+Actuate.tween(mariahcarey_big, 2, { x: 0 }).ease(Expo.easeOut);
+
+wait(0.5);
+ 
+mariahcarey_big.show("talking", true);
+actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
+speak("Mariah Carey", "Oh my dear Witch...");
+mariahcarey_big.show("talking-confused", true);
+speak("Mariah Carey", "I kind of messed up your episode", "normal");
+mariahcarey_big.show("idle", true);
+
+speak("Witch", "What how!?", "action");
+speak("Witch", "I mean does it at least work?", "normal");
+
+mariahcarey_big.show("talking", true);
+speak("Mariah Carey", "Well yes but now you don't have a spell book...", "normal");
+speak("Mariah Carey", "Thats great right? Like this is a good thing?");
+mariahcarey_big.show("idle", true);
+
+speak("Witch", "Not exactly.", "action");
+speak("Witch", "Plus how did you mess it up?");
+
+mariahcarey_big.show("talking-scary", true);
+actor("Mariah Carey", screenwidthmid + 350, 700, Col.RED, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
+speak("Mariah Carey", "[red]STOP ASKING POINTLESS QUESTIONS!", "normal");
+speak("Mariah Carey", "[red]JUST TAKE THE EASY WIN YOU SPOILED BRA-");
+mariahcarey_big.show("talking", true);
+actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
+speak("Mariah Carey", "(Oh um... I misclicked and added a ton of wizards items.");
+speak("Mariah Carey", "But now you get wizards loadout no matter|what items are in your inventory", "normal");
+mariahcarey_big.show("idle", true);
+
+speak("Witch", "Ok weird but sounds really cool!", "normal");
+
+startgamefromcutscene();
