@@ -75,12 +75,16 @@ if(player == "Warrior"){
   spin = 50;
 }else if(player == "Bear"){
   actor("Bear", 150, screenheight - 100, Col.RED, LEFT, BOTTOM, "chat_thief", "characters/bear/charicon_bear");
+  spin = 70;
 }else if(player == "Ghost of Present"){
   actor("Ghost of Present", 150, screenheight - 100, Col.RED, LEFT, BOTTOM, "chat_thief", "characters/thief/charicon_thief");
+  spin = 70;
 }else if(player == "Ghost of Past"){
   actor("Ghost of Past", 150, screenheight - 100, Col.RED, LEFT, BOTTOM, "chat_thief", "characters/thief/charicon_thief");
+  spin = 70;
 }else if(player == "Ghost of Future"){
   actor("Ghost of Future", 150, screenheight - 100, Col.RED, LEFT, BOTTOM, "chat_thief", "characters/thief/charicon_thief");
+  spin = 70;
 }else if(player == "Mariah"){
   actor("Mariah", 150, screenheight - 100, Col.RED, LEFT, BOTTOM, "chat_mariah", "characters/mariah/charicon_mariah");
   spin = 70;
