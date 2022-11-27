@@ -35,8 +35,8 @@ actor("Witch", 2680, 730, 0xb496ec, CENTER, BOTTOM, "chat_witch", "characters/wi
 play("music_cutscene_cheery");
 
 witch.scale = 0.5;
-witch.x = 2620 - ((witch.getwidth("idle") * witch.scale) / 2);
-witch.y = 890;
+witch.x = 2700 - ((witch.getwidth("idle") * witch.scale) / 2);
+witch.y = 650;
 changebackground("intro_stage");
 fadein();
 witch.show("idle");
@@ -71,7 +71,7 @@ speak("Mariah Carey", "[red]STOP ASKING POINTLESS QUESTIONS!", "normal");
 speak("Mariah Carey", "[red]JUST TAKE THE EASY WIN YOU SPOILED BRA-");
 mariahcarey_big.show("talking", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "(Oh um... I misclicked and added a ton of wizards items.");
+speak("Mariah Carey", "Oh um... I misclicked and added a ton of wizards items.");
 speak("Mariah Carey", "But now you get wizards loadout no matter|what items are in your inventory", "normal");
 mariahcarey_big.show("idle", true);
 
