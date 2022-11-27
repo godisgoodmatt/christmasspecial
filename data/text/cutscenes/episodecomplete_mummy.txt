@@ -240,6 +240,21 @@ if (wheelwins) {
 			announcer.show("talking");
 			speak("Lady Luck", "Okay then...", "normal");
 			announcer.show("idle");
+		} else if (player == "Warrior" && episodenum == 2) {
+			speak("Mariah Carey", "See I knew you could do it!", "normal");
+			announcer.show("idle");
+			speak(player, "My head feels heavy... ugh.", "normal");
+			speak(player, "Why did we do it that way?", "personality");
+			speak(player, "I could've just bashed stuff", "action");
+			announcer.show("talking");
+			speak("Mariah Carey", "Well then you wouldn't have learned anything", "normal");
+			speak("Mariah Carey", "What did you learn?");
+			announcer.show("idle");
+			speak(player, "Hitting things works better than math!", "worried");
+			announcer.show("talking");
+			speak("Mariah Carey", "Welp heres your candy");
+			announcer.show("idle");
+			speak(player, "It wasn't even worth it.", "worried");
 		} else if (player == "Thief" && episodenum == 1) {
 			speak("Lady Luck", "Huh! It actually landed on the prize space.", "normal");
 			announcer.show("idle");
@@ -255,6 +270,20 @@ if (wheelwins) {
 			speak("Lady Luck", "Alright, then.", "normal");
 			speak("Lady Luck", "Bring out the wheelbarrow!", "personality");
 			announcer.show("idle");
+		} else if (player == "Thief" && episodenum == 2) {
+			speak("Mariah Carey", "Oh your idea worked?", "normal");
+			announcer.show("idle");
+			speak(player, "Is it that suprising?", "normal");
+			speak(player, "Your not the only one with good ideas. Ya know?", "personality");
+			announcer.show("talking");
+			speak("Mariah Carey", "Hmph.", "normal");
+			speak("Mariah Carey", "Well heres your 1.3 million dollars...");
+			announcer.show("idle");
+			speak(player, "I wanted a billion!", "worried");
+			announcer.show("talking");
+			speak("Mariah Carey", "Right but america...");
+			announcer.show("idle");
+			speak(player, "Oh ugh...", "worried");
 		} else if (player == "Robot" && episodenum == 1) {
 			speak("Lady Luck", "Well, would you look at that. Right on the prize.", "normal");
 			announcer.show("idle");
@@ -296,6 +325,32 @@ if (wheelwins) {
 			speak("Lady Luck", "How is standing on your spindly legs|physically possible?", "sly");
 			announcer.show("idle");
 			speak(player, "Point taken.");
+		} else if (player == "Inventor" && episodenum == 2) {
+			speak(player, "Woah what a trip!", "normal");
+			speak(player, "That was soooo cool!", "personality");
+			announcer.show("talking");
+			speak("Mariah Carey", "Aw thanks I'm flattered!", "normal");
+			speak("Mariah Carey", "Bet Lady Luck would never had thought of that");
+			announcer.show("idle");
+			speak(player, "Probably not thats why your the best!", "worried");
+			announcer.show("talking");
+			speak("Mariah Carey", "Oh stop it! As your gift I'll explain how it works!");
+			announcer.show("idle");
+			speak(player, "Wooooo!", "worried");
+		} else if (player == "Witch" && episodenum == 2) {
+			speak(player, "That was interesting...", "normal");
+			speak(player, "Pretty sure wizard hates me know.", "personality");
+			announcer.show("talking");
+			speak("Mariah Carey", "How come?", "normal");
+			announcer.show("idle");
+			speak(player, "He thinks I was mocking him.", "worried");
+			announcer.show("talking");
+			speak("Mariah Carey", "What a shame... Well what would you like?");
+			announcer.show("idle");
+			speak(player, "For wizard not to beat me up.", "worried");
+			announcer.show("talking");
+			speak("Mariah Carey", "I'm not sure I can stop that...");
+			announcer.show("idle");
 		} else if (player == "Witch" && episodenum == 1) {
 			speak("Lady Luck", "You won the wheel spin. Huzzah.", "normal");
 			speak("Lady Luck", "Magic is now literally real.");
@@ -325,6 +380,20 @@ if (wheelwins) {
 			speak(player, "I've heard many a legend about the|\"Null Object Reference\", but now|I can finally see it for real.", "determined");
 			announcer.show("talking");
 			speak("Lady Luck", "Well, enjoy yourself.|Not right now, of course.", "normal");
+			announcer.show("idle");
+		} else if (player == "Jester" && episodenum == 2) {
+			speak(player, "WHAT A RUSH!", "normal");
+			speak(player, "WOOOOOOOO!", "personality");
+			announcer.show("talking");
+			speak("Mariah Carey", "I'm shocked the game didn't crash...", "normal");
+			announcer.show("idle");
+			speak(player, "I wish it did! That would be so cool!", "worried");
+			announcer.show("talking");
+			speak("Mariah Carey", "Well what would you like now?");
+			announcer.show("idle");
+			speak(player, "For 2 of each Christmas item!", "worried");
+			announcer.show("talking");
+			speak("Mariah Carey", "Hmmmm I belive you are insane");
 			announcer.show("idle");
 		} else if (player == "Bear" && episodenum == 1) {
 			speak("Lady Luck", "Huh! It actually landed on the prize space.", "normal");
