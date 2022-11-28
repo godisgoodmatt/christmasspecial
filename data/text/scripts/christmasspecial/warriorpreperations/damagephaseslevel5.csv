@@ -1,20 +1,23 @@
 slots,equipment
-MIN2|MIN2,Frogsword
+MIN2|MIN2,Frogsword|Frogsword
 MIN4,Battle Axe|Battle Axe
-NORMAL|NORMAL,Divine Dagger
+NORMAL|NORMAL,Divine Dagger+
 MAX3,Sneeze|Tetraphobia|Tetraphobia|Tetraphobia
 MIN3,Crowbar|Blasto|Wind up Fist
-MIN2,Crossbow
-MIN2,Earthquake
+MIN2,Grand Finale
+MIN2,Earthquake|Earthquake
 NORMAL,Key 1|Key 2|Key 3|Key 4|Key 5|Key 6
 MAX4,Sword+|Tower Shield
 NORMAL,Wall of Flame|Wall of Flame
-MIN4|MIN4|MIN4,Divine Megaphone
-MIN4|MIN4|MIN4,Divine Hammer
-EVEN,Mechanical Leg|Backstab
+MIN4|REQUIRE6|MIN4,Divine Hammer|Divine Megaphone
+COUNTDOWN_8,Mechanical Leg+
 NORMAL,Pirate Hook+|Lucky Star
 ODD,Yoink|Yoink
 NORMAL,Infliction|Magic Missile|Magic Spear|Hex
-NORMAL,Sword Hilt+|Sword Hilt
+NORMAL,Sword Hilt+|Sword Hilt|Magic Barrier
 NORMAL,Freeze Spell|Flame Spell
 MIN3,Boomerang|Healing Crystal
+COUNTDOWN_5,Thunder Storm|Thunder Storm|Thunder Storm
+COUNTDOWN_5,Heatwave|Heatwave|Heatwave
+COUNTDOWN_5,Snowstorm|Snowstorm|Snowstorm
+COUNTDOWN_8,Hurricane|Hurricane|Hurricane

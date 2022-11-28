@@ -11,10 +11,13 @@ MAX4,Sword+|Tower Shield
 NORMAL,Wall of Flame|Wall of Flame
 MIN4|REQUIRE6|MIN4,Divine Megaphone|Very Good Sword
 MIN4|REQUIRE6|MIN4,Divine Hammer|Very Good Sword
-EVEN,Mechanical Leg|Backstab
+COUNTDOWN_8,Mechanical Leg
 NORMAL,Pirate Hook+|Lucky Star
 ODD,Yoink|Yoink
 NORMAL,Infliction|Magic Missile|Magic Spear|Hex
 NORMAL,Sword Hilt+|Sword Hilt|Magic Barrier
 NORMAL,Freeze Spell|Flame Spell
 MIN3,Boomerang|Healing Crystal
+COUNTDOWN_5,Thunder Storm|Thunder Storm|Thunder Storm
+COUNTDOWN_5,Heatwave|Heatwave|Heatwave
+COUNTDOWN_5,Snowstorm|Snowstorm|Snowstorm

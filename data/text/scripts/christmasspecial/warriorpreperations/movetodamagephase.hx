@@ -54,6 +54,19 @@ for (e in f.equipment){
 	} else if (!(preview && e.name == "Preview Equipment")) {
 		if (preview) {
 			e.setvar("e.ready", e.ready);
+		} else {
+			for (i in 0...e.tags.length) {
+				var res = e.tags[i].indexOf("transitioneffect:");
+				if (res != -1) {
+					var transitioneffectstring = e.tags[i].substr("transitioneffect:".length);
+					inflictself(transitioneffectstring, 1);
+				}
+				res = e.tags[i].indexOf("transitionsound:");
+				if (res != -1) {
+					var transitionsoundstring = e.tags[i].substr("transitionsound:".length);
+					sfx(transitionsoundstring);
+				}
+			}
 		}
 		e.ready = false;
 		var act = new motion.actuators.SimpleActuator(e,0.5,{x:-e.width - 5});
@@ -62,5 +75,6 @@ for (e in f.equipment){
 	}
 }
 
+f.applyequipmentcurses();
 
 //f.fetchequipment("right");
