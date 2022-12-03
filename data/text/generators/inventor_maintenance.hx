@@ -10,7 +10,6 @@ if (chance(30)) shoplist1.push("Sledgehammer");
 var midtierdrops = ["Goggles", "Permapick", "Scorpion", "Boston Basher", "Matchbook", "Technology", "God's Pick", pick(["Wispy Kaboom Smash", "Switchblade"]), "Tootsie Pop"];
 var floor3items = ["Vacuum", "Occam's Razor", "Dice Pump", "Adamant Rail", pick(["Hall of Daggers", "Devilsknife"]), "Stop Sign", "Popcorn", "Gatling Pea", pick(["Reverse Emulation","Supersonic"]), "Ice Skates", "Zeus Dagger"];
 var commonlist2 = ["Return Bicep Curls", "Sneksword", "Ale Bat", "Waltzer", "The Monarch", "Janky Spanner", "Spirit Shield", "Present Shotgun", "Incapacitate", "Ubersaw", "Storm Reactor", "Stygian Blade", "Sand Hawk"];
-commonlist2.push(pick(jackpothelpers));
 var floor5items = ["Lucky Punch", "Russian Roulette", "Old Nail@2", "Rigged Calculate", "Betelgeuse"];
 var threeturnsitems = shuffle(["Tyrant's Glare", "Brimstone"]);
 floor5items.push(threeturnsitems.pop());
@@ -56,7 +55,7 @@ var otherstuff = [];
 var goodotherstuff = [];
 
 //Floor 1:
-items = [pick(floor1countdowns),pick(jackpothelpers)];
+items = [pick(floor1countdowns),jackpothelpers.pop()];
 gooditems = [pick(floor1crap)];
 otherstuff = [];
 goodotherstuff = [];
@@ -74,8 +73,8 @@ otherstuff = [
   health()
 ];
 goodotherstuff = [
-  shop(shuffle([shoplist1.pop(), shoplist1.pop(), pick(jackpothelpers)]), shuffle([2, 1, 1])),
-  shop(shuffle(["upgrade", shoplist1.pop(), pick(jackpothelpers)]), shuffle([2, 1, 2]))
+  shop(shuffle([shoplist1.pop(), shoplist1.pop(), jackpothelpers.pop()]), shuffle([2, 1, 1])),
+  shop(shuffle(["upgrade", shoplist1.pop(), jackpothelpers.pop()]), shuffle([2, 1, 2]))
 ];
 var mycoolfloor2 = addfloor('inventorlarge').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
 mycoolfloor2.theme = rand([music.pop()]);
