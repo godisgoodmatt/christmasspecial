@@ -1,13 +1,14 @@
+var floor1items = shuffle(["Ghostly Flame Spell", "Fortify Spell", "Supercharger", "Acorn Shield"]);
 var witchshops = shuffle(["Pip Master", "Christmas Pistol","Blighted Zap", 
   "Brace", "Pocket Protector", "Rock Crusher", "Power Glove", 
   "Frosty Bufu", "Sandbag", "Matchbook", "Quadrality"]);
-var strangeshop = shuffle(["Wide Spatula", "Sickle", "Cactus Cauldron"]);
+var strangeshop = shuffle(["Wide Spatula", "Cactus Cauldron"]);
 var awesomelist = shuffle(["Christmas Pistol", "Roulette", "AC Unit", 
   "Poison Spell", "Power Glove", 
-  "Lucky Punch"]);
+  "Lucky Punch", "Wizard's Hat"]);
 var floor2gooditem = shuffle(["Budge", "Pip Master"]);
 var floor3item = shuffle([
-  "Innovate", "Renunciation", "Magic Dagger", "Electric Shock", "Bicep Curl"]);
+  "Innovate", "Renunciation", "Supercharger", "Magic Dagger", "Electric Shock", "Bicep Curl"]);
 var floor5item = shuffle([ 
   "Teleport Spell", "Bank Trade", "Bloodstone", "Healing Blast"]);
 var vampireitem = ["Silver Sword"];
@@ -23,7 +24,7 @@ var goodotherstuff = [];
 
 //Floor 1:
 items = [];
-gooditems = ["Ghostly Flame Spell","Fortify Spell"];
+gooditems = [floor1items.pop(),floor1items.pop()];
 otherstuff = [];
 goodotherstuff = [];
 
@@ -35,16 +36,15 @@ mycoolfloor1.generate();
 items = [];
 gooditems = [floor2gooditem.pop()];
 otherstuff = [health()];
-goodotherstuff = [shop([witchshops.pop(), witchshops.pop(), witchshops.pop()])];
+goodotherstuff = [shop([witchshops.pop(), floor1items.pop(), witchshops.pop()])];
 
 var mycoolfloor2 = addfloor('small').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
 mycoolfloor2.theme = rand([music.pop()]);
 mycoolfloor2.generate();
 
 //Floor 3:
-items = [];
-items.push(floor3item.pop());
-gooditems = [];
+items = [floor3item.pop()];
+gooditems = [floor3item.pop()];
 
 otherstuff = [health(), health()];
 
