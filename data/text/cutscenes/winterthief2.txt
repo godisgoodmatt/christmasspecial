@@ -50,14 +50,14 @@ wait(0.5);
  
 mariahcarey_big.show("talking", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "Heya, Thief! How are you feeling this christmas?");
+speak("Mariah Carey", "Heya, Thief! How are you feeling this Christmas?");
 mariahcarey_big.show("talking-confused", true);
 speak("Mariah Carey", "I'm... still working on your new episode.", "normal");
 mariahcarey_big.show("idle-confused", true);
 
 speak("Thief", "Well, I made some chit-chat, might've|eavesdropped a bit...", "action");
 speak("Thief", "...a lot, you could say...");
-speak("Thief", "...and I found out most of the minions|here are starting their New Years'|resolutions early.", "normal");
+speak("Thief", "...and I found out most of the minions|here are starting their New Year's|resolutions early.", "normal");
 mariahcarey_big.show("idle-angry", true);
 speak("Thief", "I'm definitely going to one-up them,|so maybe you could include that|in your episode. I copy their|resolutions after beating them.");
 
@@ -68,7 +68,7 @@ mariahcarey_big.show("talking", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
 speak("Mariah Carey", "I mean... actually, that's a great idea.");
 mariahcarey_big.show("talking-confused", true);
-speak("Mariah Carey", "Apologies for the outburst. They've been|happening more often now I'm host.", "normal");
+speak("Mariah Carey", "Apologies for the outburst. They've been|happening more often now that I'm host.", "normal");
 mariahcarey_big.show("idle", true);
 
 speak("Thief", "Oof, right.", "action");
