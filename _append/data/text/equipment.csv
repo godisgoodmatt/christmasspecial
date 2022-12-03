@@ -1907,3 +1907,16 @@ Bicep Curl_downgraded,Dice value +1|[gray](Reuseable),1,e.sourceequipment.animat
 Rubber Duck,Do absolutely nothing,1,donothing(); sfx(~_whooshweapons~);,Broken Gadget,ODD,,ORANGE,change_power,change_power,,,0,NO,NO,reunion,,,,,,,,,,,,
 Rubber Duck_upgraded,Do absolutely nothing,1,donothing(); sfx(~_whooshweapons~);,Broken Gadget,REQUIRE5,,ORANGE,,,,,0,NO,NO,reunion,,,,,,,,,,,,
 Rubber Duck_downgraded,Do absolutely nothing,1,donothing(); sfx(~_whooshweapons~);,Broken Gadget,NORMAL,,ORANGE,,,,,0,NO,NO,reunion,,,,,,,,,,,,
+Bank Trade,Roll all dice from 1 to 6,1,givedice([1|2|3|4|5|6]),Megaflip,NORMAL|NORMAL|NORMAL,,GREEN,,,,none,0,YES,NO,,,,,,,,,,,,,
+Bank Trade_upgraded,Roll all dice from 1 to 6,1,givedice([1|2|3|4|5|6]),Megaflip,NORMAL|NORMAL,,GREEN,,,,none,0,YES,NO,,,,,,,,,,,,,
+Bank Trade_downgraded,Roll all dice from 1 to 4,1,givedice([1|2|3|4]),Megaflip,NORMAL|NORMAL|NORMAL,,GREEN,,,,none,0,YES,NO,,,,,,,,,,,,,
+Bank Trade_weakened,Roll all dice from 1 to 4,1,givedice([1|2|3|4]),Megaflip,NORMAL|NORMAL,,GREEN,,,,none,0,YES,NO,,,,,,,,,,,,,
+Quadrality,Roll a 4,1,givedice(4),Magic Dice,NORMAL,,GREEN,,,,none,0,YES,NO,,,,,,,,,,,,,
+Quadrality_upgraded,Roll a 4|Do [sword]1 per pip changed,1,var rand = 4; givedice(rand); if (rand != d) { var large = d; var small = rand; if(rand > d) { large = rand; small = d; } attack(large - small); sfxdamage(target[;] large - small); },Magic Dice,NORMAL,,GREEN,,,,none,0,YES,NO,,,,,,,,,,,,,
+Quadrality_downgraded,Roll a 2,1,givedice(2),Magic Dice,NORMAL,,GREEN,,,,none,0,YES,NO,,,,,,,,,,,,,
+Bloodstone,Do [sword]15 damage[;]|inflict 2 [bleed]Bleed,1,attack(15); sfxdamage(target[;] 15); inflict(~Bleed~[;]2); sfx(~_poison~);,Bitey Bitey,NORMAL|NORMAL|NORMAL,,RED,change_power,change_power,,,0,NO,NO,,,,,,,,,,,,,;
+Bloodstone_upgraded,Do [sword]20 damage[;]|inflict 2 [bleed]Bleed,1,attack(20); sfxdamage(target[;] 20); inflict(~Bleed~[;]2); sfx(~_poison~);,Bitey Bitey,NORMAL|NORMAL|NORMAL,,RED,change_power,change_power,,,0,NO,NO,,,,,,,,,,,,,;
+Bloodstone_downgraded,Do [sword]10 damage[;]|inflict 1 [bleed]Bleed,1,attack(10); sfxdamage(target[;] d); inflict(~Bleed~[;]1); sfx(~_poison~);,Bitey Bitey,NORMAL|NORMAL|NORMAL,,RED,,,,,0,NO,NO,,,,,,,,,,,,,;
+Healing Blast,Do [sword]15 damage[;]|recover 5 health,1,attack(15); sfxdamage(target[;] 15); attackself(-5); sfx(~_heal~[;]~~[;]0.2);,Regenerate,NORMAL|NORMAL|NORMAL,,GREEN,change_power,change_power,,,0,NO,NO,,,,,,,,,,,,,;
+Healing Blast_upgraded,Do [sword]15 damage[;]|recover 8 health,1,attack(20); sfxdamage(target[;] 20); attackself(-8); sfx(~_heal~[;]~~[;]0.2);,Regenerate,NORMAL|NORMAL|NORMAL,,GREEN,change_power,change_power,,,0,NO,NO,,,,,,,,,,,,,;
+Healing Blast_downgraded,Do [sword]10 damage[;]|recover 3 health,1,attack(d); sfxdamage(target[;] d); attackself(-3); sfx(~_heal~[;]~~[;]0.2);,Regenerate,NORMAL|NORMAL|NORMAL,,GREEN,,,,,0,NO,NO,,,,,,,,,,,,,;

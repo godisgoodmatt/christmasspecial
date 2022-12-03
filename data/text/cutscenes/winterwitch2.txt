@@ -54,8 +54,8 @@ mariahcarey_big.show("talking-confused", true);
 speak("Mariah Carey", "I kind of messed up your episode", "normal");
 mariahcarey_big.show("idle", true);
 
-speak("Witch", "What how!?", "action");
-speak("Witch", "I mean does it at least work?", "normal");
+speak("Witch", "Wha- how!?", "action");
+speak("Witch", "I mean, does it at least work?", "normal");
 
 mariahcarey_big.show("talking", true);
 speak("Mariah Carey", "Well yes but now you don't have a spell book...", "normal");
@@ -71,10 +71,10 @@ speak("Mariah Carey", "[red]STOP ASKING POINTLESS QUESTIONS!", "normal");
 speak("Mariah Carey", "[red]JUST TAKE THE EASY WIN YOU SPOILED BRA-");
 mariahcarey_big.show("talking", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "Oh um... I misclicked and added a ton of wizards items.");
-speak("Mariah Carey", "But now you get wizards loadout no matter|what items are in your inventory", "normal");
+speak("Mariah Carey", "Oh um... I misclicked and added a ton of Wizard's items.");
+speak("Mariah Carey", "But now you get Wizard's loadout no matter|what items are in your inventory.", "normal");
 mariahcarey_big.show("idle", true);
 
-speak("Witch", "Ok weird but sounds really cool!", "normal");
+speak("Witch", "Seems weird, but can't hurt to try a new setup!", "normal");
 
 startgamefromcutscene();
