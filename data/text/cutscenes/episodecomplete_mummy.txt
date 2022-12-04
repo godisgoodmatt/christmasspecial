@@ -397,7 +397,7 @@ if (wheelwins) {
 			announcer.show("idle");
 			speak(player, "For 2 of each Christmas item!", "worried");
 			announcer.show("talking");
-			speak("Mariah Carey", "Hmmmm I belive you are insane");
+			speak("Mariah Carey", "I belive you are insane");
 			announcer.show("idle");
 		} else if (player == "Bear" && episodenum == 1) {
 			speak("Lady Luck", "Huh! It actually landed on the prize space.", "normal");

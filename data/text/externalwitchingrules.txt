@@ -11,4 +11,4 @@ Your starter spells are [yellow]Cauldron[] and [yellow]Infliction[] in book 1[;]
 [yellow]Duplicate[] and [yellow]Hall_of_Mirrors[] in book 3.
 
 That's all. Good luck there!
-                   -[ice][]Fiship
+                   -[ice][]Dummy
