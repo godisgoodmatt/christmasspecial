@@ -58,8 +58,8 @@ speak("Mariah Carey", "Please welcome back Lady Luck,|for her second edgy phase!
 mariahcarey_big.show("idle-sly", true);
 
 actor("Lady Luck", screenwidthmid + 800, 200, Col.RED, RIGHT, TOP, "chat_ladyluck", "characters/lady luck/charicon_lady_luck");
-speak("Lady Luck", "Ha-ha.", "normal");
-speak("Lady Luck", "So, another of these, huh?|What’s the twist this time?");
+speak("Lady Luck", "What?", "normal");
+speak("Lady Luck", "Why am I a dice again?");
 
 mariahcarey_big.show("talking", true);
 speak("Mariah Carey", "Well, we’ve been reading fan letters from last|Christmas, and we had reports you were…");
@@ -71,9 +71,10 @@ speak("Lady Luck", "What? How dare they.");
 speak("Lady Luck", "I make a whole game show for them|and this is how they treat me?");
 
 mariahcarey_big.show("talking", true);
-speak("Mariah Carey", "Well, that stops now!");
+speak("Mariah Carey", "So! That means your victory last episode is null and void!|If you want to be human, you'll have to win again.");
 mariahcarey_big.show("talking-sly", true);
-speak("Mariah Carey", "Using new, revolutionary dice-tracking technology,|after your turn we’ll punish you for every cheat we detect!");
+speak("Mariah Carey", "And no cheating this time.");
+speak("Mariah Carey", "Using revolutionary dice-tracking technology, now after|your turn we can punish you for every cheat we detect!");
 mariahcarey_big.show("idle-sly", true);
 
 speak("Lady Luck", "So I just have to hide all the|evidence by the end of my turn?");

@@ -125,8 +125,12 @@ if (player == "Lady Luck" && episodenum == 1) {
 	announcer.show("talking");
 	speak("Mariah Carey", "Sure.");
 } else if (player == "Lady Luck" && episodenum == 2) {
-	speak("Mariah Carey", "Placeholder dialogue for second episode.");
-	speak("Lady Luck", "What?");
+	speak("Mariah Carey", "Oh, wow! You really managed to win fair and square.");
+	speak("Mariah Carey", "Ready to spin that lovely, lovely wheel again?");
+	announcer.show("idle");
+	speak("Lady Luck", "Yeah, yeah... get on with it.");
+	announcer.show("talking");
+	speak("Mariah Carey", "Heh, you're no fun...");
 } else {
     var firstlinevoice = false;
     for(message in variables.messages_beforespin) {
@@ -156,7 +160,7 @@ if (wheelwins) {
     play("stopallmusic");    
     play("cutscene_audience");
     play("music_cutscene_cheery");
-    if (player == "Lady Luck") {
+    if (player == "Lady Luck" && episodenum == 1) {
         speak("Mariah Carey", "What the he- how did yo- wha?");
 		announcer.show("idle");
 		speak("Lady Luck", "Seems like just a matter of chance.");
@@ -226,6 +230,31 @@ if (wheelwins) {
 		}
 		endingcredits();
 		return;
+	} else if (player == "Lady Luck" && episodenum == 2) {
+		speak("Mariah Carey", "Haha, aww... I guess I have to turn you back, then...");
+		speak("Mariah Carey", "...wait.");
+		announcer.show("idle");
+		speak("Lady Luck", "Wait?");
+		announcer.show("talking");
+		speak("Mariah Carey", "What was that equipment you were using earlier in the episode?");
+		announcer.show("idle");
+		speak("Lady Luck", "...where are you going with this.");
+		announcer.show("talking");
+		speak("Mariah Carey", "'Call for Backup Robot', wasn't it?");
+		speak("Mariah Carey", "Oh dear, doesn't that count as... getting outside help?");
+		announcer.show("idle");
+		speak("Lady Luck", "You're kidding.");
+		announcer.show("talking");
+		speak("Mariah Carey", "Oh well. Back down into the dungeon for you!");
+		announcer.show("idle");
+		speak("Lady Luck", "Ha-ha.");
+		announcer.hide();
+		signanimate(sign);
+		announcer = ladyluck_sign;
+		announcer.show("talking");
+		actor("Lady Luck_", screenwidthmid + 200, 100, Col.YELLOW, LEFT, TOP, "chat_ladyluck", "characters/misc/charicon_ladyluck");
+
+		speak("Lady Luck_", "No, I don't think so.");
     } else {
 		if (player == "Warrior" && episodenum == 1) {
 			speak("Lady Luck", "Wow, it looks like it landed on the prize!", "normal");
