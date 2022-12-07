@@ -8,7 +8,7 @@ MIN2,Grand Finale
 MIN2,Earthquake
 NORMAL,Key 1|Key 2|Key 3|Key 4|Key 5|Key 6
 MAX4,Sword+|Tower Shield
-NORMAL,Wall of Flame|Wall of Flame
+NORMAL,Wall of Flame|Wall of Flame|Wall of Flame
 MIN4|REQUIRE6|MIN4,Divine Hammer|Divine Megaphone
 MIN4|REQUIRE6|REQUIRE6,Divine Hammer|Divine Megaphone|Very Good Sword
 COUNTDOWN_8,Mechanical Leg+
