@@ -20,7 +20,19 @@ for (e in self.equipment) {
 	}
 }
 
+if (self.varexists("previousloadout")) {
+	var previousloadout = self.getvar("previousloadout");
+	var previousloadoutobj = {};
+	for (item in data) {
+		if (item.equipment == previousloadout) {
+			previousloadoutobj = item;
+		}
+	}
+	if (previousloadoutobj != {}) data.remove(previousloadoutobj);
+}
+
 var damagephase = rand(data);
+self.setvar("previousloadout", damagephase.equipment);
 
 var eqlist = bonusEquipment.concat(damagephase.equipment.split("|"));
 var slots = damagephase.slots.split("|");
