@@ -1,14 +1,15 @@
-var floor1items = shuffle(["Ghostly Flame Spell", "Fortify Spell", "Supercharger", "Acorn Shield"]);
-var witchshops = shuffle(["Pip Master", "Christmas Pistol","Blighted Zap", 
+var floor1items = shuffle(["Ghostly Flame Spell", "Honeysuckle", "Supercharger", "Acorn Shield"]);
+var witchshops = shuffle(["Pip Master", "Gladioli", "Blighted Zap", 
   "Brace", "Pocket Protector", "Rock Crusher", "Power Glove", 
   "Frosty Bufu", "Sandbag", "Matchbook", "Quadrality"]);
 var strangeshop = shuffle(["Wide Spatula", "Cactus Cauldron"]);
-var awesomelist = shuffle(["Christmas Pistol", "Roulette", "AC Unit", 
-  "Poison Spell", "Power Glove", 
+var awesomelist = shuffle(["Magic Dagger", "Roulette", "Mana Spear", 
+  "Poison Spell", "Power Glove", "Blue Ocean",
   "Lucky Punch", "Wizard's Hat"]);
 var floor2gooditem = shuffle(["Budge", "Pip Master"]);
+floor2gooditem.push(floor1items.pop());
 var floor3item = shuffle([
-  "Innovate", "Renunciation", "Supercharger", "Magic Dagger", "Electric Shock", "Bicep Curl"]);
+  "Renunciation@witch", "Fortify Spell", "Supercharger", "Magic Dagger", "Electric Shock", "Sheer Will", "Bicep Curl"]);
 var floor5item = shuffle([ 
   "Teleport Spell", "Bank Trade", "Bloodstone", "Healing Blast"]);
 var vampireitem = ["Silver Sword"];

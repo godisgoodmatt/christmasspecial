@@ -8,7 +8,7 @@ MIN2,Grand Finale
 MIN2,Earthquake
 NORMAL,Key 1|Key 2|Key 3|Key 4|Key 5|Key 6
 MAX4,Sword+|Tower Shield
-NORMAL,Wall of Flame|Wall of Flame
+NORMAL,Wall of Flame|Wall of Flame|Binary Blast
 MIN4|REQUIRE6|MIN4,Divine Megaphone|Very Good Sword
 MIN4|REQUIRE6|MIN4,Divine Hammer|Very Good Sword
 COUNTDOWN_8,Mechanical Leg
@@ -21,3 +21,5 @@ MIN3,Boomerang|Healing Crystal
 COUNTDOWN_5,Thunder Storm|Thunder Storm|Thunder Storm
 COUNTDOWN_5,Heatwave|Heatwave|Heatwave
 COUNTDOWN_5,Snowstorm|Snowstorm|Snowstorm
+COUNTDOWN_4,Calculator+|Calculator
+MIN3,Hedge Clippers+
