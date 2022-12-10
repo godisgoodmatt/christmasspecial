@@ -31,7 +31,7 @@ mycoolfloor1.generate();
 //Floor 2:
 items = [ladymain.pop()];
 gooditems = [];
-otherstuff = [health()];
+otherstuff = [health(), health()];
 goodotherstuff = [];
 var mycoolfloor2 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
 mycoolfloor2.theme = mycoolfloor1.theme;
@@ -43,7 +43,7 @@ items = [];
 gooditems = [ladymain.pop()];
 otherstuff = [health(), health()];
 
-goodotherstuff = [];
+goodotherstuff = [health()];
 var mycoolfloor3 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
 mycoolfloor3.theme = rand(['music_ladyluck1']);
 mycoolfloor3.setlocation("GAMESHOW");
@@ -53,7 +53,7 @@ mycoolfloor3.generate();
 items = [ladymain.pop()];
 gooditems = [];
 
-otherstuff = [health()];
+otherstuff = [health(),health()];
 goodotherstuff = [shop(["Health", ladyinteresting.pop()],[4,4])];
 var mycoolfloor4 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
 mycoolfloor4.theme = rand(['music_ladyluck1']);
@@ -66,7 +66,7 @@ gooditems = [];
 
 otherstuff = [health(), health()];
 goodotherstuff = [
-  shop(["health", "health", "health"], [4, 4, 4])
+  health()
 ];
 
 var mycoolfloor5 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
