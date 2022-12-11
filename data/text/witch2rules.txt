@@ -1,0 +1,13 @@
+h1|A Wizardly Mix-Up
+
+In this episode, all of your equipment requires a specific dice.
+The dice required is based on the location of the equipment
+in the "Equipped" section, like so:
+
+1/3/5
+2/4/6
+
+Equipment with two or three slots will take a combination of dice which is preserved between turns.
+
+If your equipment upgrades by changing its slots to other dice, it'll take even dice
+if placed in slots 2, 4, or 6, and odd dice if in slots 1, 3, or 5.

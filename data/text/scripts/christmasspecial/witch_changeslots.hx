@@ -4,6 +4,11 @@ var reset = args[1];
 var beforestartturn = args[2];
 
 for(e in self.getcurrentequipment()) {
+	// Don't change slots of passive equipment
+	if(e.slots.length == 0) {
+		return;
+	}
+
     var upgraded = e.namemodifier == '+';
     var upgradeType = new elements.Equipment(e.name).upgradetype;
     trace(upgradeType + " " + upgraded);
