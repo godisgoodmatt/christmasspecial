@@ -49,32 +49,34 @@ wait(0.5);
  
 mariahcarey_big.show("talking", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "Oh my dear Witch...");
+speak("Mariah Carey", "Oh, my dear Witch...");
 mariahcarey_big.show("talking-confused", true);
-speak("Mariah Carey", "I kind of messed up your episode", "normal");
+speak("Mariah Carey", "I... kind of messed up your episode.", "normal");
 mariahcarey_big.show("idle", true);
 
 speak("Witch", "Wha- how!?", "action");
 speak("Witch", "I mean, does it at least work?", "normal");
 
 mariahcarey_big.show("talking", true);
-speak("Mariah Carey", "Well yes but now you don't have a spell book...", "normal");
-speak("Mariah Carey", "Thats great right? Like this is a good thing?");
+speak("Mariah Carey", "Well, yes! I've traded your|spellbook for normal equipment!", "normal");
+speak("Mariah Carey", "That's great, right?");
 mariahcarey_big.show("idle", true);
 
 speak("Witch", "Not exactly.", "action");
-speak("Witch", "Plus how did you mess it up?");
+speak("Witch", "...please tell me that's all you messed up.");
 
 mariahcarey_big.show("talking-scary", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.RED, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "[red]STOP ASKING POINTLESS QUESTIONS!", "normal");
-speak("Mariah Carey", "[red]JUST TAKE THE EASY WIN YOU SPOILED BRA-");
+speak("Mariah Carey", "[red]THAT WASN'T A MISTAKE! I JUST|[red]WANTED TO GIVE YOU AN EASIER TIME!", "normal");
+speak("Mariah Carey", "[red]YOU SHOULD BE THANKFUL,|[red]YOU UNGRATEFUL BRA-");
 mariahcarey_big.show("talking", true);
 actor("Mariah Carey", screenwidthmid + 350, 700, Col.YELLOW, CENTER, BOTTOM, "chat_mariahcarey", "characters/misc/charicon_mariahcarey");
-speak("Mariah Carey", "Oh um... I misclicked and added a ton of Wizard's items.");
-speak("Mariah Carey", "But now you get Wizard's loadout no matter|what items are in your inventory.", "normal");
+speak("Mariah Carey", "Oh, um... yeah, about the mistake... I misclicked and|added a ton of Wizard's items to your pool.");
+speak("Mariah Carey", "But now you get Wizard's loadout no matter|what items are in your inventory!", "normal");
+speak("Mariah Carey", "So it all works out in the end.", "normal");
 mariahcarey_big.show("idle", true);
 
-speak("Witch", "Seems weird, but can't hurt to try a new setup!", "normal");
+speak("Witch", "Oh.", "normal");
+speak("Witch", "...I guess it can't hurt to try a new setup?", "normal");
 
 startgamefromcutscene();
