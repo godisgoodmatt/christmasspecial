@@ -91,6 +91,7 @@ if(player == "Warrior"){
 }else{
   actor("Lady Luck", 150, screenheight - 100, Col.RED, LEFT, BOTTOM, "chat_ladyluck", "characters/lady luck/charicon_lady_luck");
 }
+spin = 100;
 
 // INTRO
 
@@ -361,30 +362,30 @@ if (wheelwins) {
 			announcer.show("idle");
 			speak(player, "Point taken.");
 		} else if (player == "Inventor" && episodenum == 2) {
-			speak(player, "Woah what a trip!", "normal");
-			speak(player, "That was soooo cool!", "personality");
+			speak(player, "Woah, what a trip!", "normal");
+			speak(player, "That was sooo cool!", "personality");
 			announcer.show("talking");
-			speak("Mariah Carey", "Aw thanks I'm flattered!", "normal");
-			speak("Mariah Carey", "Bet Lady Luck would never had thought of that");
+			speak("Mariah Carey", "Aw thanks, I'm flattered!", "normal");
+			speak("Mariah Carey", "Bet Lady Luck couldn't've thought of that.");
 			announcer.show("idle");
-			speak(player, "Probably not thats why your the best!", "worried");
+			speak(player, "Probably not, that's why you're the best!", "worried");
 			announcer.show("talking");
-			speak("Mariah Carey", "Oh stop it! As your gift I'll explain how it works!");
+			speak("Mariah Carey", "Oh, stop it! Know what - as your gift,|I'll explain how it works!");
 			announcer.show("idle");
 			speak(player, "Wooooo!", "worried");
 		} else if (player == "Witch" && episodenum == 2) {
 			speak(player, "That was interesting...", "normal");
-			speak(player, "Pretty sure wizard hates me know.", "personality");
+			speak(player, "Pretty sure Wizard hates me now.", "personality");
 			announcer.show("talking");
 			speak("Mariah Carey", "How come?", "normal");
 			announcer.show("idle");
 			speak(player, "He thinks I was mocking him.", "worried");
 			announcer.show("talking");
-			speak("Mariah Carey", "What a shame... Well what would you like?");
+			speak("Mariah Carey", "What a shame... Well, what would you like?");
 			announcer.show("idle");
-			speak(player, "For wizard not to beat me up.", "worried");
+			speak(player, "Can you convince Wizard not to beat me up?", "worried");
 			announcer.show("talking");
-			speak("Mariah Carey", "I'm not sure I can stop that...");
+			speak("Mariah Carey", "Haha, I don't think even I can do that...");
 			announcer.show("idle");
 		} else if (player == "Witch" && episodenum == 1) {
 			speak("Lady Luck", "You won the wheel spin. Huzzah.", "normal");
@@ -395,13 +396,13 @@ if (wheelwins) {
 			speak("Lady Luck", "No.", "normal");
 			announcer.show("idle");
 		} else if (player == "Mariah" && episodenum == 1) {
-			speak("Lady Luck", "Well it looks like you did it wooow", "sly");
-			speak("Lady Luck", "I guess you'll become human again");
+			speak("Lady Luck", "Well... looks like you did it. Good job.", "sly");
+			speak("Lady Luck", "I guess you get to be human again.");
 			announcer.show("idle");
-			speak(player, "Oh this is so lovely I could just sing!", "personality");
+			speak(player, "Oh, this is so lovely! I could just sing!", "personality");
 			announcer.show("talking");
 			speak("Lady Luck", "No....", "confused");
-			speak("Lady Luck", "Don't", "confused");
+			speak("Lady Luck", "Don't.", "confused");
 			announcer.show("idle");
 		} else if (player == "Jester" && episodenum == 1) {
 			speak("Lady Luck", "Congratulations, Jess. You won.", "normal");
@@ -424,11 +425,11 @@ if (wheelwins) {
 			announcer.show("idle");
 			speak(player, "I wish it did! That would be so cool!", "worried");
 			announcer.show("talking");
-			speak("Mariah Carey", "Well what would you like now?");
+			speak("Mariah Carey", "Well, what would you like now?");
 			announcer.show("idle");
 			speak(player, "For 2 of each Christmas item!", "worried");
 			announcer.show("talking");
-			speak("Mariah Carey", "I belive you are insane");
+			speak("Mariah Carey", "You're... insane.");
 			announcer.show("idle");
 		} else if (player == "Bear" && episodenum == 1) {
 			speak("Lady Luck", "Huh! It actually landed on the prize space.", "normal");
