@@ -1,9 +1,9 @@
 /*var awesomelist = shuffle(["Bump", "Bump", "Nudge", "Nudge", "Spatula", "Spatula", "Spanner", "Spanner", "Lockpick", "Lockpick", "Doppeldice", "Doppeldice", "Duplicate", "Duplicate", "Table Slam", "Chocolate Cookie", "Hookshot", "Snake Eye Charm", "Square Pair", "Midnight Charm", "Half Moon Charm", "Counterfeit", "Hacksaw", "Crowbar", "Chisel", "Sine Wave", "Saw Wave", "Berlin Key", "Master Key", "Skeleton Key", "Blender", "Magic Key", "Woof Woof Woof", "Cauldron", "Spare 1", "Spare 2","Spare 3","Spare 4","Spare 5","Spare 6", "Illuminate", "Paper Lantern", "Picnic Basket", "Marmalade", "Befuddle", "Signal Jammer", "Cauldron", "Splitula", "Bronze Cauldron", "Mirror Cauldron", "Glass Cauldron", "Silver Cauldron", "Gold Cauldron", "Blood Cauldron", "Crucible", "Broken Mirror", "Hall of Mirrors", "Honey", "Lucky Roll", "Avalanche", "Smush Together", "Change Machine", "Rat", "Parity Flip", "Rerow", "Scrambler", "Obsidian Bauble", "Call for Backup Robot?", "Lollipop", "Subdivide", "Lucky Star", "Fury Spell", "Doppeltwice", "Budge", "Pip Master", "Disco Ball", "Giant Spatula", "Bearpick", "Magic Reroll", "Ungeradedice", "Candle", "Radicalise", "5patula", "Waterwheel", "Logistics Expert", "Half Moon Cauldron", "One I Prepared Earlier", "Dullplicate", "Bumper Sticker", "Murk", "Trinity Charm", "Luckpick", "Buzzsaw", "Eternal Cauldron", "Contact Juggling", "Dime", "Burner Phone", "Demote", "Rockfall", "Locktrick", "Mitosis", "Janky Spanner", "Metal Crusher", "Plug Socket", "Natural Charm", "Mass Grimoire", "Rock Crusher", "Shrug", "Star Cauldron", "Mirror Spatula", "Halfula", "Endless Pond", "Chain Link", "God's Pick", "Dice Pump", "Sharpie", "Transporter", "Fogged Mirror", "Decantation", "Caustic Cauldron", "Cactus Cauldron", "Wide Spatula", "Deva Form", "Permapick", "Vice Grip", "Countvalanche"]);*/
 var vampireitem = ["Silver Sword"];
 
-var simple = shuffle(["Bump", "Nudge", "Spatula", "Spanner", "Lockpick", "Doppeldice", "Duplicate", "Vise Grip", "Cauldron"]);
+var simple = ["Bump", "Nudge", "Spatula", "Spanner", "Lockpick", "Doppeldice", "Duplicate", "Vise Grip", "Cauldron"];
 
-var intermediate = shuffle([
+var intermediate = [
 // Other Vanilla
 // Charms
 "Snake Eye Charm", "Square Pair", "Midnight Charm", "Half Moon Charm",
@@ -28,11 +28,9 @@ var intermediate = shuffle([
 "Caustic Cauldron", "Cactus Cauldron", "Halfula", "Radicalise", "Waterwheel", "Murk",
 "Burner Phone", "Demote", "Locktrick", "Mitosis", "Janky Spanner", "Rock Crusher",
 "Decantation", "Permapick"
+];
 
-// Note to self, add reunion items
-]);
-
-var advanced = shuffle([
+var advanced = [
 // Vanilla
 "Befuddle", "Blender", "Table Slam", "Crowbar", "Bearpick", "Giant Spatula", "Magic Reroll", 
 "Candle", "Avalanche", "Splitula",
@@ -45,11 +43,21 @@ var advanced = shuffle([
 "Luckpick", "Dullplicate", "One I Prepared Earlier", "Half Moon Cauldron", "Buzzsaw", "Bumper Sticker",
 "Trinity Charm", "Rockfall", "Metal Crusher", "Plug Socket", "Chain Link", "God's Pick", "Sharpie",
 "Transporter"
-]);
+];
 
 var exotic = shuffle(["Lucky Star", "Disco Ball", "Logistics Expert", "Call for Backup Robot?", "Mass Grimoire", "Obsidian Bauble", "Sugar Rush"]);
 
 var spare = shuffle(["Spare 1", "Spare 2","Spare 3","Spare 4","Spare 5","Spare 6", "Wizard's Hat"]);
+
+advanced = shuffle(advanced);
+intermediate.push(advanced.pop());
+intermediate.push(advanced.pop());
+intermediate.push(advanced.pop());
+intermediate.push(advanced.pop());
+intermediate = shuffle(intermediate);
+simple.push(intermediate.pop());
+simple.push(intermediate.pop());
+simple = shuffle(simple);
 
 //var awesomelist = shuffle(["Bronze Cauldron", "Mirror Cauldron", "Broken Mirror", "Hall of Mirrors", "Mirror Spatula", "Endless Pond", "Fogged Mirror", "Deva Form"]);
 
