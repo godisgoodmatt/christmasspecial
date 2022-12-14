@@ -27,7 +27,7 @@ var intermediate = [
 "Dime", "Parity Flip", "Shrug", "5patula", "Rerow", "Scrambler", "Natural Charm",
 "Caustic Cauldron", "Cactus Cauldron", "Halfula", "Radicalise", "Waterwheel", "Murk",
 "Burner Phone", "Demote", "Locktrick", "Mitosis", "Janky Spanner", "Rock Crusher",
-"Decantation", "Permapick"
+"Decantation", "Permapick", "Big Bump", "Big Nudge", "Duplishift"
 ];
 
 var advanced = [
