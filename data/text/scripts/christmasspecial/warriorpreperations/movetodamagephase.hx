@@ -48,7 +48,7 @@ for (e in f.equipment){
 		var act = new motion.actuators.SimpleActuator(e,0.5,{x:e.finalpos.x});
 		act._repeat = 0;
 		act.move();
-		if (e.y < 0) {
+		while (e.y < 0) {
 			e.y += 2165;
 		}
 	} else if (!(preview && e.name == "Preview Equipment")) {
