@@ -6,15 +6,18 @@ var beforestartturn = args[2];
 for(e in self.getcurrentequipment()) {
 	// Don't change slots of passive equipment
 	if(e.slots.length == 0) {
-		return;
+		continue;
 	}
 
     var upgraded = e.namemodifier == '+';
     var upgradeType = new elements.Equipment(e.name).upgradetype;
-    trace(upgradeType + " " + upgraded);
 
 	if (e.varexists("oldslots") && beforestartturn) {
 		e.changeslots(e.getvar("oldslots"));
+		if (e.varexists("oldtags")) {
+			e.tags = e.getvar("oldtags");
+		}
+		continue;
 	}
 
 	var position = ((e.column * 2) + e.row + 1);

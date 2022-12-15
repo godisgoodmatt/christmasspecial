@@ -35,6 +35,7 @@ if(_modifier == "-"){
 	chargedequipment.downgrade();
 }
 
+_self.equipment.remove(_self.getskillcard()); // This ensures that Strong Breath works if uncharged Calm Mind is used first
 var skillcard = _thisequipment.skillcard;
 _internalexchangeequipment(_self, _thisequipment, chargedequipment, -1);
 chargedequipment.ready = _reusable;
