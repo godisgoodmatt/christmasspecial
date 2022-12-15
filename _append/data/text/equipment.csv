@@ -1529,7 +1529,7 @@ Flame Spell@witch,Deal [fire]5 damage|Burn [fire]2 dice,1,attack(5[;] FIRE); inf
 Flame Spell@witch_upgraded,Deal [fire]6 damage|Burn [fire]ALL dice,1,attack(6[;] FIRE); inflict(FIRE[;] ALL); sfxdamage(target[;]6); sfx(~_fire~[;]~~[;]0.2);,Hellfire,NORMAL,,RED,,,,,0,NO,NO,,,,,,,,,,,,,
 Flame Spell@witch_downgraded,Deal [sword]5 damage,1,attack(5); sfxdamage(target[;]6);,Hellfire,NORMAL,,RED,,,,,0,NO,NO,,,,,,,,,,,,,
 Ghostly Flame Spell,Deal [fire]8 damage|Inflict [vanish]vanish,1,attack(8[;] FIRE); inflict(VANISH); sfxdamage(target[;]8); sfx(~_vanish~[;]~~[;]0.2);,Hellfire,NORMAL|NORMAL,,PINK,change_power,change_power,,,0,NO,NO,,,,,,,,,,,,,
-Ghostly Flame Spell_upgraded,Deal [fire]9 damage|Inflict [vanish]vanish,1,attack(9[;] FIRE); inflict(FIRE[;] ALL); sfxdamage(target[;]9); sfx(~_vanish~[;]~~[;]0.2);,Hellfire,NORMAL|NORMAL,,PINK,,,,,0,NO,NO,,,,,,,,,,,,,
+Ghostly Flame Spell_upgraded,Deal [fire]9 damage|Inflict [vanish]vanish,1,attack(9[;] FIRE); inflict(VANISH); sfxdamage(target[;]9); sfx(~_vanish~[;]~~[;]0.2);,Hellfire,NORMAL|NORMAL,,PINK,,,,,0,NO,NO,,,,,,,,,,,,,
 Ghostly Flame Spell_downgraded,Deal [sword]7 damage,1,attack(7); sfxdamage(target[;]7);,Hellfire,NORMAL|NORMAL,,PINK,,,,,0,NO,NO,,,,,,,,,,,,,
 Fortify Spell,Gain [reduce]2 reduce,1,inflictself(REDUCE[;]2); sfx(~_shield~);,Quick Thinking,NORMAL,,ORANGE,change_power,change_power,dodge,,0,YES,NO,,1,,,,,,,,,,,
 Fortify Spell_upgraded,Gain [reduce]3 reduce,1,inflictself(REDUCE[;]3); sfx(~_shield~);,Quick Thinking,NORMAL,,ORANGE,,,,,0,YES,NO,,1,,,,,,,,,,,
