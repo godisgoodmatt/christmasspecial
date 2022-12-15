@@ -242,7 +242,7 @@ if (wheelwins) {
 		announcer.show("idle");
 		speak("Lady Luck", "...where are you going with this.");
 		announcer.show("talking");
-		speak("Mariah Carey", "'Call for Backup Robot', wasn't it?");
+		speak("Mariah Carey", "'Call for Backup Thief', wasn't it?");
 		speak("Mariah Carey", "Oh dear, doesn't that count as... getting outside help?");
 		announcer.show("idle");
 		speak("Lady Luck", "You're kidding.");
