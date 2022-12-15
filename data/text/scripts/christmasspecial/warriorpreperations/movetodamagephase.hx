@@ -69,8 +69,7 @@ for (e in f.equipment){
 			}
 		}
 		e.ready = false;
-		e.finalpos.x = -e.width - 20;
-		var act = new motion.actuators.SimpleActuator(e,0.5,{x:e.finalpos.x});
+		var act = new motion.actuators.SimpleActuator(e,0.5,{x:-e.width - 5});
 		act._repeat = 0;
 		act.move();
 	}
