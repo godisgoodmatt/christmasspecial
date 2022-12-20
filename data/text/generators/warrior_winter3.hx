@@ -43,7 +43,7 @@ var advanced = [
 "Luckpick", "Dullplicate", "One I Prepared Earlier", "Half Moon Cauldron", "Buzzsaw", "Bumper Sticker",
 "Trinity Charm", "Rockfall", "Metal Crusher", "Plug Socket", "Chain Link", "God's Pick", "Sharpie",
 "Transporter", "Fairy Lights", "Return Bicep Curls", "Bank Trade", "Copy Machine",
-"Divine Rock Crusher"
+"Divine Rock Crusher", "Melon Cauldron"
 ];
 
 var exotic = shuffle(["Lucky Star", "Disco Ball", "Logistics Expert", "Call for Backup Robot?", "Mass Grimoire", "Obsidian Bauble", "Sugar Rush", "Autohook"]);
