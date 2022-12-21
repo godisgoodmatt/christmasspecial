@@ -27,7 +27,7 @@ var intermediate = [
 "Dime", "Parity Flip", "Shrug", "5patula", "Rerow", "Scrambler", "Natural Charm",
 "Caustic Cauldron", "Cactus Cauldron", "Halfula", "Radicalise", "Waterwheel", "Murk",
 "Burner Phone", "Demote", "Locktrick", "Mitosis", "Janky Spanner", "Rock Crusher",
-"Decantation", "Permapick", "Big Bump", "Big Nudge", "Duplishift"
+"Decantation", "Permapick", "Big Bump", "Big Nudge", "Duplishift", "Skewer", "Quadrality"
 ];
 
 var advanced = [
@@ -42,10 +42,11 @@ var advanced = [
 "Dupliduddle", "Eternal Cauldron", "Countvalanche", "Star Cauldron", "Dice Pump", "Wide Spatula",
 "Luckpick", "Dullplicate", "One I Prepared Earlier", "Half Moon Cauldron", "Buzzsaw", "Bumper Sticker",
 "Trinity Charm", "Rockfall", "Metal Crusher", "Plug Socket", "Chain Link", "God's Pick", "Sharpie",
-"Transporter"
+"Transporter", "Fairy Lights", "Return Bicep Curls", "Bank Trade", "Copy Machine",
+"Divine Rock Crusher", "Melon Cauldron"
 ];
 
-var exotic = shuffle(["Lucky Star", "Disco Ball", "Logistics Expert", "Call for Backup Robot?", "Mass Grimoire", "Obsidian Bauble", "Sugar Rush"]);
+var exotic = shuffle(["Lucky Star", "Disco Ball", "Logistics Expert", "Call for Backup Robot?", "Mass Grimoire", "Obsidian Bauble", "Sugar Rush", "Autohook"]);
 
 var spare = shuffle(["Spare 1", "Spare 2","Spare 3","Spare 4","Spare 5","Spare 6", "Wizard's Hat"]);
 
