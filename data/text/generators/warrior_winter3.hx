@@ -48,7 +48,7 @@ var advanced = [
 
 var exotic = shuffle(["Lucky Star", "Disco Ball", "Logistics Expert", "Call for Backup Robot?", "Mass Grimoire", "Obsidian Bauble", "Sugar Rush", "Autohook"]);
 
-var spare = shuffle(["Spare 1", "Spare 2","Spare 3","Spare 4","Spare 5","Spare 6", "Wizard's Hat", "Gambler's Paradice"]);
+var spare = shuffle(["Spare 1", "Spare 2","Spare 3","Spare 4","Spare 5","Spare 6", "Wizard's Hat", "Gambler's Paradice", "Hall of Mirrors"]);
 
 advanced = shuffle(advanced);
 intermediate.push(advanced.pop());
