@@ -237,3 +237,4 @@ super_anticheat,Anti-Cheat!,ncr_error,For every dice left at the end of|your tur
 extradamage_singleturn,Extra,sword,Do [sword]<value> extra damage with each attack this turn.,YES,YES,NO,NO,NO,Rules.bonusdamage = status.value;,,,,,,Rules.bonusdamage = 0;,,,,
 berserk,Berserk,berserk,All damage you inflict is doubled until the end of the turn.,YES,NO,NO,NO,NO,inflict(~realberserk~); ,,,inflict(~realberserk~); ,,,var berserk = self.getstatus(~berserk~); berserk.value--; berserk._displayvalue = berserk.value; if(berserk.value <=0) berserk.cleanup = true;,,,,
 realberserk,Berserk,berserk,Should not appear.,NO,YES,YES,YES,NO,status.scriptmodifydamage = ~return (dmg * 2);~;,,status.scriptmodifydamage = ~~;,,,,status.scriptmodifydamage = ~~;,status.scriptmodifydamage = ~~;,,,
+mariah2logic,Mariah_2_Logic,cog,Does the logic for Mariah Carey Episode 2,NO,NO,NO,YES,NO,,,,,runscript(~christmasspecial/mariahflipping/flipcard~[;][e]);,,,,,,
