@@ -1,0 +1,9 @@
+Wail,Lament,Lament,Shriek
+Electromagnet,Yoink
+Six Shooter,Midnight Charm
+Avalanche,Avalanche,Glare,Avalanche,Avalanche
+Cardboard Sword,Glue
+Rat,Rat,Rat,Rat,Rat,Rat
+Sad Verse,Sad Verse,High Note
+Two Handed Sword,Shriek
+Shooting Star,Dark Shadow

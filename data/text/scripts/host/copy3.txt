@@ -1,0 +1,15 @@
+Rock,Rock,Rock,Rock,Fists
+Cactus Spear,Cactus Shield
+Slime Ball,Slime Ball,Sinkhole
+Fireball,Fireball
+Spanner,Hammer,Pea Shooter
+Poison Cloud,Blight
+Lock 1,Lock 2,Lock 3,Lock 4,Lock 5,Lock 6
+Cauldron,Sonic Wave,Sonic Wave,Infliction
+Dust Cloud,Blood Suck
+Ice Shard,Ice Shard,Ice Age
+Slush Ball,Slush Ball,Cold Cut
+Candy Cane,Self Consume,Gumdrop Throw
+Shiny Nose,Headbutt,Antlers
+Scorching Blast,Hot Headed
+Frozen Touch,White Christmas

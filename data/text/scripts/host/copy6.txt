@@ -1,0 +1,18 @@
+Tower Shield,Broadsword,Charge!
+Headbutt,Earthquake
+Bee Sting,Bee Sting,Flight,Bee Sting,Bee Sting
+Fire Breath,Fire Breath,Fire Breath,Fire Breath
+Blood Suck,Smog Cloud
+Campfire,Pocket Knife,Chocolate Cookie
+Wail,Lament,Lament,Shriek
+Electromagnet,Yoink
+Six Shooter,Midnight Charm
+Avalanche,Avalanche,Glare,Avalanche,Avalanche
+Cardboard Sword,Glue
+Rat,Rat,Rat,Rat,Rat,Rat
+Sad Verse,Sad Verse,High Note
+Two Handed Sword,Shriek
+Shooting Star,Dark Shadow
+All I Want,Sing,Mic Drop
+Ram,Stomp,Acceleration Kick
+All Aboard,Ticket Dispenser

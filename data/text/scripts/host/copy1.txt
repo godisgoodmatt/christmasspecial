@@ -1,0 +1,9 @@
+Broadsword,Small Shield
+Shovel
+Fireball
+Magic Missile,Magic Shield
+Slime Ball,Slime Ball
+Rosewood Spear
+Woof Woof Woof,Wolf Puppy Bite
+Ray Gun
+Slide,Peck

@@ -1,0 +1,12 @@
+Spiky Potion,Toxic Potion,Fire Potion
+Sonic Wave,Sonic Wave
+Ink Splat,Headbutt
+Mystery Box
+Fireball,Snowball
+Pickpocket,Run Away!
+Pirate Hook,Cannon Fire
+Sneeze,Spike,Spike,Spike,Spike
+Poison Slingshot,Venus Fly Trap
+Freeze Spell,Flame Spell,Poison Spell,Thunder Spell,Teleport Spell,Hall Of Mirrors
+Candy Cane Spear
+Doom and Gloom,12 Days Of Christmas
