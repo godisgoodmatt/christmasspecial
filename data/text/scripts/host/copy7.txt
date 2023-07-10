@@ -1,0 +1,77 @@
+Tower Shield,Broadsword,Charge!
+Headbutt,Earthquake
+Bee Sting,Bee Sting,Flight,Bee Sting,Bee Sting
+Fire Breath,Fire Breath,Fire Breath,Fire Breath
+Blood Suck,Smog Cloud
+Campfire,Pocket Knife,Chocolate Cookie
+Wail,Lament,Lament,Shriek
+Electromagnet,Yoink
+Six Shooter,Midnight Charm
+Avalanche,Avalanche,Glare,Avalanche,Avalanche
+Cardboard Sword,Glue
+Rat,Rat,Rat,Rat,Rat,Rat
+Sad Verse,Sad Verse,High Note
+Two Handed Sword,Shriek
+Shooting Star,Dark Shadow
+All I Want,Sing,Mic Drop
+Ram,Stomp,Acceleration Kick
+All Aboard,Ticket Dispenser
+Broadsword,Small Shield
+Shovel
+Fireball
+Magic Missile,Magic Shield
+Slime Ball,Slime Ball
+Rosewood Spear
+Woof Woof Woof,Wolf Puppy Bite
+Ray Gun
+Slide,Peck
+Spiky Potion,Toxic Potion,Fire Potion
+Sonic Wave,Sonic Wave
+Ink Splat,Headbutt
+Mystery Box
+Fireball,Snowball
+Pickpocket,Run Away!
+Pirate Hook,Cannon Fire
+Sneeze,Spike,Spike,Spike,Spike
+Poison Slingshot,Venus Fly Trap
+Freeze Spell,Flame Spell,Poison Spell,Thunder Spell,Teleport Spell,Hall Of Mirrors
+Candy Cane Spear
+Doom and Gloom,12 Days Of Christmas
+Rock,Rock,Rock,Rock,Fists
+Cactus Spear,Cactus Shield
+Slime Ball,Slime Ball,Sinkhole
+Fireball,Fireball
+Spanner,Hammer,Pea Shooter
+Poison Cloud,Blight
+Lock 1,Lock 2,Lock 3,Lock 4,Lock 5,Lock 6
+Cauldron,Sonic Wave,Sonic Wave,Infliction
+Dust Cloud,Blood Suck
+Ice Shard,Ice Shard,Ice Age
+Slush Ball,Slush Ball,Cold Cut
+Candy Cane,Self Consume,Gumdrop Throw
+Shiny Nose,Headbutt,Antlers
+Scorching Blast,Hot Headed
+Frozen Touch,White Christmas
+Heatwave,Snowstorm,Hurricane
+Crystallize,Crystallize@attack,Crystallize@attack
+Dire Wolf Howl,Claw,Claw
+Camouflage,Deep Sea Howl,Overwhelm
+Squak,Flight,Echo Blast
+Battle Axe,Beetle Headbutt
+Rotten Core,Worm Bite
+Snowball,Snowball,Snowball,Snowball
+Wicker Staff,Venus Fly Trap
+Fool's Fire,Burning Light,Burning Light
+Tree Shake
+Frozen Slash,Frozen Claw
+BackHand,Tazer
+Slush Spell,Doom Spell,Redshift Spell,Regeneration Spell,Sweet Spell,Hall Of Mirrors
+Wail,Lament,Lament,Shriek
+Electromagnet,Yoink
+Six Shooter,Midnight Charm
+Avalanche,Avalanche,Glare,Avalanche,Avalanche
+Cardboard Sword,Glue
+Rat,Rat,Rat,Rat,Rat,Rat
+Sad Verse,Sad Verse,High Note
+Two Handed Sword,Shriek
+Shooting Star,Dark Shadow
