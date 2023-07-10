@@ -2000,4 +2000,4 @@ Milk_upgraded,Reduce [reduce]2 damage|from each attack,2,inflictself(REDUCE[;]2)
 Milk_downgraded,Add [shield]2 shield,2,inflictself(SHIELD|2); sfx(~_shield~);,,ODD,,GRAY,,,,,0,YES,NO,otherside:Cookies,,,,,,,,,,,,
 Mana Overdrive,Double [mana]mana,1,givedice([d| d]);,,MIN4,,GREEN,simplify,complicate,,,0,YES,NO,otherside:Duplicating Doppeldice,,,,,,,,,,,,
 Mana Cooldown,Half [mana]mana,1,givedice(d * 2| ~combinedice~);,,MAX3,,GREEN,change_requirements,complicate,,,0,YES,NO,otherside:Doppeling Duplicate,,,,,,,,,,,,
-Mirror To The Universe,Next turn switch to |Parallel Universe statuses,2,inflict(~altshock~); inflictself(~altshock~); sfx(~_thinghappens~);,,COUNTDOWN,10,,,,,,0,YES,NO,,,,,,,,,,,,,
+Mirror To The Universe,This turn switch to |Parallel Universe statuses,2,Rules.setalternate(ALL); inflict(~altshock~); inflictself(~altshock~); sfx(~_thinghappens~);,,COUNTDOWN,10,,,,,,0,YES,NO,,,,,,,,,,,,,
