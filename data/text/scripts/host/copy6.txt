@@ -29,7 +29,7 @@ Heatwave,Snowstorm,Hurricane
 Crystallize,Crystallize@attack,Crystallize@attack
 Dire Wolf Howl,Claw,Claw
 Camouflage,Deep Sea Howl,Overwhelm
-Squak,Flight,Echo Blast
+Squawk,Flight,Echo Blast
 Battle Axe,Beetle Headbutt
 Rotten Core,Worm Bite
 Snowball,Snowball,Snowball,Snowball
