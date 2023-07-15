@@ -242,3 +242,4 @@ manaabsorb,Mana Absorb,mana,All hp you lose is converted to [mana],YES,NO,YES,NO
 manablast,Mana Blast,mana,Each attack this turn[;] consume a [mana]mana to do +[sword]<value> extra damage,YES,YES,YES,NO,NO,inflict(~realmanablast~); ,,,inflict(~realmanablast~); ,,,,,,,
 realmanablast,Mana Blast,mana,Should not appear.,NO,YES,YES,YES,NO,status.scriptmodifydamage = ~var manablast = target.getstatus(\~manablast\~); if(target.hasstatus(\~mana\~)) {return dmg + manablast.value;} else {return dmg;}~;,,,,,,,,,if (getstatus(MANA) > 0) {sfx(~_mana~|~~|0.2); removestatus(MANA|1);},
 altshock,Alternate_ALL,polymorph,Sets all statuses to their alternate version,NO,YES,NO,NO,YES,,,,,,,Rules.clearalternate(ALL);,Rules.clearalternate(ALL);,,,
+Karma,Karma,karma,Uses ~Done Deed~ To inflict damage,YES,NO,NO,NO,NO,,,,,,,,,,,

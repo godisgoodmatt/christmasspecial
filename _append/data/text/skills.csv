@@ -102,3 +102,4 @@ Fair Play,Reroll dice to lower values[;] roll a dice below 6,var c = 0; var r = 
 Oh Snap!,Use a random item at no cost,inflictself(~ncr_snap~);
 Bitey Bitey,Inflict 2 [bleed]Bleed,inflict(~Bleed~[;]2); sfx(~_poison~);
 Redecide,Get a completely random loadout,removeequipment(ALL); var eqs = rand(loadtext(~host/copy6~)).split(~[;]~); giveequipment(eqs); sfx(~levelup~);
+Done Deed,Deal damage equal to enemies karma,attack(getstatus(~Karma~)); removestatus(getstatus(~Karma~)); sfxdamage(target[;] getstatusself(~Karma~));
