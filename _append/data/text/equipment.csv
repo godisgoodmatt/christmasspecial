@@ -2001,3 +2001,7 @@ Milk_downgraded,Add [shield]2 shield,2,inflictself(SHIELD|2); sfx(~_shield~);,,O
 Mana Overdrive,Double [mana]mana,1,givedice([d| d]);,,MIN4,,GREEN,simplify,complicate,,,0,YES,NO,otherside:Duplicating Doppeldice,,,,,,,,,,,,
 Mana Cooldown,Half [mana]mana,1,givedice(d * 2| ~combinedice~);,,MAX3,,GREEN,change_requirements,complicate,,,0,YES,NO,otherside:Doppeling Duplicate,,,,,,,,,,,,
 Mirror To The Universe,This turn switch to |Parallel Universe statuses,2,Rules.setalternate(ALL); inflict(~altshock~); inflictself(~altshock~); sfx(~_thinghappens~);,,COUNTDOWN,10,,,,,,0,YES,NO,,,,,,,,,,,,,
+Karmanic Cauldron,Inflict 2 [karma]Karma|Gain 5 Limit Charge|[80%]Reroll dice,1,givedice(); inflict(~Karma~[;] 2); self.limitvalue+=5; sfx(~_mana~); if(self.limitvalue > self.limitmax){ self.limitvalue = self.limitmax; };,,NORMAL,,PURPLE,change_power,complicate,,,0,NO,NO,,1,,,,,,,,,,,
+Bad Intentions,Inflict 4 [karma]Karma,1,inflict(~Karma~[;] 4); sfx(~_mana~);,,NORMAL,,RED,change_power,complicate,,,0,NO,NO,,1,,,,,,,,,,,
+Karmanic Cauldron_upgraded,Inflict 3 [karma]Karma|Gain 7 Limit Charge|[80%]Reroll dice,1,givedice(); inflict(~Karma~[;] 3); self.limitvalue+=7; sfx(~_mana~); if(self.limitvalue > self.limitmax){ self.limitvalue = self.limitmax; };,,NORMAL,,PURPLE,change_power,complicate,,,0,NO,NO,,1,,,,,,,,,,,
+Bad Intentions_upgraded,Inflict 6 [karma]Karma,1,inflict(~Karma~[;] 6); sfx(~_mana~);,,NORMAL,,RED,,complicate,,,0,NO,NO,,1,,,,,,,,,,,
