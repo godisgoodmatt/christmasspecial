@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
 <!-- $TexturePacker:SmartUpdate:e42cad997f3e56110c107e8a98e70af7:308ff84baaa0a560c37e4c64316b0be4:2bc947f6d78526bd7d45bc6f97ece5b1$ -->
-<TextureAtlas imagePath="pack_1080.atf" width="2048" height="2048">
+<TextureAtlas imagePath="pack_1080.png" width="2048" height="2048">
     <SubTexture name="back_leafies_copy_2_Forest" x="1926" y="1" rotated="true" width="106" height="56" frameX="-1119" frameY="-976" frameWidth="1923" frameHeight="1082"/>
     <SubTexture name="back_leafies_copy_Forest" x="1926" y="646" rotated="true" width="61" height="49" frameX="-1074" frameY="-1021" frameWidth="1923" frameHeight="1082"/>
     <SubTexture name="back_leafies_Forest" x="2000" y="538" width="46" height="39" frameX="-1002" frameY="-1043" frameWidth="1923" frameHeight="1082"/>
