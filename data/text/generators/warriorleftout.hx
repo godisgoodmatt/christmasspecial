@@ -49,7 +49,7 @@ setupenemy('Kraken', 42, 4, ['Tentacle Grab','Tentacle Wack']);
 setupenemy('Loud Bird', 44, 4, ['Honk','Flap Flap','Power Quack']);
 setupenemy('Rhino Beetle', 48, 4, ['Rhino Ram','Rhino Ram','Rhino Ram','Rhino Ram']);
 setupenemy('Rotten Apple', 44, 2, ['Worm']);
-setupenemy('Polar bear', 42, 2, ['Slice','Bloody Bite']);
+setupenemy('Polar Bear', 42, 2, ['Slice','Bloody Bite']);
 setupenemy('Snowman', 44, 4, ['Snowball Effect','Snowball Machinegun','Snowball']);
 setupenemy('Wicker Man', 46, 2, ['Candle Light','Wicker Weave']);
 setupenemy('Wisp', 44, 3, ['Blighted Fire','Blighted Fire']);
@@ -148,14 +148,7 @@ gooditems = [];
 otherstuff = [];
 goodotherstuff = [];
 
-var lastfloor = addfloor("boss");
-
-if (getfinalboss() == "Mariah Carey"){
-  items.push("BOOO!");
-}
-
-lastfloor
-  .additems(items, gooditems)
-  .setlocation('BOSS')
-  .addotherstuff(otherstuff, goodotherstuff)
-  .generate();
+var mycoolfloor6 = addfloor('boss').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
+mycoolfloor6.theme = rand(['bossy']);
+mycoolfloor6.setlocation("BOSS");
+mycoolfloor6.generate();
