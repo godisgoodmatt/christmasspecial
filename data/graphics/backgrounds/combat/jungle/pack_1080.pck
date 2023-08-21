@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
 <!-- $TexturePacker:SmartUpdate:a89bce6154c6deee48ecfbd0aacf63b1:01c3c55bf8a368143bf98fed07460362:2bc947f6d78526bd7d45bc6f97ece5b1$ -->
-<TextureAtlas imagePath="pack_1080.atf" width="2048" height="2048">
+<TextureAtlas imagePath="pack_1080.png" width="2048" height="2048">
     <SubTexture name="back_leafies_Jungle" x="1926" y="723" rotated="true" width="97" height="55" frameX="-24" frameY="0" frameWidth="1923" frameHeight="1082"/>
     <SubTexture name="back_leafies_Jungle_0" x="487" y="1085" rotated="true" width="144" height="68" frameX="-93" frameY="0" frameWidth="1923" frameHeight="1082"/>
     <SubTexture name="dust_copy_2_Jungle" x="1926" y="646" rotated="true" width="100" height="75" frameX="-894" frameY="-947" frameWidth="1923" frameHeight="1082"/>
