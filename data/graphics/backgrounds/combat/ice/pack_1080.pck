@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
 <!-- $TexturePacker:SmartUpdate:97bdde8442aaf46467b5c43f47ab4864:31ed4bd2f7dc134773c661d442031bda:2bc947f6d78526bd7d45bc6f97ece5b1$ -->
-<TextureAtlas imagePath="pack_1080.atf" width="2048" height="2048">
+<TextureAtlas imagePath="pack_1080.png" width="2048" height="2048">
     <SubTexture name="bottom_middle_battleBG_Ice" x="1129" y="1243" rotated="true" width="170" height="213"/>
     <SubTexture name="icicle_mask_battleBG_Ice" x="433" y="1243" width="93" height="343"/>
     <SubTexture name="Layer_6_battleBG_Ice" x="1" y="1" width="1923" height="1082"/>
