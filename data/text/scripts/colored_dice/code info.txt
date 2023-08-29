@@ -1,0 +1,3 @@
+colored_dice_begin, colored_dice_check, and colored_dice_end written (mostly) by david "themysticsword" galiev
+colored_dice_countdown_check written by bert of the wibi system
+final touches & bugfixes by plokmijnuhby
