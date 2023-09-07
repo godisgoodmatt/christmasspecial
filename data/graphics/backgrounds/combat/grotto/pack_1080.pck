@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
 <!-- $TexturePacker:SmartUpdate:47c78a8c7b1f24d773f0f56020e3b1b3:12b38ebbdb2718c306d5380946b6c684:2bc947f6d78526bd7d45bc6f97ece5b1$ -->
-<TextureAtlas imagePath="pack_1080.atf" width="2048" height="2048">
+<TextureAtlas imagePath="pack_1080.png" width="2048" height="2048">
     <SubTexture name="Hue_Saturation_9_Grotto" x="1" y="1" width="1923" height="1082"/>
     <SubTexture name="Layer_172_Grotto" x="1432" y="1351" rotated="true" width="146" height="160" frameX="-6" frameY="-285" frameWidth="1923" frameHeight="1082"/>
     <SubTexture name="Layer_172_Grotto_2" x="276" y="1126" rotated="true" width="144" height="352" frameX="-265" frameY="-245" frameWidth="1923" frameHeight="1082"/>

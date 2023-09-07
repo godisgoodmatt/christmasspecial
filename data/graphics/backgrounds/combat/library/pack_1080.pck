@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
 <!-- $TexturePacker:SmartUpdate:4e32c601fba739178800ee7e3b798d23:9171dddacf8c257895b2504a929956bd:2bc947f6d78526bd7d45bc6f97ece5b1$ -->
-<TextureAtlas imagePath="pack_1080.atf" width="2048" height="2048">
+<TextureAtlas imagePath="pack_1080.png" width="2048" height="2048">
     <SubTexture name="Layer_1_copy_2_Library" x="1" y="1085" width="260" height="296" frameX="-893" frameY="-15" frameWidth="1923" frameHeight="1082"/>
     <SubTexture name="Layer_1_copy_Library" x="1" y="1805" width="159" height="197" frameX="-1744" frameY="-669" frameWidth="1923" frameHeight="1082"/>
     <SubTexture name="Layer_1_Library" x="128" y="1603" width="149" height="194" frameX="-41" frameY="-382" frameWidth="1923" frameHeight="1082"/>
