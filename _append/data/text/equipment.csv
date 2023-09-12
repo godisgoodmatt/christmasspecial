@@ -2298,3 +2298,4 @@ Christmas Revolver@b,Do [sword]<var:6rolls> damage|+3 per 6 rolled,2,var arrayna
 Nine Iron@b,Deal [sword]<d6> damage|On 6[;] deal [sword]3 more,2,if(d == 6){ attack(d+3); sfxdamage(target[;]d+3); }else{ attack(d); sfxdamage(target[;]d); };,Plasma Gun,NORMAL,,BRIGHTCYAN,change_power,change_power,,none,0,NO,NO,mf,,,,,,,,,,,,
 Nine Iron@b_upgraded,Deal [sword]<d6> damage|On even[;] deal [sword]3 more,2,if(d % 2 == 0){ attack(d+3); sfxdamage(target[;]d+3); }else{ attack(d); sfxdamage(target[;]d); };,Plasma Gun,NORMAL,,BRIGHTCYAN,,,,none,0,NO,NO,mf,,,,,,,,,,,,
 Nine Iron@b_downgraded,Deal [sword]<d6> damage,2,attack(d); sfxdamage(target[;]d);,Plasma Gun,NORMAL,,BRIGHTCYAN,,,,none,0,NO,NO,mf,,,,,,,,,,,,
+Plasma Blaster@b,Do [sword]<d6> damage,1,attack(d); sfxdamage(target[;] d);,Plasma Gun,MAX5,,BRIGHTCYAN,increaserange,complicate,,,0,NO,NO,,,,,,,,,,,,,
