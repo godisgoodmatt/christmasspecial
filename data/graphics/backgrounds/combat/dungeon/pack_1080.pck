@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
 <!-- $TexturePacker:SmartUpdate:193f5924a3c24194ddf681d76f40c614:fd9316abce30a5384cfcb4400328a260:2bc947f6d78526bd7d45bc6f97ece5b1$ -->
-<TextureAtlas imagePath="pack_1080.atf" width="2048" height="2048">
+<TextureAtlas imagePath="pack_1080.png" width="2048" height="2048">
     <SubTexture name="HueSaturation-2" x="1" y="1" width="1923" height="1082"/>
     <SubTexture name="Layer-1-copy-2" x="2032" y="27" rotated="true" width="13" height="19" frameX="-1242" frameY="-395" frameWidth="1923" frameHeight="1082"/>
     <SubTexture name="Layer-1-copy-3" x="2022" y="277" rotated="true" width="16" height="26" frameX="-1648" frameY="-631" frameWidth="1923" frameHeight="1082"/>
