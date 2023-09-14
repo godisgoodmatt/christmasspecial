@@ -29,8 +29,8 @@ mycoolfloor1.theme = rand([music.pop()]);
 mycoolfloor1.generate();
 
 //Floor 2:
-items = [rand([dicer.pop(),diceb.pop()])];
-gooditems = [rand([robotr.pop(),robotb.pop()])];
+items = [rand([dicer.pop(),robotr.pop()])];
+gooditems = [rand([diceb.pop(),robotb.pop()])];
 otherstuff = [health()];
 goodotherstuff = [shop([rand([damr.pop(),damb.pop()]), rand([dicer.pop(),diceb.pop()]), rand([robotr.pop(),robotb.pop()])])];
 var mycoolfloor2 = addfloor('small').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
