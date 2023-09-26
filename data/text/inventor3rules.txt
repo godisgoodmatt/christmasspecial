@@ -1,0 +1,10 @@
+h1|Equipment Guard
+
+Another twist on the durability system!
+
+This time, the enemies break your equipment instead.
+You'll have to figure out ways to either avoid damage
+or break your equipment properly in order to get by.
+
+As usual, equipment that breaks will become a gadget.
+Also, you start with half health. You've got shields, after all.
