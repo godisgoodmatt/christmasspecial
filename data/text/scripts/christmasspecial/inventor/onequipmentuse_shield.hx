@@ -12,5 +12,3 @@ fighter.removestatus("inventor_shield");
 
 // Add the new status.
 fighter.addstatus("inventor_shield", equipment.totalusesremaining);
-
-trace(equipment);
