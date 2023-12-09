@@ -1,0 +1,5 @@
+Boosterpack:Freezing Wind,Ice Claw,Cold Snap,Ice Claw,Ice Claw,Ice Claw,Ice Claw,Cold Snap,Cold Snap
+Boosterpack:Cozy Fire,Fire Flip,Fire Snap,Fire Flip,Fire Flip,Fire Flip,Fire Flip,Fire Snap,Fire Snap
+Boosterpack:Wrecking Ball,Crossbow,Tetraphobia,Wrecking Ball,Wrecking Ball,Crossbow,Crossbow,Tetraphobia,Tetraphobia
+Boosterpack:Slapsies,Long Game,Delayed Curse,Slapsies,Long Game,Hijinx,Hijinx,Delayed Curse,Delayed Curse
+Boosterpack:Poison Slingshot,Dual Blades,Liquorice@jester3,Poison Slingshot,Dual Blades,Dual Blades,Liquorice@jester3,Liquorice@jester3,Liquorice@jester3
