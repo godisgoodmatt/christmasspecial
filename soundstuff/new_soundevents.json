@@ -27624,5 +27624,12 @@
                 }
             }
         ]
+    },
+    "_toxic": {
+        "playsounds": [
+            {
+                "file": "reunion/sfx/toxic"
+            }
+        ]
     }
 }

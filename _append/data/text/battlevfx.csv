@@ -1,2 +1,3 @@
 id,Name,Pack,Offset,Speed,Applies To
 reunion_berserk,berserk,pack3,10|270,1,berserk
+reunion_toxic,toxic,pack3,-100|210,1,toxic

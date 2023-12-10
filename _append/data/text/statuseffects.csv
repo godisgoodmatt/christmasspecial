@@ -265,3 +265,4 @@ hyperactive,Hyper_Active,mana,You can snap,NO,NO,YES,NO,NO,Deck.snapbutton = tru
 hyperactive_trigger,Hyper_Active_Trigger,mana,You can snap next turn,NO,NO,YES,NO,NO,,,,,,,,inflictself(~hyperactive~);,,,
 active,Active,mana,You can discard,NO,NO,YES,NO,NO,Deck.snapbutton = true; Deck.snapstyle = ~discard~;,,,,,,,Deck.snapbutton = false;,,,
 active_trigger,Active_Trigger,mana,You can discard next turn,NO,NO,YES,NO,NO,,,,,,,,inflictself(~active~);,,,
+toxic,Toxic,toxic,When you use any equipment[;] inflict [poison]<value> poison to yourself.,YES,YES,NO,NO,YES,,,,,inflictself(POISON| status.value); sfx(~_poison~);,,,,,,

@@ -1,7 +1,5 @@
 // Code by Ed x 7
 
-trace("TEST EQUIPMENT USE");
-
 var fighter = args[0];
 var equipment = args[1];
 
