@@ -1,8 +1,8 @@
 // Inventor Episode 2: Maintenance Protocols
 var thisgenerator = "inventor_maintenance";
 var floor1countdowns = ["Eggnog", "Sceptre", "Chain Knife", "Steamstaff", "Revolver", "Pinball Machine", "Drumkit"];
-var itemstoprotect = ["Bloody Drill", "Juggling Lantern", "Increment", "Cooling Fan", "Fixed Payout"];
-var petshop = ["Magiduck@3", "Increment", "Cooling Fan", "Fixed Payout"];
+var itemstoprotect = ["Bloody Drill", "Juggling Lantern", "Slowbump", "Fixed Payout"];
+var petshop = ["Magiduck@3", "Atroid@3", "Sharpie", "Bronze Medal"];
 var floor1crap = ["Flicker","Pocket Sand","Create Opening","Chain Link","Ubernudge","Zoop Zoop","Loud Brostep", "Crazy Glue"];
 var commonlist1 = ["Tennis Racket", "Umbrella", "Sharpie", "Bronze Medal", "Stockpick", "Waltzer", "Safety Scissors", "Natural Charm", "Glue Pact", "Plasma Rifle"];
 var shoplist1 = ["Tennis Racket", "Technology", "Rising Dagger", "Compact Resonator", "Burst Beam", "Repast Rapier", "Hand Sanitiser", "Spin Attack", pick(["Eternal Cauldron","Plug Socket"]), "Metal Crusher", "Iron Helmet", "Two Handed Spatula", "Contact Juggling"];
@@ -10,7 +10,7 @@ if (chance(30)) shoplist1.push("Gavel");
 if (chance(30)) shoplist1.push("Sledgehammer");
 var midtierdrops = ["Cozy Fire", "Ice Claw", "Scorpion", "Boston Basher", "Matchbook", "Technology", "God's Pick", pick(["Wispy Kaboom Smash", "Switchblade"]), "Tootsie Pop"];
 var floor3items = ["Cataclysm", "Occam's Razor", "Dice Pump", "Adamant Rail", pick(["Hall of Daggers", "Devilsknife"]), "Stop Sign", "Popcorn", "Gatling Pea", pick(["Reverse Emulation","Supersonic"]), "Ice Skates", "Zeus Dagger"];
-var commonlist2 = ["Return Bicep Curls", "Sneksword", "Waltzer", "The Monarch", "Janky Spanner", "Spirit Shield", "Present Shotgun", "Incapacitate", "Ubersaw", "Storm Reactor", "Stygian Blade", "Sand Hawk"];
+var commonlist2 = ["Return Bicep Curls", "Sneksword", "Waltzer", "The Monarch", "Janky Spanner", "Freezing Wind", "Present Shotgun", "Incapacitate", "Ubersaw", "Storm Reactor", "Stygian Blade", "Sand Hawk"];
 var floor5items = ["Lucky Punch", "Russian Roulette", "Nail Rat", "Betelgeuse"];
 var threeturnsitems = shuffle(["Tyrant's Glare", "Brimstone"]);
 floor5items.push(threeturnsitems.pop());
