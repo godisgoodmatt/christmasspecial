@@ -1,5 +1,5 @@
-// Inventor Episode 2: Maintenance Protocols
-var thisgenerator = "inventor_maintenance";
+// Inventor Episode 3: Equipment Guard
+var thisgenerator = "inventor_equipmentguard";
 var floor1countdowns = ["Eggnog", "Sceptre", "Chain Knife", "Steamstaff", "Revolver", "Pinball Machine", "Drumkit"];
 var itemstoprotect = ["Bloody Drill", "Juggling Lantern", "Slowbump", "Decantation", "Swords Dance"];
 var petshop = ["Magiduck@3", "Atroid@3", "Ghoulter@3"];
@@ -8,7 +8,7 @@ var commonlist1 = ["Tennis Racket", "Umbrella", "Sharpie", "Bronze Medal", "Stoc
 var shoplist1 = ["Tennis Racket", "Technology", "Rising Dagger", "Compact Resonator", "Burst Beam", "Repast Rapier", "Hand Sanitiser", "Spin Attack", pick(["Eternal Cauldron","Plug Socket"]), "Metal Crusher", "Iron Helmet", "Two Handed Spatula", "Contact Juggling"];
 if (chance(30)) shoplist1.push("Gavel");
 if (chance(30)) shoplist1.push("Sledgehammer");
-var midtierdrops = ["Cozy Fire", "Ice Claw", "Scorpion", "Boston Basher", "Matchbook", "Technology", "God's Pick", pick(["Wispy Kaboom Smash", "Switchblade"]), "Tootsie Pop"];
+var midtierdrops = ["Cozy Fire", "Ice Claw", "Scorpion", "Boston Basher", "Matchbook", "Technology", "God's Pick", "Mikiri", "Tootsie Pop"];
 var floor3items = ["Cataclysm", "Occam's Razor", "Dice Pump", "Adamant Rail", pick(["Hall of Daggers", "Devilsknife"]), "Stop Sign", "Popcorn", "Gatling Pea", pick(["Reverse Emulation","Supersonic"]), "Ice Skates", "Zeus Dagger"];
 var commonlist2 = ["Return Bicep Curls", "Sneksword", "Waltzer", "The Monarch", "Janky Spanner", "Freezing Wind", "Present Shotgun", "Incapacitate", "Ubersaw", "Storm Reactor", "Stygian Blade", "Sand Hawk"];
 var floor5items = ["Lucky Punch", "Russian Roulette", "Nail Rat", "Betelgeuse"];
