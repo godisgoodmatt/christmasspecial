@@ -261,8 +261,9 @@ merry_conditions,Merry_Conditions,gift,When you deal damage[;]reduce countdowns 
 austrailian_conditions,Austrailian_Conditions,fire,Extinguishing dice costs 5 more hp,NO,NO,NO,NO,NO,Rules.burningdicecost = 5;,,,,,,,Rules.burningdicecost = 2;,,,
 tense_conditions,Tense_Conditions,jinx,Take 1 damage at the start of your turn for every unique status effect[;] excluding this one,NO,NO,NO,NO,NO,,,var count = -1; for (sta in self.status) {if (!sta.invisible) {count = count + 1;}} if (count > 0) {attackself(count); sfxdamage(self[;]count);},,,,,,,,
 gloomy_conditions,Gloomy_Conditions,poison,Poison is no longer reduced by 1|each turn.,NO,NO,NO,NO,NO,Rules.playerpoisondelta = 0; Rules.enemypoisondelta = 0;,,,,,,,Rules.playerpoisondelta = -1; Rules.enemypoisondelta = -1;,,,
-hyperactive,Hyper_Active,mana,You can snap,NO,NO,YES,NO,NO,Deck.snapbutton = true; Deck.snapstyle = ~cards~;,,,,,,,Deck.snapbutton = false;,,,
-hyperactive_trigger,Hyper_Active_Trigger,mana,You can snap next turn,NO,NO,YES,NO,NO,,,,,,,,inflictself(~hyperactive~);,,,
-active,Active,mana,You can discard,NO,NO,YES,NO,NO,Deck.snapbutton = true; Deck.snapstyle = ~discard~;,,,,,,,Deck.snapbutton = false;,,,
-active_trigger,Active_Trigger,mana,You can discard next turn,NO,NO,YES,NO,NO,,,,,,,,inflictself(~active~);,,,
+hyperactive,Hyper_Active,mana,You can snap,NO,YES,NO,NO,NO,Deck.snapbutton = true; Deck.snapstyle = ~cards~;,,,,,,,Deck.snapbutton = false;,,,Deck.snapbutton = false;
+hyperactive_trigger,Hyper_Active_Trigger,mana,You can snap next turn,NO,NO,YES,NO,NO,,,,,,,,,,,inflictself(~hyperactive~);
+active,Active,mana,You can discard,NO,YES,NO,NO,NO,Deck.snapbutton = true; Deck.snapstyle = ~discard~;,,,,,,,Deck.snapbutton = false;,,,Deck.snapbutton = false;
+active_trigger,Active_Trigger,mana,You can discard next turn,NO,NO,YES,NO,NO,,,,,,,,,,,inflictself(~active~);
 toxic,Toxic,toxic,When you use any equipment[;] inflict [poison]<value> poison to yourself.,YES,YES,NO,NO,YES,,,,,inflictself(POISON| status.value); sfx(~_poison~);,,,,,,
+fire_flip_attack,Fire_Flip_Attack,fire,Should not appear.,NO,NO,NO,YES,NO,,if(inflicted_type == ~fire~) {for(e in target.equipment) {if (e.hastag(~fire_flip~) && e.ready) {attackself(2|FIRE); sfxdamage(self|2);}}},,,,,,,,,

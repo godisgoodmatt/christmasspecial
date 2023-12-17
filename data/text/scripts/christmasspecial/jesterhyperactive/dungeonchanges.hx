@@ -16,13 +16,13 @@ if (levelupselections.indexOf("Boosterpack:Cozy Fire,Fire Flip,Fire Snap,Fire Fl
   Rules.substitute("Boosterpack,Boosterpack,Boosterpack", rand(["Flame Shatter,Cozy Fire,Fire Flip,Fire Flip,Fire Flip,Fire Snap,Fire Snap", "Flame Shatter,Cozy Fire,Fire Flip,Flame Shatter,Fire Snap,Fire Snap,Fire Snap", "Flame Shatter,Cozy Fire,Fire Flip,Cozy Fire,Fire Flip,Fire Flip,Fire Snap"])); 
 }
 
-if (levelupselections.indexOf("Boosterpack:Wrecking Ball,Crossbow,Tetraphobia,Wrecking Ball,Wrecking Ball,Crossbow,Crossbow,Tetraphobia,Tetraphobia") > -1){ 
+if (levelupselections.indexOf("Boosterpack:Crowbar,Crossbow,Tetraphobia,Crowbar,Crowbar,Crossbow,Crossbow,Tetraphobia,Tetraphobia") > -1){ 
   Rules.substitute("Status Item To Replace", "Tetraphobia"); 
   Rules.substitute("Attack Item To Replace", "Sparkles"); 
-  Rules.substitute("Strong Item To Replace", "Wrecking Ball"); 
+  Rules.substitute("Strong Item To Replace", "Crowbar"); 
   Rules.substitute("Condition Item To Replace", "Merry Conditions"); 
   Rules.substitute("Unique Item To Replace", "Catastrophe"); 
-  Rules.substitute("Boosterpack,Boosterpack,Boosterpack", rand(["Catastrophe,Wrecking Ball,Sparkles,Sparkles,Sparkles,Crossbow,Tetraphobia", "Catastrophe,Wrecking Ball,Sparkles,Catastrophe,Wrecking Ball,Sparkles,Tetraphobia", "Catastrophe,Wrecking Ball,Sparkles,Catastrophe,Wrecking Ball,Wrecking Ball,Crossbow"])); 
+  Rules.substitute("Boosterpack,Boosterpack,Boosterpack", rand(["Catastrophe,Crowbar,Sparkles,Sparkles,Sparkles,Crossbow,Tetraphobia", "Catastrophe,Crowbar,Sparkles,Catastrophe,Crowbar,Sparkles,Tetraphobia", "Catastrophe,Crowbar,Sparkles,Catastrophe,Crowbar,Crowbar,Crossbow"])); 
 }
 
 if (levelupselections.indexOf("Boosterpack:Slapsies,Long Game,Delayed Curse,Slapsies,Long Game,Long Game,Long Game,Delayed Curse,Delayed Curse") > -1){ 
