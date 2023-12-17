@@ -14,7 +14,7 @@ var basicItems = ["Red Stripes", "White Stripes", "Spiked Sword", "Plated Shield
 var diceItems = ["Spanning Lockpick","Lockpicking Spanner", "Nudging Bump", "Bumping Nudge", "Doppeling Duplicate", "Duplicating Doppeldice"];
 var uniqueItems = ["365 Days of Christmas","Gift To Me", "On The Flipside", "Fit of Rage", "Copyright", "Free Use"];
 var noteItems = ["Peaceful Strum", "Angry Strum", "Verse", "Chorus", "Constant Note"];
-var manaItems = ["Mistletoe", "Holly Spikes", "Black Friday", "Cyber Monday", "Christmas Spirit", "Joy of Giving"];
+var manaItems = ["Mistletoe", "Holly Spikes", "Black Friday", "Cyber Monday", "Christmas Spirit", "Joy of Giving", "Mana Overdrive"];
 
 var items = [];
 var gooditems = [];
