@@ -13,7 +13,7 @@ var vampireitem = ["Silver Sword"];
 var basicItems = ["Red Stripes", "White Stripes", "Spiked Sword", "Plated Shield", "Boomerang Throw", "Cookies", "Milk", "Touch My Body", "Don't Touch My Body", "Obsessed", "It's A Wrap"];
 var diceItems = ["Spanning Lockpick","Lockpicking Spanner", "Nudging Bump", "Bumping Nudge", "Doppeling Duplicate", "Duplicating Doppeldice"];
 var uniqueItems = ["365 Days of Christmas","Gift To Me", "On The Flipside", "Fit of Rage", "Copyright", "Free Use"];
-var noteItems = ["Peaceful Strum", "Angry Strum", "Verse", "Chorus", "Constant Note"];
+var noteItems = ["Peaceful Strum", "Angry Strum", "Verse", "Chorus", "Constant Note", "Theremin Sound"];
 var manaItems = ["Mistletoe", "Holly Spikes", "Black Friday", "Cyber Monday", "Christmas Spirit", "Joy of Giving", "Mana Overdrive"];
 
 var items = [];
