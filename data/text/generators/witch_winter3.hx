@@ -1,5 +1,5 @@
-// currently just witch_winter2 for now
-var floor1items = shuffle(["Ghostly Flame Spell", "Honeysuckle", "Supercharger", "Acorn Shield"]);
+// Plan: Add mainly status effect-dealing items and use them to supplant the karma thing
+var floor1items = shuffle(["Ghostly Flame Spell", "Matchbook", "Acorn Shield"]);
 var witchshops = shuffle(["Pip Master", "Gladioli", "Blighted Zap", 
   "Brace", "Rock Crusher", "Power Glove", "Sun Beam",
   "Blue Ocean", "Sandbag", "Matchbook", "Quadrality"]);
