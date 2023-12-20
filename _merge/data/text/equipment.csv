@@ -1309,3 +1309,6 @@ Cooling Fan_weakened,Reduce CPU by a quarter,1,if(simulation) { bonus(-1000); } 
 Cooling Fan_downgraded,Reduce CPU by a quarter,1,if(simulation) { bonus(-1000); } else { adjustrobotcounter(-(self.roll_total/4)); },Hibernate,COUNTDOWN,10,BRIGHTCYAN,,,,,0,YES,NO,robotonly|vanilla,,,,,,,,,,,,
 Fixed Payout,Use an additional|Jackpot ability,1,if(!simulation) { if(self.usecpuinsteadofdice) { self.roll_jackpotbonus += 1; } } bonus(-10000);,Infinity Mirror,EVEN,,YELLOW,change_power,complicate,,,0,YES,NO,robotonly|vanilla,,,,,,,,,,,,
 Fixed Payout_upgraded,Use all additional|Jackpot abilities,1,if(!simulation) { if(self.usecpuinsteadofdice) { self.roll_jackpotbonus += 2; } } bonus(-10000);,Infinity Mirror,EVEN,,YELLOW,,,,,0,YES,NO,robotonly|vanilla,,,,,,,,,,,,
+Splitula,Flip a dice upside down[;]|duplicate the flipped dice,1,givedice([7-d|7-d]);,Megaflip,MIN4,,GREEN,change_requirements,change_function,,,0,YES,NO,,1,,,,,,,,,,,
+Splitula_upgraded,Flip a dice upside down[;]|duplicate the flipped dice,1,givedice([7-d|7-d]);,Megaflip,MIN3,,GREEN,,,,,0,YES,NO,,1,,,,,,,,,,,
+Splitula_downgraded,Flip a dice upside down,1,givedice(7-d);,Megaflip,MIN4,,GREEN,,,,,0,YES,NO,,1,,,,,,,,,,,

@@ -5,7 +5,7 @@ var strangeshop = shuffle(["Wide Spatula", "Splitula", "Duality"]);
 var awesomelist = shuffle(["Mikiri", "Building Karma", "Consequences"]);
 var floor2gooditem = shuffle(["Karmic Ball", "Virtuous Mirror"]);
 var floor3item = shuffle([
-  "Renunciation@witch", "Fortify Spell", "Primal Cauldron", "Bicep Curl"]);
+  "Renunciation", "Fortify Spell", "Primal Cauldron", "Bicep Curl"]);
 var floor5item = shuffle([ 
   "Teleport Spell", "Tails Wave"]);
 var vampireitem = ["Silver Sword"];
