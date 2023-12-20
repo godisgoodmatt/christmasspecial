@@ -18,8 +18,6 @@ var gooditems = [];
 var otherstuff = [];
 var goodotherstuff = [];
 
-trace("f1");
-
 //Floor 1:
 items = [];
 gooditems = [floor1items.pop(),floor1items.pop()];
@@ -59,6 +57,9 @@ items = [];
 gooditems = [awesomelist.pop()];
 
 otherstuff = [health(), health()];
+goodotherstuff = [
+  shop([awesomelist.pop(), floor3item.pop(), strangeshop.pop()])
+];
 
 var mycoolfloor4 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
 mycoolfloor4.theme = rand([music.pop()]);
