@@ -1,6 +1,6 @@
 // Plan: Add mainly status effect-dealing items and use them to supplant the karma thing
 var floor1items = shuffle(["Icicle Wind", "Equality", "Matchbook", "Acorn Shield", "Vise Grip"]);
-var witchshops = shuffle(["Crowbar", "Peony", "Karmioli", "Full Circle", "Equality", "Virtuous Mirror"]);
+var witchshops = shuffle(["Crowbar", "Peony", "Karmioli", "Full Circle", "Meditation", "Virtuous Mirror"]);
 var strangeshop = shuffle(["Wide Spatula", "Splitula", "Duality"]);
 var awesomelist = shuffle(["Mikiri", "Building Karma", "Consequences"]);
 var floor2gooditem = shuffle(["Karmic Ball", "Virtuous Mirror"]);
