@@ -1,16 +1,11 @@
 // Plan: Add mainly status effect-dealing items and use them to supplant the karma thing
-var floor1items = shuffle(["Ghostly Flame Spell", "Matchbook", "Acorn Shield"]);
-var witchshops = shuffle(["Pip Master", "Gladioli", "Blighted Zap", 
-  "Brace", "Rock Crusher", "Power Glove", "Sun Beam",
-  "Blue Ocean", "Sandbag", "Matchbook", "Quadrality"]);
-var strangeshop = shuffle(["Wide Spatula", "Splitula", "Solar Cookie"]);
-var awesomelist = shuffle(["Magic Dagger", "Roulette", "Mana Spear", 
-  "Poison Spell", "Power Glove", "Wizard's Hat"]);
-var floor2gooditem = shuffle(["Budge", "Pip Master"]);
-floor2gooditem.push(floor1items.pop());
+var floor1items = shuffle(["Equality", "Matchbook", "Acorn Shield"]);
+var witchshops = shuffle(["Crowbar", "Peony", "Karmioli", "Full Circle", "Equality", "Virtuous Mirror"]);
+var strangeshop = shuffle(["Wide Spatula", "Splitula", "Duality", "Primal Cauldron"]);
+var awesomelist = shuffle(["Mikiri", "Building Karma", "Consequences"]);
+var floor2gooditem = shuffle(["Karmic Ball", "Virtuous Mirror"]);
 var floor3item = shuffle([
-  "Renunciation@witch", "Fortify Spell", "Supercharger", "Magic Dagger", "Waves of Slime", 
-  "Electric Shock", "Sheer Will", "Bicep Curl"]);
+  "Renunciation@witch", "Fortify Spell", "Magic Dagger", "Electric Shock", "Sheer Will", "Bicep Curl"]);
 var floor5item = shuffle([ 
   "Teleport Spell", "Bank Trade", "Bloodstone", "Healing Blast"]);
 var vampireitem = ["Silver Sword"];
@@ -51,8 +46,7 @@ gooditems = [floor3item.pop()];
 otherstuff = [health(), health()];
 
 goodotherstuff = [
-  shop([witchshops.pop(), witchshops.pop(), witchshops.pop()]),
-  upgrade()
+  shop([witchshops.pop(), witchshops.pop(), witchshops.pop()])
 ];
 
 var mycoolfloor3 = addfloor('normal').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
@@ -63,10 +57,7 @@ mycoolfloor3.generate();
 items = [];
 gooditems = [awesomelist.pop()];
 
-otherstuff = [health()];
-goodotherstuff = [
-  trade(["any"], [awesomelist.pop()])
-];
+otherstuff = [health(), health()];
 
 var mycoolfloor4 = addfloor('big').additems(items, gooditems).addotherstuff(otherstuff, goodotherstuff);
 mycoolfloor4.theme = rand([music.pop()]);
@@ -79,7 +70,6 @@ gooditems = [];
 
 otherstuff = [health(), health()];
 goodotherstuff = [
-  upgrade(),
   shop(["health", strangeshop.pop(), floor5item.pop()], [4, 4, 4])
 ];
 

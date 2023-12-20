@@ -36,7 +36,7 @@ setupenemy('Fireman', 38, 3, ['Melting Touch','Flame Ball','Flame Ball']);
 setupenemy('Handyman', 36, 2, ['Spanner','Nail','Power Drill']);
 setupenemywithinnate('Haunted Jar', 36, 4, ['Poison Splash','Poison Spill','Poison Spill@odd','Toxic Roll'], ['absorbpoison']);
 setupenemy('Keymaster', 36, 2, ['Nudge','Bump','Lockpick','Lockpick','Lockblaster']);
-setupenemy('Sorceress', 34, 3, ['Karma Cauldron','Karmanic Infliction','Karma Cauldron','Karmanic Infliction','Karma Consequences']);
+setupenemy('Sorceress', 34, 3, ['Karma Cauldron','Karmic Infliction','Karma Cauldron','Karmic Infliction','Karma Consequences']);
 setupenemy('Vacuum', 40, 2, ['Soul Suck','Suck']);
 setupenemy('Yeti', 38, 2, ['Cave Rumble','Icicle','Icicle','Icicle','Icicle','Icicle','Icicle']);
 setupenemy('Drain Monster', 36, 4, ['Slime Ball','Slime Ball','Mancover Hit']);
